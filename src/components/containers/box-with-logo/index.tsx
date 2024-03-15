@@ -6,6 +6,7 @@ import Logo from "../../../../public/images/schedule-call/logoW.png";
 import { Button } from "../button";
 import Link from "next/link";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { IndexInfo } from "typescript";
 interface BoxWithLogoProps {
     Id?: string,
     Heading?: string,
@@ -19,12 +20,13 @@ interface BoxWithLogoProps {
     HoverImgClass?: string,
     ImgClass?: string,
     structureClass?: string,
-    LogoImg?: string
+    LogoImg?: string 
+    key?: any
 }
 const BoxWithLogo = (props: BoxWithLogoProps) => {
     return (
         <>
-            <div className={props?.structureClass}>
+            <div className={props?.structureClass} key={props?.key}>
                 <Card className={`${style.box} ${props?.className}`}>
                     {
                         !!Boolean(props?.Logo) && (
