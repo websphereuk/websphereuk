@@ -1,0 +1,47 @@
+.Avtar {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 63px;
+    height: 70px;
+}
+
+.heading {
+    font-size: 1.25rem;
+    margin-top: 15px;
+    font-weight: 600;
+
+}
+
+.tagline {
+
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(74, 70, 70) !important;
+}
+
+.para {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.date {
+    font-weight: 500;
+    font-size: 15px;
+    color: black !important;
+}
+
+.card2 {
+    position: absolute;
+    top: 26%;
+    left: 8%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.card3 {
+    position: absolute;
+    right: 0;
+    top: 44%;
+    left: 47%;
+    z-index: 3;
+}

@@ -1,0 +1,41 @@
+.portfolio {
+    background-color: #fafafa !important;
+    padding: 150px 0px 200px;
+}
+
+.img {
+    width: 120px;
+    transition-duration: .5s;
+
+}
+
+.hoverimg {
+    width: 0px;
+    transition-duration: .5s;
+
+}
+
+.box:hover .hoverimg {
+    width: 120px;
+    transition-duration: .5s;
+}
+
+.box:hover .img {
+    width: 0px;
+}
+.box:hover{
+    background-color: black;
+    transition-duration: .5s;
+}
+.box{
+    transition-duration: .5s;
+}
+.box:hover div , .box:hover p{
+color: white !important;
+}
+.box:hover button{
+    background-color: white; 
+}
+.box:hover button a {
+    color: black;
+}

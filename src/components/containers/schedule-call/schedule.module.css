@@ -1,0 +1,97 @@
+.box {
+    border: 1px dashed rgb(128, 122, 122);
+    width: 500px;
+    padding: 20px 20px;
+    border-radius: 8px;
+    position: relative;
+    margin: 30px 0px;
+    transition-duration: .3s;
+}
+
+.boxheading {
+    font-size: 16px;
+    color: rgb(38, 34, 34);
+    font-weight: 600;
+    padding: 30px 0px;
+}
+
+.boxsubheading {
+    font-size: 17px;
+    color: #687580 !important;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.boxpara {
+    font-size: 15px;
+}
+
+.icon {
+    bottom: 88%;
+    left: 38%;
+    right: 50%;
+    background: #bebebe;
+    padding: 7px;
+    border-radius: 100%;
+}
+
+.arrowIcon {
+    right: 0;
+    left: 99%;
+    top: 46%;
+
+}
+
+.box:nth-child(even) .arrowIcon {
+    right: 97% !important;
+    left: -112px;
+    transform: rotate(196deg);
+    transform: scaleX(-1);
+}
+.box:hover{
+transition-duration: all ease-in-out;
+/* background-color: black; */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+/* border-color: transparent; */
+transition-duration: .3s;
+
+}
+.LeftColImg::after{
+    content: '';
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    display: block;
+    z-index: 1;
+    border-radius:100% ;
+    top: -100px;
+    left: -70px;
+    position: absolute  ;
+    
+}
+/* .box:hover .boxheading{
+color: white !important;
+}
+.box:hover .boxpara{
+    color: white !important;
+
+}
+.box:hover .boxsubheading{
+    color: white !important;
+} */
+
+.LeftImg{
+    color: transparent;
+    z-index: 2;
+    display: block;
+    position: relative;
+}
+.LogoImg{
+    z-index: 99;
+    top: -84px;
+    left: -15px;
+}
+.Button{
+    width: 500px;
+}
