@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "public/images/logo.png";
@@ -56,7 +56,7 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
     return () => {
       window.removeEventListener("resize", handleResizeHeader);
     };
-  }, []);
+  }, [setOpenNav]); // Added setOpenNav to the dependency array
 
   const closeNav = () => {
     setOpenNav(false);
@@ -257,7 +257,7 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
           <div className="offcanvas-menu__options nav-fade">
             <div className="offcanvas__mobile-options d-flex">
               <Link href="contact-us" className="btn btn--secondary">
-                Let&apos;s Talk
+                Lets Talk
               </Link>
             </div>
           </div>

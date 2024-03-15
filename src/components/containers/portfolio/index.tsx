@@ -56,9 +56,9 @@ const Portfolio = () => {
                 <GeneralHeading content="Explore a Showcase of Our Innovative Work" className="text-center text-black mb-5" />
                 <div className="section__content banner-five__wrapper container ">
                     {
-                        ProjectData.map((v) => {
+                        ProjectData.map((v , index) => {
                             return (
-                                <div className="banner-five__single">
+                                <div key={index} className="banner-five__single">
                                     <div className="projects-s__single topy-tilt ">
                                         {
                                             !!Boolean(v?.id) && (

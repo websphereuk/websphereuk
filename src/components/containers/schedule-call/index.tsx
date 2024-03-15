@@ -25,15 +25,17 @@ const ScheduleCall = () => {
                         <Image className={`${style.LeftImg} `} src={LadyCall} alt="" />
                     </div>
                     <div className="col-md-6 text-black">
-                        {ScheduleCallData.map((d) => {
+                        {ScheduleCallData.map((d , index) => {
                             return (
-                                <BorderBox
+                              <div key={index}>
+                                  <BorderBox
                                     Heading={d?.Name}
                                     SubHeading={d?.step}
                                     Paragraph={d?.content}
                                     ThemeBlack={true}
                                     Arrow
                                 />
+                              </div>
                             )
                         })}
                         <Button className={`${style.Button} font-bold`} >Schedule A Call</Button>

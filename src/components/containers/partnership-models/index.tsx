@@ -20,9 +20,10 @@ const PartnershipsModels = () => {
                 </div>
                 <div className="container mt-5">
                     <div className="row justify-content-center">
-                        {PartnershipsModelsData.map((v) => {
+                        {PartnershipsModelsData.map((v , index) => {
                             return (
-                                <BoxWithLogo
+                               <div key={index}>
+                                 <BoxWithLogo
                                     structureClass="col-md-4"
                                     Logo
                                     Id={v?.Id}
@@ -31,6 +32,7 @@ const PartnershipsModels = () => {
                                     ButtonText={v?.ButtonText}
                                     ButtonLink={v?.ButtonLink}
                                 />
+                               </div>
                             )
                         })}
 
