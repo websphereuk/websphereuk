@@ -45,7 +45,7 @@ const Testimonial = () => {
       }
     },
     {
-      quote: "Websphere's team not only delivered a stunning website but also provided exceptional support along the way. Their dedication to quality and customer satisfaction is truly commendable.",
+      quote: "Websphere's team not only delivered a stunning website but also provided exceptional support. Their dedication to quality and customer satisfaction is truly commendable, ensuring a successful project experience.",
       author: {
         name: "Laura White",
         role: "Client",

@@ -9,14 +9,14 @@ export const PartnershipsModelsData = [
     {
         Id: "2",
         Heading: "Employ Exclusive Talent Model",
-        Paragraph: "In this streamlined model, clients pay for developer hours, ensuring a seamless project initiation and effortless feature updates. The precision in payment transparency not only fosters trust but also enhances communication throughout the process.",
+        Paragraph: "In this streamlined model, clients pay for developer hours, ensuring a seamless project initiation and effortless feature updates. The precision in payment transparency not only fosters trust but also enhances communication throughout the process, greather  collaboration ",
         ButtonText: "Schedule A Call",
         ButtonLink: "/contact"
     },
     {
         Id: "3",
         Heading: " On-location Development Approach",
-        Paragraph: " Clients opt for this model to receive on-site development support. It is a cost-effective choice that encourages face-to-face interaction, facilitating timely delivery through continuous communication and ensuring the achievement of deadlines.",
+        Paragraph: " Clients often prefer to adopt this model to receive comprehensive on-site development support. It is widely regarded as a cost-effective and efficient choice that not only encourages valuable face-to-face interaction but also fosters strong team dynamics",
         ButtonText: "Schedule A Call",
         ButtonLink: "/contact"
     },
