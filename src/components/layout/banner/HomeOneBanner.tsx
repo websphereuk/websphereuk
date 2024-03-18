@@ -47,7 +47,7 @@ const HomeOneBanner = () => {
 
   return (
     <>
-      <section className="banner">
+      <section className="banner ">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -108,7 +108,7 @@ const HomeOneBanner = () => {
           <Image src={videoframe} alt="Image" priority />
           <i className="fa-sharp fa-solid fa-play"></i>
         </button>
-        <div className="lines d-none d-lg-flex">
+        <div className="d-lg-flex lines d-none">
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>

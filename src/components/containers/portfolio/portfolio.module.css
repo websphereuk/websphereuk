@@ -36,6 +36,6 @@ color: white !important;
 .box:hover button{
     background-color: white; 
 }
-.box:hover button a {
+.box:hover a button  {
     color: black;
 }

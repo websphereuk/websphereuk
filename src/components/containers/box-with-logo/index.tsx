@@ -15,12 +15,12 @@ interface BoxWithLogoProps {
     Logo?: Boolean,
     ButtonLink?: string | undefined,
     ButtonText?: string,
-    Img?: StaticImageData | string | any ,
-    HoverImg?: StaticImageData | string | any ,
+    Img?: StaticImageData | string | any,
+    HoverImg?: StaticImageData | string | any,
     HoverImgClass?: string,
     ImgClass?: string,
     structureClass?: string,
-    LogoImg?: string 
+    LogoImg?: string
     key?: any
 }
 const BoxWithLogo = (props: BoxWithLogoProps) => {
@@ -58,11 +58,11 @@ const BoxWithLogo = (props: BoxWithLogoProps) => {
                     </p>
                     {
                         props?.ButtonLink && (
-                            <Button className="w-100 d-inline-block">
-                                <Link href={props?.ButtonLink}>
+                            <Link className="w-100 d-inline-block" href={props?.ButtonLink}>
+                                <Button className="w-100 d-inline-block">
                                     {props?.ButtonText}
-                                </Link>
-                            </Button>
+                                </Button>
+                            </Link>
                         )
                     }
                 </Card>
