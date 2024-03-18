@@ -38,52 +38,59 @@
 
 .box:nth-child(even) .arrowIcon {
     right: 97% !important;
-    left: -112px;
-    transform: rotate(196deg);
-    transform: scaleX(-1);
+    left: -112px  !important;
+    transform: rotate(196deg) !important;
+    transform: scaleX(-1) !important;
 }
-.box:hover{
-transition-duration: all ease-in-out;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-transition-duration: .3s;
+
+.box:hover {
+    transition-duration: all ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition-duration: .3s;
 
 }
-.BlackHoverBox:hover{
-background-color: black;
-border-color: transparent;
+
+.BlackHoverBox:hover {
+    background-color: black;
+    border-color: transparent;
 
 }
-.LeftColImg::after{
+
+.LeftColImg::after {
     content: '';
     height: 200px;
     width: 200px;
     background-color: black;
     display: block;
     z-index: 1;
-    border-radius:100% ;
+    border-radius: 100%;
     top: -100px;
     left: -70px;
-    position: absolute  ;
-    
-}
-.BlackHoverBox:hover .boxheading{
-color: white !important;
-}
-.BlackHoverBox:hover .boxpara{
-    color: white !important;
+    position: absolute;
 
 }
-.BlackHoverBox:hover .boxsubheading{
+
+.BlackHoverBox:hover .boxheading {
     color: white !important;
 }
 
-.LeftImg{
+.BlackHoverBox:hover .boxpara {
+    color: white !important;
+
+}
+
+.BlackHoverBox:hover .boxsubheading {
+    color: white !important;
+}
+
+.LeftImg {
     color: transparent;
     z-index: 2;
     display: block;
     position: relative;
 }
-.LogoImg{
+
+.LogoImg {
     z-index: 99;
     top: -84px;
     left: -15px;

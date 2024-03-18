@@ -27,15 +27,14 @@ const ScheduleCall = () => {
                     <div className="col-md-6 text-black">
                         {ScheduleCallData.map((d , index) => {
                             return (
-                              <div key={index}>
                                   <BorderBox
+                                  key={index}
                                     Heading={d?.Name}
                                     SubHeading={d?.step}
                                     Paragraph={d?.content}
                                     ThemeBlack={true}
                                     Arrow
                                 />
-                              </div>
                             )
                         })}
                         <Button className={`${style.Button} font-bold`} >Schedule A Call</Button>

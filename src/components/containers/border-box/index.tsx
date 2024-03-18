@@ -6,12 +6,13 @@ interface BorderBoxProps {
     Heading?: string,
     Paragraph?: string,
     Arrow?: Boolean,
-    ThemeBlack  : Boolean
+    ThemeBlack  : Boolean , 
+    key : any 
 }
 const BorderBox = (props: BorderBoxProps) => {
     return (
         <>
-            <div className={`${style.box} d-md-flex ${props?.ThemeBlack && `${style.BlackHoverBox}`} `}>
+            <div key={props?.key} className={`${style.box} d-md-flex ${props?.ThemeBlack && `${style.BlackHoverBox}`} `}>
                 {
                     !!Boolean(props?.Arrow) && (
                         <div>
