@@ -1,0 +1,20 @@
+.formFieldWrapper input {
+    background: #fff;
+    outline: none;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px;
+    padding: 16px 14px;
+    font-size: 16px;
+    border: 1px solid #67636366
+}
+
+.formFieldWrapper input::placeholder {
+    color: #9A9CA5;
+    font-weight: 400;
+    font-size: 16px;
+}
+.formFieldWrapper input:focus {
+box-shadow: none;
+border-color: lightgray;
+}

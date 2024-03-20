@@ -1,14 +1,23 @@
-import React from 'react'
+import React from 'react';
 import styles from './button.module.css';
-interface buttonProps {
-    children: any;
+
+interface ButtonProps {
+    children: React.ReactNode;
     className: string;
     disabled?: boolean;
+    type?: "button" | "submit" | "reset" | undefined;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
-export const Button: React.FC<buttonProps> = ({ children, className, disabled }) => {
 
+export const Button: React.FC<ButtonProps> = ({ children, className, disabled, type, onClick }) => {
     return (
-        <button className={`${className} ${styles.customBtn} ${disabled ? 'opacity-50' : ''} cursor-pointer`} disabled={disabled} >
-            {children}</button>
-    )
-}
+        <button
+            type={type}
+            onClick={onClick}
+            className={`${className} ${styles.customBtn} ${disabled ? 'opacity-50' : ''} cursor-pointer`}
+            disabled={disabled}
+        >
+            {children}
+        </button>
+    );
+};

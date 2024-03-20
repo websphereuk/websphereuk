@@ -116,6 +116,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav , themeBlack }: HeaderProps)
                       <li className="navbar__item nav-fade">
                         <Link href="about-us">About Us</Link>
                       </li>
+                     
                       <li className="navbar__item navbar__item--has-children nav-fade">
                         <button
                           aria-label="dropdown menu"
@@ -206,7 +207,11 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav , themeBlack }: HeaderProps)
                           <li>
                             <Link href="blog-single">Blog Details</Link>
                           </li>
+                          
                         </ul>
+                      </li>
+                      <li className="navbar__item nav-fade">
+                        <Link href="/careers">Careers</Link>
                       </li>
                     </ul>
                   </div>

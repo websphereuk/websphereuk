@@ -2,13 +2,14 @@ import React from "react";
 import Link from "next/link";
 
 interface BannerProps {
-  title?: any;
-  navigation?: any;
+  title?: string;
+  navigation?: string;
   parent?: any;
   parentLink?: any;
+  content?: string;
 }
 
-const CmnBanner = ({ title, navigation, parent, parentLink }: BannerProps) => {
+const CmnBanner = ({ title, navigation, parent, parentLink, content }: BannerProps) => {
   return (
     <>
       <section
@@ -43,9 +44,9 @@ const CmnBanner = ({ title, navigation, parent, parentLink }: BannerProps) => {
             <div className="col-12 col-lg-7 col-xl-5">
               <div className="text-center text-lg-start">
                 <p className="primary-text">
-                  We&apos;re an UK-based top-notch design agency committed to
+                  {content ? (content) : `We&apos;re an UK-based top-notch design agency committed to
                   partnering with good companies and hiring the right people for
-                  the right roles.
+                  the right roles.`}
                 </p>
               </div>
             </div>

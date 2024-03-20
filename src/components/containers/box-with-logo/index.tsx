@@ -5,8 +5,7 @@ import style from "./box-with-logo.module.css";
 import Logo from "../../../../public/images/schedule-call/logoW.png";
 import { Button } from "../button";
 import Link from "next/link";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import { IndexInfo } from "typescript";
+
 interface BoxWithLogoProps {
     Id?: string,
     Heading?: string,
@@ -22,6 +21,12 @@ interface BoxWithLogoProps {
     structureClass?: string,
     LogoImg?: string
     key?: any
+    bottomBar?: Boolean;
+    bottomBarClass?: string;
+    stack?: string;
+    duration?: string;
+    country?: string;
+    numberboxClass?: string;
 }
 const BoxWithLogo = (props: BoxWithLogoProps) => {
     return (
@@ -33,12 +38,16 @@ const BoxWithLogo = (props: BoxWithLogoProps) => {
                             <Image className={`bg-black ${style.logo} ${props?.LogoImg}`} src={Logo} alt='' />
                         )
                     }
-                    {
-                        !!Boolean(props?.Id) && (
-                            <div className={`${style.numberBox}`}>
-                                {props?.Id}
-                            </div>)
-                    }
+                    <div className="">
+                        {
+                            !!Boolean(props?.Id) && (
+                                <div className={`${style.numberBox} ${props?.numberboxClass}`}>
+                                    {props?.Id}
+                                </div>)
+                        }
+                       
+                    </div>
+
 
                     {
                         !!Boolean(props?.Img) && (
@@ -56,6 +65,7 @@ const BoxWithLogo = (props: BoxWithLogoProps) => {
                     <p className={`${style.Paragraph}`}>
                         {props?.Paragraph}
                     </p>
+
                     {
                         props?.ButtonLink && (
                             <Link className="w-100 d-inline-block" href={props?.ButtonLink}>
@@ -63,6 +73,24 @@ const BoxWithLogo = (props: BoxWithLogoProps) => {
                                     {props?.ButtonText}
                                 </Button>
                             </Link>
+                        )
+                    }
+
+                    {
+                        !!Boolean(props?.bottomBar) && (
+                            <>
+                                < div className={` d-flex justify-content-between ${props?.bottomBarClass}`}>
+                                    <div>
+                                        <p className="text-black">{props?.stack} </p>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+
+                                        <i className="fa fa-clock mx-2" aria-hidden="true"> </i> <p className="text-black">{props?.duration} </p>
+                                    </div>
+                                </div >
+                                <p className="text-black">{props?.country} </p>
+                            </>
+
                         )
                     }
                 </Card>
