@@ -29,7 +29,7 @@ const ApplyForm = () => {
     return (
         <>
             <form className="container" onSubmit={form?.handleSubmit}>
-                <div className="px-md-5 text-black text-center section__content">
+                <div className={`px-md-5 text-black text-center section__content ${styles?.box}`}>
                     <h6 className="text-black mb-5  sub-title"> Apply For This Position</h6>
                     <div className="row">
                         <div className="col-lg-6">
