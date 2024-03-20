@@ -251,6 +251,9 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
                     </li>
                   </ul>
                 </li>
+                <li className="navbar__item nav-fade">
+                  <Link href="/careers">Careers</Link>
+                </li>
               </ul>
             </div>
           </div>
