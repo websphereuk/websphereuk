@@ -6,29 +6,50 @@ import TextArea from "../textArea/TextArea";
 import styles from "./apply-form.module.css"
 import { ApplyEntity } from "@/models/apply.entity";
 import axios from "axios";
-const ApplyForm = () => {
+import { toast } from "react-toastify";
+const ApplyForm = ({ data }: any) => {
     const form = useFormik({
         initialValues: new ApplyEntity(),
         validationSchema: ApplyEntity.yupSchema(),
         enableReinitialize: true,
-        onSubmit: async (v: ApplyEntity) => {
 
+        onSubmit: async (values, { resetForm }) => {
             try {
-                const res = await axios.post('/api/apply', form?.values)
-                console.log('====================================');
-                console.log(res);
-                console.log('====================================');
-            } catch (error) {
-                console.log(error)
-            }
+                const submitValues = {
+                    ...values,
+                    country: data?.country,
+                    positionTitle: data?.position
+                };
 
+                const res = await axios.post('/api/apply', submitValues);
+                toast.success('Thank You For Submitting');
+                resetForm({
+                    values: {
+                        firstName: '',
+                        lastName: '',
+                        email: '',
+                        phone: '',
+                        perviousExperience: '',
+                        year: '',
+                        education: '',
+                        coverLetter: ''
+                    }
+                });
+                console.log(form?.values, 'values/////////////////////////')
+                console.log(res);
+            } catch (error) {
+                console.log(error);
+                toast.error('Error ');
+
+            }
         }
+
     })
 
 
     return (
         <>
-            <form className="container" onSubmit={form?.handleSubmit}>
+            <form className="container" onSubmit={form?.handleSubmit} >
                 <div className={`px-md-5 text-black text-center section__content ${styles?.box}`}>
                     <h6 className="text-black mb-5  sub-title"> Apply For This Position</h6>
                     <div className="row">
@@ -106,7 +127,7 @@ const ApplyForm = () => {
                     <TextArea className="w-100 text-black" placeholder=" Cover Letter" onChange={form?.handleChange}
                         value={form?.values?.coverLetter} name="coverLetter" />
 
-                    <Button type={"submit"} className="w-100 mt-5"  >
+                    <Button type={"submit"} disabled={form?.isSubmitting} className="w-100 mt-5"  >
                         Apply Now
                     </Button>
                 </div>

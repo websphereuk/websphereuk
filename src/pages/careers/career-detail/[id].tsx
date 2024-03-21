@@ -18,7 +18,7 @@ const CareerDetails = () => {
         <div className="bg-white ">
           <div className="container">
             <div className='custom-section-padding mt-5'>
-              <GeneralHeading content={v?.title} className='text-black' />
+              <GeneralHeading content={v?.title} className='text-black title-anim' />
 
               <div className="row ">
                 <div className="col-md-7 mt-4 ">
@@ -56,7 +56,7 @@ const CareerDetails = () => {
                   </div>
                 </div>
                 <div className={`col-lg-5 mt-4 text-black ${styles?.applysection}`}>
-                  <ApplyForm />
+                  <ApplyForm  data={v}/>
                 </div>
               </div>
             </div>

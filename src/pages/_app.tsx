@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState } from "react";
 import type { AppProps } from "next/app";
-
+import 'react-toastify/dist/ReactToastify.css';
 // bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,6 +15,8 @@ import "public/icons/glyphter/css/websphere.css";
 import "@/styles/main.scss";
 import Loader from "@/components/containers/loader";
 import gsap from "gsap";
+
+import { ToastContainer } from 'react-toastify';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = useState(false);
@@ -53,7 +55,7 @@ export default function App({ Component, pageProps }: AppProps) {
           loading && (
             <>
               <Suspense fallback={<div>Loading...</div>}>
-
+                <ToastContainer />
                 <Component {...pageProps} />
               </Suspense>
             </>
