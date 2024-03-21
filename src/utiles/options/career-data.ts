@@ -47,7 +47,7 @@ export const CareerData = [
     {
         id: "2",
         title: "Frontend Developer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "10 days ago",
         country: "Remote",
         
@@ -124,7 +124,7 @@ export const CareerData = [
     {
         id: "5",
         title: "DevOps Engineer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: " 7 days ago",
         country: "London",
         
@@ -225,7 +225,7 @@ export const CareerData = [
     {
         id: "9",
         title: "Cybersecurity Analyst",
-        position: "Mid-Level",
+        position: "Mid",
         country: "Canada",
         
         duration: " 5 days ago",
@@ -300,7 +300,7 @@ export const CareerData = [
     {
         id: "12",
         title: "Big Data Engineer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "5 days ago",
         country: "India",
         
@@ -376,7 +376,7 @@ export const CareerData = [
     {
         id: "15",
         title: "Data Analyst",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "4 days ago",
         country: "London",
         
@@ -401,7 +401,7 @@ export const CareerData = [
     {
         id: "16",
         title: "UI/UX Designer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "6 days ago",
         country: "Remote Based",
         
@@ -501,7 +501,7 @@ export const CareerData = [
     {
         id: "20",
         title: "Cybersecurity Analyst",
-        position: "Mid-Level",
+        position: "Mid",
         country: "Canada",
         
         duration: " 5 days ago",
@@ -527,7 +527,7 @@ export const CareerData = [
     {
         id: "21",
         title: "Software Engineer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "3 days ago",
         country: "Canada",
         
@@ -552,7 +552,7 @@ export const CareerData = [
     {
         id: "22",
         title: "System Analyst",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "5 days ago",
         country: "India",
         
@@ -702,7 +702,7 @@ export const CareerData = [
     {
         id: "28",
         title: "IT Trainer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "10 days ago",
         country: "Remote Based",
         
@@ -727,7 +727,7 @@ export const CareerData = [
     {
         id: "29",
         title: "Business Intelligence Analyst",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "7 days ago",
         country: "America",
         
@@ -777,7 +777,7 @@ export const CareerData = [
     {
         id: "31",
         title: "Software Quality Assurance Engineer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "3 days ago",
         country: "America",
         
@@ -852,7 +852,7 @@ export const CareerData = [
     {
         id: "34",
         title: "Database Administrator",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "9 days ago",
         country: "Pakistan",
         
@@ -927,7 +927,7 @@ export const CareerData = [
     {
         id: "37",
         title: "Cloud Security Engineer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "8 days ago",
         country: "Canada",
         
@@ -977,7 +977,7 @@ export const CareerData = [
     {
         id: "39",
         title: "IT Auditor",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "12 days ago",
         country: "Pakistan",
         
@@ -1052,7 +1052,7 @@ export const CareerData = [
     {
         id: "42",
         title: "Network Engineer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "14 days ago",
         country: "London",
         
@@ -1077,7 +1077,7 @@ export const CareerData = [
     {
         id: "43",
         title: "Full Stack Developer",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "15 days ago",
         country: "Canada",
         
@@ -1102,7 +1102,7 @@ export const CareerData = [
     {
         id: "44",
         title: "Business Systems Analyst",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "16 days ago",
         country: "Pakistan",
         
@@ -1177,7 +1177,7 @@ export const CareerData = [
     {
         id: "47",
         title: "IT Business Analyst",
-        position: "Mid-Level",
+        position: "Mid",
         duration: "19 days ago",
         country: "Remote Based",
         

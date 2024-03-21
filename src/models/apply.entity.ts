@@ -10,6 +10,8 @@ export class ApplyEntity {
     year?: string;
     education?: string;
     coverLetter?: string;
+    positionTitle ? : string ; 
+    country ? : string
 
 
     static yupSchema() {

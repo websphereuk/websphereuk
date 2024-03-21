@@ -12,7 +12,7 @@ const SplineDesign = () => {
             </video>
             <div className="position-absolute  w-100 " style={{ top: "5%" }}>
                 <GeneralHeading content="Web Sphere Digital Solution" className="pt-5 text-center" />
-                <iframe src='https://my.spline.design/react3dwebsite-aea54912fc71fa526e48473fa9a647d3/' frameBorder='0' width='100%' height='800px'></iframe>
+                <iframe src='https://my.spline.design/react3dwebsite-aea54912fc71fa526e48473fa9a647d3/' frameBorder='0' width='100%' height='700px'></iframe>
             </div>
         </div>
     )

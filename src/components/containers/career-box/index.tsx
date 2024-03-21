@@ -6,7 +6,10 @@ import { Card } from '../card';
 import FormFields from '../form-feilds';
 import SelectFields from '../SelectFields';
 import GeneralHeading from '../general-heading';
+import NotFoundData from "../../../../public/images/noodataaa.png"
 import { Button } from '../button';
+import Image from 'next/image';
+import { DataNotFound } from '../../../../public/icons/svg';
 
 const CareerBox = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -30,7 +33,10 @@ const CareerBox = () => {
     );
 
     const countriesToFilter = ['America', 'London', 'Canada', 'Pakistan', 'India', 'Remote Based'];
-
+    const handleReset = () => {
+        setSearchTerm(""); // Reset the search term
+        setSelectedCountry(""); // Reset the selected countryXR
+    }
     return (
         <div className="bg-white position-relative d-flex justify-content-center">
             <Card className={styles?.SearchCard}>
@@ -62,7 +68,18 @@ const CareerBox = () => {
             </Card>
             <div className={styles.parentrow}>
                 <div className="container mt-5 ">
-                    <div className="row justify-content-center ">
+                    <div className="row justify-content-start ">
+                        {
+                            filteredCareers.length === 0 &&
+                            (
+                                <div>
+                                    <Image src={NotFoundData} alt='' />
+                                    <Button className="m-auto px-5 py-3 bg-black mt-5" onClick={handleReset}>
+                                        Reset Filters
+                                    </Button>
+                                </div>
+                            )
+                        }
                         {filteredCareers.slice(0, itemsToShow).map((v) => (
                             <BoxWithLogo
                                 numberboxClass={`${styles?.numberBox}`}
