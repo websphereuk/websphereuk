@@ -4,15 +4,15 @@ import { Button } from "../button";
 import GeneralHeading from "../general-heading"
 import style from "./partnerships-models.module.css";
 import { Card } from "../card";
-import { PartnershipsModelsData } from "./patnerships-models-data";
 import BoxWithLogo from "../box-with-logo";
+import { PartnershipsModelsData } from "@/utiles/options/patnerships-models-data";
 const PartnershipsModels = () => {
 
     return (
 
         <>
             <div className={`  w-100 text-black ${style.partnershipsModels}`}>
-                <div className="section__content container text-center">
+                <div className="section__content container text-md-center">
                     <div className="sub-title text-black">
                         Types of Partnership Models
                     </div>
@@ -24,7 +24,7 @@ const PartnershipsModels = () => {
                             return (
                                 <BoxWithLogo
                                     key={index}
-                                    structureClass="col-md-4"
+                                    structureClass="col-lg-4 mt-4"
                                     Logo
                                     Id={v?.Id}
                                     Heading={v?.Heading}
