@@ -1,0 +1,34 @@
+.footerCard {
+    /* box-shadow: #55e6a57f 0px -50px 36px -28px inset;
+     */
+    text-align: center;
+    margin: auto;
+    padding: 50px 50px 60px;
+    position: absolute;
+    z-index: 2;
+    transform: translateY(-40%);
+    width: 60%;
+    transition-duration: .3s !important;
+    background: radial-gradient(circle, rgba(49, 51, 60, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    box-shadow: -10px 10px 70px 0px #55e6a54d;
+
+
+}
+
+.footerCard:hover {
+    transition-duration: .3s;
+    
+    box-shadow: -10px 10px 70px 0px #55e6a54d;
+}
+
+.subheading {
+    font-size: 23px;
+    font-weight: 700;
+}
+@media only screen and (max-width: 767px) {
+.footerCard{
+    width: 99%;
+    padding: 30px 20px 30px;
+    margin: auto;
+}
+}

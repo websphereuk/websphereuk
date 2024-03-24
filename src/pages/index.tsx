@@ -28,7 +28,7 @@ const Home = () => {
   return (
 
     <>
-      <Layout themeBlack={true} header={2} footer={2} video={true}>
+      <Layout themeBlack={true} header={2} footer={2} video={false}>
         <BannerVideo />
         <ServiceMain ThemeBlack />
         <ScheduleCall />

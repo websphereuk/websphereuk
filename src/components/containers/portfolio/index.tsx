@@ -11,9 +11,13 @@ import KbrLogoWhite from "../../../../public/images/projects/kbrlogowhite.png";
 import BoxWithLogo from "../box-with-logo";
 import { Card } from "../card";
 import { ProjectData } from "@/utiles/options/portfolio-data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import useCheckMobileScreen from "@/components/common/use-check-mobile-screen";
 
 gsap.registerPlugin(ScrollTrigger);
 const Portfolio = () => {
+    const isItMobile = useCheckMobileScreen();
     const slider = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -47,51 +51,97 @@ const Portfolio = () => {
     return (
         <>
 
-            <div className={`${style.portfolio}  banner-five `} ref={slider}>
-                <div className="section__content text-center text-black mb-3">
+            <div className={`${style.portfolio}  banner-five `} ref={slider} >
+                <div className="section__content mx-3 text-md-center text-black mb-3">
                     <div className="sub-title  text-black">
                         From Concept to Completion
                     </div>
                 </div>
-                <GeneralHeading content="Explore a Showcase of Our Innovative Work" className="text-center text-black mb-5" />
-                <div className="section__content banner-five__wrapper container ">
-                    {
-                        ProjectData.map((v , index) => {
-                            return (
-                                <div key={index} className="banner-five__single">
-                                    <div className="projects-s__single topy-tilt ">
-                                        {
+                <GeneralHeading content="Explore a Showcase of Our Innovative Work" className="text-md-center mx-3 text-black mb-5" />
+
+                {
+                    !!!isItMobile
+                        ?
+                        <div className="section__content banner-five__wrapper container ">
+                            {
+                                ProjectData.map((v, index) => {
+                                    return (
+                                        <div key={index} className="banner-five__single">
+                                            <div className="projects-s__single topy-tilt ">
+                                                {
+                                                    !!Boolean(v?.id) && (
+                                                        <>
+                                                            <BoxWithLogo Logo={true}
+                                                                Img={v?.projectLogo} ImgClass={`${style?.img}`}
+                                                                HoverImg={v?.projectHoverLogo} HoverImgClass={`${style?.hoverimg}`}
+                                                                ButtonText={'Explore Nows'}
+                                                                ButtonLink={`/portfolio/${v?.id}`}
+                                                                className={`text-black mt-5 ${style?.box}`}
+                                                                Heading={v?.projectHeading}
+                                                                Paragraph={v?.projectParagraph}
+                                                            />
+                                                        </>
+                                                    )
+                                                }
+
+
+
+
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                        :
+                        <div className="testimonials-slider">
+                            <Swiper
+                                modules={[Navigation]}
+                                breakpoints={{
+                                    768: {
+                                        slidesPerView: 1,
+                                    },
+                                    991: {
+                                        slidesPerView: 2.5,
+                                    },
+                                    1140: {
+                                        slidesPerView: 2.5,
+                                    },
+                                }}
+                                autoplay
+                                spaceBetween={50}
+                                navigation
+                            >
+                                {
+
+                                    ProjectData.map((v, index) => {
+
+                                        return (
                                             !!Boolean(v?.id) && (
-                                                <>
-                                                    <BoxWithLogo Logo={true}
-                                                        Img={v?.projectLogo} ImgClass={`${style?.img}`}
-                                                        HoverImg={v?.projectHoverLogo} HoverImgClass={`${style?.hoverimg}`}
-                                                        ButtonText={'Explore Nows'}
-                                                        ButtonLink={`/portfolio/${v?.id}`}
-                                                        className={`text-black mt-5 ${style?.box}`}
-                                                        Heading={v?.projectHeading}
-                                                        Paragraph={v?.projectParagraph}
-                                                    />
-                                                </>
+                                                <SwiperSlide key={index}>
+                                                    <>
+                                                        <BoxWithLogo Logo={true}
+                                                            Img={v?.projectLogo} ImgClass={`${style?.img}`}
+                                                            HoverImg={v?.projectHoverLogo} HoverImgClass={`${style?.hoverimg}`}
+                                                            ButtonText={'Explore Nows'}
+                                                            ButtonLink={`/portfolio/${v?.id}`}
+                                                            className={`text-black mt-5  ${style?.box}`}
+                                                            Heading={v?.projectHeading}
+                                                            Paragraph={`${v?.projectParagraph?.substring(0, 180)} ...`}
+                                                        />
+                                                    </>
+                                                </SwiperSlide>
                                             )
-                                        }
+
+                                        )
+                                    })
+                                }
+                            </Swiper>
+                        </div>
+                }
 
 
 
-
-                                    </div>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-                <style>
-                    {`
-            .pin-space{
-                background:black !important;
-            }
-            `}
-                </style>
             </div>
         </>
 

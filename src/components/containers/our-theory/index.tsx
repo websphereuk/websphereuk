@@ -42,7 +42,7 @@ const OurTheory = () => {
                             <div className="section__header--secondary">
                                 <div className="row gaper align-items-center">
                                     <div className="col-12 col-lg-5 col-xxl-5">
-                                        <div className="section__header text-center text-lg-start mb-0">
+                                        <div className="section__header text-md-center text-lg-start mb-0">
                                             <span className="sub-title">
                                                 Introduction to Our Theory
                                                 <i className="fa-solid fa-arrow-down"></i>
@@ -51,7 +51,7 @@ const OurTheory = () => {
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-7 col-xxl-5 offset-xxl-2">
-                                        <div className="text-center text-lg-start">
+                                        <div className="text-md-center text-lg-start">
                                             <p>
                                                 Web Sphere, a tech innovator, specializes in software development, app creation, UI/UX design, and more. We prioritize a balance of quality, speed, and cost-effectiveness, facilitated by a dedicated team and direct communication across global offices. Founded by industry veterans, our organization boasts a track record of timely project delivery and peak performance, aiding clients in successful goal attainment.
                                             </p>

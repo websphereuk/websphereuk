@@ -215,7 +215,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav , themeBlack }: HeaderProps)
                       </li>
                     </ul>
                   </div>
-                  <div className="navbar__options">
+                  <div className="navbar__options resposive-talk-button">
                     <div className="navbar__mobile-options d-none d-sm-flex">
                       <Link href="contact-us" className="btn btn--secondary">
                         Let&apos;s Talk

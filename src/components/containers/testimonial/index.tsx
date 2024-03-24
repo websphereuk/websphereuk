@@ -68,14 +68,14 @@ const Testimonial = () => {
       <div className="bg-white ">
 
         <section className="section feedback-s fade-wrapper">
-          <div className="section__content text-black mb-5 text-center">
+          <div className="section__content text-black mb-5 mx-4 text-md-center">
             <div className="sub-title text-black">Customer Satisfaction`</div>
             <GeneralHeading content="Voices of Trust and Satisfaction" className="text-black" />
           </div>
           <div className="container">
-            <div className="row gaper">
+            <div className="row gaper mb-5">
               {
-                testimonialsData.map((v) => {
+                testimonialsData.slice(0, 3).map((v) => {
                   return (
                     <>
 

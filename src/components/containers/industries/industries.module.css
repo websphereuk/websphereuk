@@ -20,3 +20,16 @@ cursor: pointer;
 .sectionInfo{
   margin-right: 80px;
 }
+
+
+@media only screen and (max-width: 767px) {
+  .sectionInfo{
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  .box{
+  margin: 0px 1%\;
+
+  }
+}

@@ -1,19 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { ServiceData } from "./ServiceData";
+import useCheckMobileScreen from "@/components/common/use-check-mobile-screen";
+import GeneralHeading from "../../general-heading";
 interface ServicesMainProps {
   ThemeBlack?: Boolean;
   AsUseSection?: Boolean;
 
 }
 const ServiceMain = (props: ServicesMainProps) => {
-  const [itemsToShow, setItemsToShow] = useState(6);
+  const isItMobile = useCheckMobileScreen();
+  const [itemsToShow, setItemsToShow] = useState(isItMobile ? 3 : 6);
   const handleLoadMore = () => {
-    setItemsToShow(prevItems => prevItems + 3);
+    setItemsToShow(prevItems => prevItems + (isItMobile ? 1 : 3));
   };
+  useEffect(() => {
+    setItemsToShow(isItMobile ? 3 : 6);
+  }, [isItMobile]);
   return (
     <section className={`section service-t ${props?.ThemeBlack && 'bg-black'}`}>
 
@@ -21,17 +27,17 @@ const ServiceMain = (props: ServicesMainProps) => {
         <div className="row">
           <div className="col-12">
             {!!!Boolean(props?.AsUseSection) && (
-              <div className="text-center container agency__content section__content">
+              <div className="text-md-center container agency__content section__content">
                 <span className="sub-title">
-                  Our Services
+                  Services We Offer
                   <i className="fa-solid fa-arrow-down"></i>
                 </span>
-                <h2 className="title ">
-                  Discover the Art of Exceptional Services
-                </h2>
-                <div className="paragraph  mb-5 mx-5">
+
+                <GeneralHeading content="Dominate Your Industry with IT Power " />
+
+                <div className="paragraph mt-4 mb-5 mx-md-5">
                   <p>
-                    Elevate your journey with innovation, excellence, and personalized solutions. Let us turn your vision into reality. Exceptional service, <br /> exceptional experiences. Welcome to a new era of success with <b> Web Sphere </b>
+                    Unleash the full potential of your business with Web Sphere of cutting-edge IT solutions. <br /> We craft customized plans to empower your growth, unlock efficiencies, and propel you ahead of the competition.
                   </p>
                 </div>
 
@@ -75,7 +81,7 @@ const ServiceMain = (props: ServicesMainProps) => {
                 <div className="row">
                   {ServiceData.slice(0, itemsToShow).map((v, index) => {
                     return (
-                      <div key={index} className=" col-lg-4 my-3" >
+                      <div key={index} className=" col-lg-4 col-md-6  my-3" >
                         <div className="service-t-single-wrapper">
                           <div className="hover-box-sh service-t__slider-single">
 
@@ -121,202 +127,7 @@ const ServiceMain = (props: ServicesMainProps) => {
                     </div>)}
                 </div>
 
-                {/* <SwiperSlide>
-                  <div className="service-t-single-wrapper">
-                    <div className="service-t__slider-single">
-                      <div className="intro">
-                        <span className="sub-title">
-                          02
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </span>
-                        <h4>
-                          <Link href="service-single">UX Design</Link>
-                        </h4>
-                      </div>
-                      <ul>
-                        <li>Estimation</li>
-                        <li>Research</li>
-                        <li>Story board</li>
-                        <li>User Flow</li>
-                        <li>Information Architecture</li>
-                      </ul>
-                      <div className="cta">
-                        <Link href="service-single">
-                          <i className="icon-arrow-top-right"></i>
-                          <span>service details</span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="service-t-single-wrapper">
-                    <div className="service-t__slider-single">
-                      <div className="intro">
-                        <span className="sub-title">
-                          03
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </span>
-                        <h4>
-                          <Link href="service-single">UI Design</Link>
-                        </h4>
-                      </div>
-                      <ul>
-                        <li>Hi-Fidelity Wireframe</li>
-                        <li>Design System</li>
-                        <li>Final Presentation</li>
-                        <li>Final Delivery</li>
-                        <li>Post Delivery Support</li>
-                      </ul>
-                      <div className="cta">
-                        <Link href="service-single">
-                          <i className="icon-arrow-top-right"></i>
-                          <span>service details</span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="service-t-single-wrapper">
-                    <div className="service-t__slider-single">
-                      <div className="intro">
-                        <span className="sub-title">
-                          04
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </span>
-                        <h4>
-                          <Link href="service-single">Development</Link>
-                        </h4>
-                      </div>
-                      <ul>
-                        <li>Front End</li>
-                        <li>Backend</li>
-                        <li>Mobile App</li>
-                        <li>Post Delivery Support</li>
-                        <li>server development</li>
-                      </ul>
-                      <div className="cta">
-                        <Link href="service-single">
-                          <i className="icon-arrow-top-right"></i>
-                          <span>service details</span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="service-t-single-wrapper">
-                    <div className="service-t__slider-single">
-                      <div className="intro">
-                        <span className="sub-title">
-                          01
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </span>
-                        <h4>
-                          <Link href="service-single">Branding</Link>
-                        </h4>
-                      </div>
-                      <ul>
-                        <li>Define Idea</li>
-                        <li>Competitor Reserach</li>
-                        <li>Target Audience</li>
-                        <li>Idea Validation</li>
-                        <li>Customer Value</li>
-                      </ul>
-                      <div className="cta">
-                        <Link href="service-single">
-                          <i className="icon-arrow-top-right"></i>
-                          <span>service details</span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="service-t-single-wrapper">
-                    <div className="service-t__slider-single">
-                      <div className="intro">
-                        <span className="sub-title">
-                          02
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </span>
-                        <h4>
-                          <Link href="service-single">UX Design</Link>
-                        </h4>
-                      </div>
-                      <ul>
-                        <li>Estimation</li>
-                        <li>Research</li>
-                        <li>Story board</li>
-                        <li>User Flow</li>
-                        <li>Information Architecture</li>
-                      </ul>
-                      <div className="cta">
-                        <Link href="service-single">
-                          <i className="icon-arrow-top-right"></i>
-                          <span>service details</span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="service-t-single-wrapper">
-                    <div className="service-t__slider-single">
-                      <div className="intro">
-                        <span className="sub-title">
-                          03
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </span>
-                        <h4>
-                          <Link href="service-single">UI Design</Link>
-                        </h4>
-                      </div>
-                      <ul>
-                        <li>Hi-Fidelity Wireframe</li>
-                        <li>Design System</li>
-                        <li>Final Presentation</li>
-                        <li>Final Delivery</li>
-                        <li>Post Delivery Support</li>
-                      </ul>
-                      <div className="cta">
-                        <Link href="service-single">
-                          <i className="icon-arrow-top-right"></i>
-                          <span>service details</span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="service-t-single-wrapper">
-                    <div className="service-t__slider-single">
-                      <div className="intro">
-                        <span className="sub-title">
-                          04
-                          <i className="fa-solid fa-arrow-right"></i>
-                        </span>
-                        <h4>
-                          <Link href="service-single">Development</Link>
-                        </h4>
-                      </div>
-                      <ul>
-                        <li>Front End</li>
-                        <li>Backend</li>
-                        <li>Mobile App</li>
-                        <li>Post Delivery Support</li>
-                        <li>server development</li>
-                      </ul>
-                      <div className="cta">
-                        <Link href="service-single">
-                          <i className="icon-arrow-top-right"></i>
-                          <span>service details</span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide> */}
+
               </Swiper>
             </div>
           </div>

@@ -23,19 +23,47 @@
 .box:hover .img {
     width: 0px;
 }
-.box:hover{
+
+.box:hover {
     background-color: black;
     transition-duration: .5s;
 }
-.box{
+
+.box {
     transition-duration: .5s;
 }
-.box:hover div , .box:hover p{
-color: white !important;
+
+.box:hover div,
+.box:hover p {
+    color: white !important;
 }
-.box:hover button{
-    background-color: white; 
+
+.box:hover button {
+    background-color: white;
 }
-.box:hover a button  {
+
+.box:hover a button {
     color: black;
+}
+
+
+@media only screen and (max-width : 767px) {
+    .box {
+        margin: 0px 20px;
+
+    }
+
+    .portfolio {
+        background-color: #fafafa !important;
+        padding: 100px 0px 100px;
+    }
+
+    .img {
+        width: 80px;
+    }
+
+    .box:hover .hoverimg {
+        width: 80px;
+
+    }
 }
