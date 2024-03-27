@@ -114,7 +114,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav , themeBlack }: HeaderProps)
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="about-us">About Us</Link>
+                        <Link href="/about-us">About Us</Link>
                       </li>
                      
                       <li className="navbar__item navbar__item--has-children nav-fade">

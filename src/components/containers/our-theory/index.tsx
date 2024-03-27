@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
 import videoframe from "public/images/video-frame.png";
-const OurTheory = () => {
+interface OurTheoryProps  {
+    className? : string
+}
+const OurTheory = (props: OurTheoryProps) => {
     const [hover, setHover] = useState(1);
     const [videoActive, setVideoActive] = useState(false);
 
@@ -35,7 +38,7 @@ const OurTheory = () => {
     }, []);
     return (
         <>
-            <section className="section work-steps fade-wrapper bg-black">
+            <section className={`section work-steps  fade-wrapper  ${props?.className}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

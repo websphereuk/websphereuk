@@ -11,10 +11,12 @@ import four from "public/images/teams/four.png";
 import five from "public/images/teams/five.png";
 import six from "public/images/teams/six.png";
 import seven from "public/images/teams/seven.png";
+import SlideText from "./slide-text";
 
 const TeamMembers = () => {
   return (
-    <section className="section team-slider-s">
+    <section className="section team-slider-s bg-black">
+     <SlideText content="Our Team"/>
       <div className="container">
         <div className="row">
           <div className="col-12">

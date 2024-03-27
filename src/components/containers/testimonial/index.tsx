@@ -8,6 +8,7 @@ import SarahImg from "../../../../public/images/testimonial/sarah.jpg";
 import LauraImg from "../../../../public/images/testimonial/laura.webp";
 import MichaelImg from "../../../../public/images/testimonial/michel.jpg";
 import ChrisImg from "../../../../public/images/testimonial/chris.jpg";
+import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
 
 
 const Testimonial = () => {
@@ -61,8 +62,8 @@ const Testimonial = () => {
       }
     }
   ];
-
-
+  const isItMobile = useCheckMobileScreen();
+  const ItemToShow =  (isItMobile) ? (3) : (6) 
   return (
     <>
       <div className="bg-white ">
@@ -75,7 +76,7 @@ const Testimonial = () => {
           <div className="container">
             <div className="row gaper mb-5">
               {
-                testimonialsData.slice(0, 3).map((v) => {
+                testimonialsData.slice(0, ItemToShow).map((v) => {
                   return (
                     <>
 

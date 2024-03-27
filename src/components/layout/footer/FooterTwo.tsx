@@ -8,12 +8,13 @@ import { Card } from "@/components/containers/card";
 import GeneralHeading from "@/components/containers/general-heading";
 import styles from "./footer.module.css"
 import { Button } from "@/components/containers/button";
+import FooterAddress from "./footer-address";
 const FooterTwo = () => {
   const currentYear = new Date().getFullYear();
 
 
   return (
-    <div className="bg-footerblue w-100 " style={{borderTop:"1px solid lightgrey"}}>
+    <div className="bg-footerblue w-100 ">
       <div className="d-flex justify-content-center " >
         <Card className={`${styles?.footerCard}   `}>
           <div className="d-lg-flex  justify-content-between align-items-center" >
@@ -68,6 +69,11 @@ const FooterTwo = () => {
             </div>
           </div>
         </div>
+
+
+        <FooterAddress />
+
+
         <div className="footer__copyright">
           <div className="container">
             <div className="row align-items-center gaper">

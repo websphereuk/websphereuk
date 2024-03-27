@@ -5,7 +5,7 @@ import Link from "next/link";
 import star from "public/images/star.png";
 import dotlarge from "public/images/agency/dot-large.png";
 
-const HomeTwoAward = () => {
+const OurStory = () => {
   return (
     <section className="section award ">
       <div className="container">
@@ -18,38 +18,32 @@ const HomeTwoAward = () => {
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                Discover Our <span>Awards</span>
+                Discover Our <span>Story</span>
               </h2>
               <div className="paragraph">
                 <p>
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation on the runway
-                  heading towards a streamlined
+                Embark on a journey through our company's rich narrative, where innovation meets dedication. From our humble beginnings to our present-day accomplishments, every chapter is woven with passion, perseverance, and a relentless pursuit of excellence. Join us as we unfold the tale of our triumphs, challenges, and the unwavering commitment that propels us forward Experience the essence of our brand, crafted with a blend of vision, values, and a steadfast focus on exceeding expectations
                 </p>
               </div>
               <div className="award__content-meta">
                 <div className="single">
-                  <h4>2018</h4>
-                  <h4>Awwwards</h4>
-                  <p>Website of the day</p>
-                </div>
-                <div className="single">
-                  <h4>2020</h4>
-                  <h4>Awwwards</h4>
-                  <p>National design contest</p>
+                  <h4>2021</h4>
+                  <h4>Progress</h4>
+                  <p>Pioneering Progress</p>
                 </div>
                 <div className="single">
                   <h4>2022</h4>
-                  <h4>Awwwards</h4>
-                  <p>Apps of the day</p>
+                  <h4>Resilience</h4>
+                  <p>Resilience & Growth</p>
+                </div>
+                <div className="single">
+                  <h4>2023</h4>
+                  <h4>Innovation</h4>
+                  <p>Innovation Unleashed</p>
                 </div>
               </div>
-              <div className="section__content-cta">
-                <Link href="about-us" className="btn btn--primary">
-                  Know More
-                </Link>
-              </div>
+              
+            
             </div>
           </div>
           <div className="col-12 col-lg-6">
@@ -73,4 +67,4 @@ const HomeTwoAward = () => {
   );
 };
 
-export default HomeTwoAward;
+export default OurStory;

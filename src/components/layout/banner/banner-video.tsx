@@ -1,4 +1,4 @@
-import useCheckMobileScreen from "@/components/common/use-check-mobile-screen";
+import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
 
 const BannerVideo = () => {
     const isItMobile = useCheckMobileScreen();
