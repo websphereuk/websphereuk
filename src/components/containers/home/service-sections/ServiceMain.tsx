@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { ServiceData } from "./ServiceData";
-import useCheckMobileScreen from "@/components/common/use-check-mobile-screen";
+import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
 import GeneralHeading from "../../general-heading";
 interface ServicesMainProps {
   ThemeBlack?: Boolean;

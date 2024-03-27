@@ -13,7 +13,7 @@ import { Card } from "../card";
 import { ProjectData } from "@/utiles/options/portfolio-data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import useCheckMobileScreen from "@/components/common/use-check-mobile-screen";
+import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
 
 gsap.registerPlugin(ScrollTrigger);
 const Portfolio = () => {

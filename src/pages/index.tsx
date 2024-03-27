@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Layout from "@/components/layout/Layout";
-import HomeOneBanner from "@/components/layout/banner/HomeOneBanner";
+import HomeOneBanner from "@/components/layout/banner/about-us-banner";
 import Agency from "@/components/containers/home/Agency";
 import PortfolioText from "@/components/containers/home/PortfolioText";
 import HomeOffer from "@/components/containers/home/HomeOffer";
@@ -35,7 +35,7 @@ const Home = () => {
         < Industries />
         <Portfolio />
         {/* <Problem/> */}
-        <OurTheory />
+        <OurTheory className="bg-black" />
         <PartnershipsModels />
         <SplineDesign />
         {/* <ClientFeedbackMain /> */}

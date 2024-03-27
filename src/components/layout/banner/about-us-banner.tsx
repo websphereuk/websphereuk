@@ -3,13 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import banneronethumb from "public/images/banner/banner-one-thumb.png";
+import BannerImage from "public/images/banner/about-banner.png";
 import star from "public/images/star.png";
 import videoframe from "public/images/video-frame.png";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
 
 gsap.registerPlugin(ScrollTrigger);
-const HomeOneBanner = () => {
+const AboutUsBanner = () => {
   const [videoActive, setVideoActive] = useState(false);
 
   useEffect(() => {
@@ -61,17 +61,15 @@ const HomeOneBanner = () => {
                 </h1>
                 <div className="banner__content-inner">
                   <p>
-                    We are a full-service website design, development and
-                    digital marketing company specializing in SEO, content
-                    marketing that grows brands.
+                    WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies
                   </p>
-                  <div className="cta section__content-cta">
+                  <div className="d-flex justify-space-between flex-row cta section__content-cta">
                     <div className="single">
-                      <h5 className="fw-7">12+</h5>
+                      <h5 className="fw-7">06+</h5>
                       <p className="fw-5">years of experience</p>
                     </div>
                     <div className="single">
-                      <h5 className="fw-7">25k</h5>
+                      <h5 className="fw-7">1k+</h5>
                       <p className="fw-5">completed projects</p>
                     </div>
                   </div>
@@ -81,14 +79,14 @@ const HomeOneBanner = () => {
           </div>
         </div>
         <Image
-          src={banneronethumb}
+          src={BannerImage}
           alt="Image"
           className="banner-one-thumb d-none d-sm-block g-ban-one"
         />
         <Image src={star} alt="Image" className="star" />
         <div className="banner-left-text banner-social-text d-none d-md-flex">
-          <Link href="mailto:info@websphere.com">mail : info@websphere.com</Link>
-          <Link href="tel:99-2158-003-6980">Call : +99 2158 003 6980</Link>
+          <Link href="mailto:info.websphereuk@gmail.com">mail : info.websphereuk</Link>
+          <Link href="tel:+923494747712">Call : +923494747712</Link>
         </div>
         <div className="banner-right-text banner-social-text d-none d-md-flex">
           <Link href="https://www.instagram.com/" target="_blank">
@@ -102,7 +100,7 @@ const HomeOneBanner = () => {
           </Link>
         </div>
         <button
-          className="video-frame video-btn"
+          className="video-frame video-btn d-lg-block d-none"
           onClick={() => setVideoActive(true)}
         >
           <Image src={videoframe} alt="Image" priority />
@@ -140,4 +138,4 @@ const HomeOneBanner = () => {
   );
 };
 
-export default HomeOneBanner;
+export default AboutUsBanner;
