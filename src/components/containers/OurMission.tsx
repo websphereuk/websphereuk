@@ -37,7 +37,7 @@ const OurMission = () => {
               <h3> Core Values and Goals</h3>
               <div className="mt-4 ">
                 <p className="" style={{ textTransform: "initial" }}>
-                  We are dedicated to delivering unparalleled quality and value to our customers while fostering a culture of collaboration and continuous improvement within our team. With a steadfast commitment to sustainability and social responsibility, we aim to make a positive impact on both the environment and the communities we serve. Our mission is not just a statement; it's a promise we uphold in every endeavor, ensuring that we consistently exceed expectations and inspire positive change in the world around us.
+                  We are dedicated to delivering unparalleled quality and value to our customers while fostering a culture of collaboration and continuous improvement within our team. With a steadfast commitment to sustainability and social responsibility, we aim to make a positive impact on both the environment and the communities we serve. Our mission is not just a statement; its a promise we uphold in every endeavor, ensuring that we consistently exceed expectations and inspire positive change in the world around us.
                 </p>
               </div>
             </div>

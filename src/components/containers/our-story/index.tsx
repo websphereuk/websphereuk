@@ -22,7 +22,7 @@ const OurStory = () => {
               </h2>
               <div className="paragraph">
                 <p>
-                Embark on a journey through our company's rich narrative, where innovation meets dedication. From our humble beginnings to our present-day accomplishments, every chapter is woven with passion, perseverance, and a relentless pursuit of excellence. Join us as we unfold the tale of our triumphs, challenges, and the unwavering commitment that propels us forward Experience the essence of our brand, crafted with a blend of vision, values, and a steadfast focus on exceeding expectations
+                Embark on a journey through our company of  rich narrative, where innovation meets dedication. From our humble beginnings to our present-day accomplishments, every chapter is woven with passion, perseverance, and a relentless pursuit of excellence. Join us as we unfold the tale of our triumphs, challenges, and the unwavering commitment that propels us forward Experience the essence of our brand, crafted with a blend of vision, values, and a steadfast focus on exceeding expectations
                 </p>
               </div>
               <div className="award__content-meta">
