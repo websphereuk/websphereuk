@@ -36,7 +36,7 @@ const SliderServices = () => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12 col-lg-8">
-                        <div className="section__header text-center">
+                        <div className="section__header text-start text-md-center">
                             <span className="sub-title">
                                 what we offer
                                 <i className="fa-solid fa-arrow-right"></i>

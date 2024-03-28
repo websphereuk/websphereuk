@@ -34,7 +34,7 @@ const FooterAddress = () => {
                 OfficeAddressData.map((v) => {
                   return (
                     <>
-                      <div className="footer-three__group col-12 col-lg-4">
+                      <div className="footer-three__group col-12 my-3 col-lg-4">
                         <div className="intro">
                           <h5>{v?.countryName}</h5>
                         </div>

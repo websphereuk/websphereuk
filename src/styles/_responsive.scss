@@ -1423,3 +1423,13 @@
   display: none !important;
 }
  }
+@media only screen and (max-width: 991px) {
+.last-sec{
+padding-bottom: 250px;
+}}
+@media only screen and (max-width: 767px) {
+
+.res-pb-0{
+  padding-bottom: 0px !important;
+}
+}

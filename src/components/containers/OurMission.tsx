@@ -12,16 +12,16 @@ const OurMission = () => {
             <div className="section__header--secondary">
               <div className="row gaper align-items-center">
                 <div className="col-12 col-lg-5 col-xxl-5">
-                  <div className="section__header text-center text-lg-start mb-0">
+                  <div className="section__header text-start mb-0">
                     <span className="sub-title">
                       mission & vission
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
-                    <h2 className="title title-anim">our mission & value</h2>
+                    <h2 className="title title-anim text-start">our mission & value</h2>
                   </div>
                 </div>
                 <div className="col-12 col-lg-7 col-xxl-5 offset-xxl-2">
-                  <div className="text-center text-lg-start">
+                  <div className="tex-start">
                     <p>
                       Our mission is to deliver exceptional value to our customers through innovative solutions, while our core values guide us in fostering integrity, collaboration, and sustainable growth
                     </p>
@@ -32,8 +32,13 @@ const OurMission = () => {
           </div>
         </div>
         <div className="row gaper">
+        <div className="col-12 col-lg-6 d-lg-none   d-block ">
+            <div className="mission-s__single fade-top d-flex">
+              <Image src={Mission} alt="Image" />
+            </div>
+          </div>
           <div className="col-12 col-lg-6">
-            <div className="mission-s__single mission-s__single--alt fade-top p-0 px-4">
+            <div className="mission-s__single mission-s__single--alt fade-top p-0 p-4">
               <h3> Core Values and Goals</h3>
               <div className="mt-4 ">
                 <p className="" style={{ textTransform: "initial" }}>
@@ -42,13 +47,13 @@ const OurMission = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6">
-            <div className="mission-s__single fade-top">
+          <div className="col-12 col-lg-6 d-lg-block  d-none ">
+            <div className="mission-s__single fade-top d-flex">
               <Image src={Mission} alt="Image" />
             </div>
           </div>
-          <div className="col-12 col-lg-6">
-            <div className="mission-s__single fade-top">
+          <div className="col-12 col-lg-6 d-lg-block  ">
+            <div className="mission-s__single fade-top d-flex">
               <Image src={Vision} alt="Image" />
             </div>
           </div>

@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
                                     Achieving real business results in the digital landscape requires a strong partner like Web Sphere. We are a reputable digital marketing agency with over six years of experience delivering successful projects across the US, UK, India, and Pakistan. Our team of experts is passionate about crafting cutting-edge and data-driven digital marketing strategies tailored to your specific business goals.We have deep expertise in delivering comprehensive solutions that drive results, such as SEO for international markets, web and app development, and social media marketing for all type of companies.
                                 </p>
                             </div>
-                            <div className="cta section__content-cta">
+                            <div className="cta section__content-cta ">
                                 <div className="single">
                                     <h5 className="fw-7">12+</h5>
                                     <p className="fw-5">years of experience</p>
@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
                                     <p className="fw-5">Team members</p>
                                 </div>
                             </div>
-                            <div className="section__content-cta cta-group text-center ">
+                            <div className="section__content-cta cta-group text-center d-none d-md-block">
 
 
                                 <Link
