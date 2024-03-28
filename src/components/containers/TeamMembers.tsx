@@ -16,31 +16,29 @@ import SlideText from "./slide-text";
 const TeamMembers = () => {
   return (
     <section className="section team-slider-s bg-black">
-     <SlideText content="Our Team"/>
+      <SlideText content="Our Team" />
       <div className="container">
         <div className="row">
           <div className="col-12">
             <div className="section__header--secondary">
               <div className="row gaper align-items-center">
-                <div className="col-12 col-lg-8">
+                <div className="col-12 col-lg-7">
                   <div className="section__header text-center text-lg-start mb-0">
                     <span className="sub-title">
-                      our awesome crew
+                      Introducing Our Team
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                     <h2 className="title title-anim">
-                      our Web Sphere team members
+                      Meet Our Dynamic Team
                     </h2>
                   </div>
                 </div>
-                <div className="col-12 col-lg-4">
-                  <div className="text-center text-lg-end">
-                    <Link
-                      href="our-teams"
-                      className="btn btn--primary text-capitalize"
-                    >
-                      view all teams
-                    </Link>
+                <div className="col-12 col-lg-5">
+                  <div className="tex-start">
+                    <p>
+                    
+Our team embodies synergy and dedication, where every member's contribution is valued and celebrated. Together, we strive for excellence, leveraging our diverse talents to overcome challenges and achieve remarkable results. Join us in our journey towards innovation and success.
+                    </p>
                   </div>
                 </div>
               </div>

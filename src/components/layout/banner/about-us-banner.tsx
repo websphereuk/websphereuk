@@ -47,7 +47,7 @@ const AboutUsBanner = () => {
 
   return (
     <>
-      <section className="banner ">
+      <section className="banner res-pb-0">
         <div className="container">
           <div className="row">
             <div className="col-12">

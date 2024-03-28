@@ -27,7 +27,7 @@ const AboutUs = () => {
       <OurStory />
       <SliderServices />
       <OurMission />
-      
+
       <TeamMembers />
       <OurTheory className="award last-sec" />
 
