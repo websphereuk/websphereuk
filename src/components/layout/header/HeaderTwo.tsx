@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import logo from "public/images/logo.png";
 import logoLight from "public/images/logo-light.png";
 import Offcanvas from "./Offcanvas";
+import NavItem from "./menu/nav-item";
 
 interface HeaderProps {
   openNav: boolean;
@@ -113,9 +114,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav , themeBlack }: HeaderProps)
                           </li>
                         </ul>
                       </li>
-                      <li className="navbar__item nav-fade">
-                        <Link href="/about-us">About Us</Link>
-                      </li>
+                    <NavItem title="ABOUT US" url="/about-us" />
                      
                       <li className="navbar__item navbar__item--has-children nav-fade">
                         <button
