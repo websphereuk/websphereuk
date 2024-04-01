@@ -36,8 +36,8 @@ const TeamMembers = () => {
                 <div className="col-12 col-lg-5">
                   <div className="tex-start">
                     <p>
-                    
-Our team embodies synergy and dedication, where every member of contribution is valued and celebrated. Together, we strive for excellence, leveraging our diverse talents to overcome challenges and achieve remarkable results. Join us in our journey towards innovation and success.
+
+                      Our team embodies synergy and dedication, where every member of contribution is valued and celebrated. Together, we strive for excellence, leveraging our diverse talents to overcome challenges and achieve remarkable results. Join us in our journey towards innovation and success.
                     </p>
                   </div>
                 </div>

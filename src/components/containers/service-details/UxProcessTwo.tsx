@@ -4,7 +4,7 @@ const UxProcessTwo = () => {
   const [imgTab, setImgTab] = useState(0);
 
   return (
-    <section className="section ux-process fade-wrapper">
+    <section className="section agency last-sec ux-process fade-wrapper">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 col-lg-8">

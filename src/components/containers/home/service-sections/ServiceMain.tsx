@@ -93,7 +93,7 @@ const ServiceMain = (props: ServicesMainProps) => {
 
                               <h4>
 
-                                <Link href="service-single" className="title ">{v?.ServiceTitle}</Link>
+                                <Link href="service-single" className="title ">{v?.banner?.ServiceTitle}</Link>
                               </h4>
                             </div>
                             <ul>
@@ -106,7 +106,7 @@ const ServiceMain = (props: ServicesMainProps) => {
                               }
                             </ul>
                             <div className="cta">
-                              <Link href="service-single">
+                              <Link href={`/services/${v?.Link}/`}>
                                 <i className="icon-arrow-top-right"></i>
                                 <span>service details</span>
                               </Link>

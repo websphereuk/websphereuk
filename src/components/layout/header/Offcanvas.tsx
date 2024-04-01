@@ -70,14 +70,14 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
       >
         <nav className="offcanvas-menu__wrapper" data-lenis-prevent>
           <div className="offcanvas-menu__header nav-fade">
-            <div className="logo">
+            <div className="logo mt-5">
               <Link href="/">
                 <Image src={logo} alt="Image" title="Image" priority />
               </Link>
             </div>
             <button
               aria-label="close offcanvas menu"
-              className="close-offcanvas-menu"
+              className="close-offcanvas-menu "
               onClick={closeNav}
             >
               <i className="fa-light fa-xmark-large"></i>
