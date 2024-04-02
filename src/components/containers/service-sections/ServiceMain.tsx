@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import { ServiceData } from "./ServiceData";
+import { ServiceData } from "../../../utiles/options/ServiceData";
 import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
-import GeneralHeading from "../../general-heading";
+import GeneralHeading from "../general-heading";
 interface ServicesMainProps {
   ThemeBlack?: Boolean;
   AsUseSection?: Boolean;
@@ -106,7 +106,7 @@ const ServiceMain = (props: ServicesMainProps) => {
                               }
                             </ul>
                             <div className="cta">
-                              <Link href={`/services/${v?.Link}/`}>
+                              <Link href={`/services/${v?.Link}/  `}>
                                 <i className="icon-arrow-top-right"></i>
                                 <span>service details</span>
                               </Link>
