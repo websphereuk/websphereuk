@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import ball from "public/images/ball.png";
-import { ServiceData } from "../home/service-sections/ServiceData";
+import { ServiceData } from "../../../utiles/options/ServiceData";
 
 const SliderServices = () => {
     useEffect(() => {
@@ -65,7 +65,7 @@ const SliderServices = () => {
                                         <i className="fa-solid fa-arrow-right"></i>
                                     </span>
                                     <h2>
-                                        <Link href="service-single">{v?.ServiceTitle}</Link>
+                                        <Link href="service-single">{v?.banner?.ServiceTitle}</Link>
                                     </h2>
                                     <div className="offer-thumb-hover d-none d-md-block">
                                         <Image src={ball} alt="Image" />
@@ -98,7 +98,7 @@ const SliderServices = () => {
                                     <i className="fa-solid fa-arrow-right"></i>
                                 </span>
                                 <h2>
-                                    <Link href="service-single">{v?.ServiceTitle}</Link>
+                                    <Link href="service-single">{v?.banner?.ServiceTitle}</Link>
                                 </h2>
                                 <div className="offer-thumb-hover d-none d-md-block">
                                     <Image src={ball} alt="Image" />

@@ -9,7 +9,7 @@ import HomeBlog from "@/components/containers/home/HomeBlog";
 import HomeSponsor from "@/components/containers/home/HomeSponsor";
 import NextPage from "@/components/containers/home/NextPage";
 import BannerVideo from "@/components/layout/banner/banner-video";
-import ServiceMain from "@/components/containers/home/service-sections/ServiceMain";
+import ServiceMain from "@/components/containers/service-sections/ServiceMain";
 import Industries from "@/components/containers/industries/Industries";
 import gsap from "gsap";
 import Loader from "@/components/containers/loader";
