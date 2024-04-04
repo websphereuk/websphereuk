@@ -46,10 +46,10 @@ const Banner = (props : banenrProps) => {
       style={{ backgroundImage: "url('/images/banner/banner-two-bg.png')" }}
     >
       <div className="container">
-        <div className="row">
-          <div className="col-12">
+        <div className="row ">
+          <div className="col-12 ">
             <div className="banner-two-inner">
-              <div className="banner-two__meta">
+              <div className="banner-two__meta d-none d-md-flex">
                 <div className="thumb imae">
                   <video autoPlay loop muted controls>
                     <source src="/images/banner-video.mp4" type="video/mp4" />
@@ -66,7 +66,7 @@ const Banner = (props : banenrProps) => {
                   </div>
                 </div>
               </div>
-              <div className="banner-two__content">
+              <div className="banner-two__content mx-md-0 mx-3">
                 <h1 className="title-anim">
                   THE <span>{props?.title}</span> AGENCY FOR BETTER METRICS
                 </h1>
@@ -81,7 +81,7 @@ const Banner = (props : banenrProps) => {
                   </div>
                   <div className="cta">
                     <Link href="contact-us" className="btn btn--tertiary">
-                      book a call now
+                      Schedule a call 
                       <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                     </Link>
                   </div>

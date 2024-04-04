@@ -43,3 +43,85 @@
 .ReasonhLogoImage {
     width: 70px;
 }
+
+
+
+.VisionToRealityLeftColImg::after {
+    content: '';
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    display: block;
+    z-index: 1;
+    border-radius: 100%;
+    top: -100px;
+    left: -70px;
+    position: absolute;
+
+}
+
+@media only screen and (max-width: 991px) {
+    .VisionToRealityLeftColImg::after {
+
+        display: none;
+    }
+
+
+    .VisionToRealityLeftColImg {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
+.VisionToRealityLeftImg {
+    color: transparent;
+    z-index: 2;
+    display: block;
+    position: relative;
+    width: 549px;
+    border-radius: 30px;
+}
+
+.VisionToRealityLogoImg {
+    z-index: 2;
+    top: -73px;
+    left: -39px;
+    width: 132px;
+}
+
+.VisionToRealityButton {
+    width: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+    .VisionToRealityButton {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) and (min-width: 767px) {
+
+    .VisionToRealityboxCol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .Row .ColSection:nth-child(even) {
+        margin-top: 0px;
+    }
+    .Row .ColSection{
+        margin-top: 40px !important;
+    }
+}

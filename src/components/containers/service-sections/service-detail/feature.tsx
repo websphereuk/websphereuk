@@ -12,7 +12,7 @@ const Feature = (data: any) => {
     console.log('====================================');
     return (
         <>
-            <div className="section bg-black">
+            <div className="section agency">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="section__header text-center">
@@ -21,7 +21,7 @@ const Feature = (data: any) => {
                             Tailored Solutions for Your Needs
                             <i className="fa fa-arrow-down"></i>
                             </div>
-                            <GeneralHeading content={`Unleashing the Power of ${data?.data?.banner?.ServiceTitle} Services`} />
+                            <GeneralHeading className="text-start mx-3 text-md-center" content={`Unleashing the Power of ${data?.data?.banner?.ServiceTitle} Services`} />
                         </div>
                         <div className={`col-lg-6 ${style?.ImageSection} `}>
                             <Image src={Girl} alt="" />
@@ -43,34 +43,6 @@ const Feature = (data: any) => {
                                         )
                                     })
                                 }
-
-
-
-                                {/* <div className="col-md-6 mt-5">
-                                    <Card className={`bg-white text-black ${style?.cardSection}`}>
-                                        <h5 className="text-black">Frontend/Backend Development</h5>
-                                        <p className="mt-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos porro dolores expedita neque quibusdam architecto veritatis assumenda eius aut. Corporis, sit. Quia sint molestias sapiente, enim voluptatum ipsum numquam.</p>
-                                    </Card>
-                                </div>
-
-
-                                <div className="col-md-6">
-                                    <Card className={`bg-white text-black ${style?.cardSection}`}>
-                                        <h5 className="text-black">Custom Website Development</h5>
-                                        <p className="mt-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos porro dolores expedita neque quibusdam architecto veritatis assumenda eius aut. Corporis, sit. Quia sint molestias sapiente, enim voluptatum ipsum numquam.</p>
-                                    </Card>
-                                </div>
-
-
-                                <div className="col-md-6 pt-5">
-                                    <Card className={`bg-white text-black  ${style?.cardSection}`}>
-                                        <h5 className="text-black">Custom Website Development</h5>
-                                        <p className="mt-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos porro dolores expedita neque quibusdam architecto veritatis assumenda eius aut. Corporis, sit. Quia sint molestias sapiente, enim voluptatum ipsum numquam.</p>
-                                    </Card>
-                                </div> */}
-
-
-
                             </div>
                         </div>
                     </div>

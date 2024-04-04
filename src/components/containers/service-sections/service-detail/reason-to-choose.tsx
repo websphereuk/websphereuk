@@ -1,14 +1,21 @@
+import { ReasonToChooseData } from "@/utiles/options/service-details/reason-to-choose-data"
 import BoxWithLogo from "../../box-with-logo"
 import GeneralHeading from "../../general-heading"
 import styles from "./services-detail.module.css"
-const ReasonToChooseData = [
-    {
-        id: "01 ",
-        title: "Decades of Expertise",
-        description: " ",
-    }
-]
-const ReasonToChoose = () => {
+import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen"
+import { useEffect, useState } from "react"
+import { Button } from "../../button"
+
+const ReasonToChoose = (data: any) => {
+    const isItMobile = useCheckMobileScreen();
+    const [itemsToShow, setItemsToShow] = useState(isItMobile ? 3 : 6);
+
+    const handleLoadMore = () => {
+        setItemsToShow(prevItems => prevItems + (1));
+    };
+    useEffect(() => {
+        setItemsToShow(isItMobile ? 3 : 6);
+    }, [isItMobile]);
     return (
         <>
             <div className="bg-white section ">
@@ -18,23 +25,36 @@ const ReasonToChoose = () => {
                             Reasons to Choose Our Services
                             <i className="fa fa-arrow-down"></i>
                         </div>
-                        <GeneralHeading content=" Benefits Of Choosing Our Services" className="text-black" />
+                        <GeneralHeading content={` Benefits Of Choosing Our ${data?.data?.banner?.ServiceTitle} Services`} className="text-black text-start text-md-center mx-3" />
                     </div>
                     <div className="row">
+                        {
+                            ReasonToChooseData.slice(0, itemsToShow).map((v) => {
+                                return (
+                                    <>
+                                        <BoxWithLogo
+                                            structureClass={`col-lg-4 mt-4 text-black `}
+                                            className={styles?.ReasonhBox}
+                                            LogoImg={styles?.ReasonhLogoImage}
+                                            numberboxClass={`${styles?.numberBox}`}
+                                            Logo
+                                            Id={v?.id}
+                                            Heading={v?.title}
+                                            Paragraph={v?.description}
+                                        />
+                                    </>
+                                )
+                            })
+                        }
+
+                        {itemsToShow < ReasonToChooseData.length && (
+                            <div className="text-center mt-3">
+                                <Button className=" px-5 mt-5 w-100 " onClick={handleLoadMore}>
+                                    Load More
+                                </Button>
+                            </div>)}
 
 
-                        <BoxWithLogo
-                            structureClass={`col-lg-4 mt-4 text-black `}
-                            className={styles?.ReasonhBox}
-                            LogoImg={styles?.ReasonhLogoImage}
-                            numberboxClass={`${styles?.numberBox}`}
-                            Logo
-                            Id={`03`}
-                            Heading={`Decades of Expertise`}
-                            Paragraph={`Our extensive experience of over 6 years, coupled with the successful delivery of 1000+ projects in this service domain, reflects our commitment to excellence and proficiency in tackling diverse IT challenges. With each project, we have garnered invaluable insights and honed our skills to ensure that our clients receive top-notch solutions tailored to their specific needs.`}
-                        />
-
-                       
                     </div>
                 </div>
             </div>

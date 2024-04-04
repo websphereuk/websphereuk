@@ -29,70 +29,70 @@ const SlideText = (props: SlideTextProps) => {
                     <SwiperSlide>
                         <div className="portfolio__text-slider-single">
                             <h2 className="h1">
-                                <Link href="portfolio">
-                                    {props?.content}
-                                    <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                                </Link>
+
+                                {props?.content}
+                                <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
+
                             </h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="portfolio__text-slider-single">
                             <h2 className="h1 str">
-                                <Link href="portfolio">
-                                    {props?.content}
-                                    <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                                </Link>
+
+                                {props?.content}
+                                <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
+
                             </h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="portfolio__text-slider-single">
                             <h2 className="h1">
-                                <Link href="portfolio">
-                                    {props?.content}
-                                    <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                                </Link>
+
+                                {props?.content}
+                                <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
+
                             </h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="portfolio__text-slider-single">
                             <h2 className="h1 str">
-                                <Link href="portfolio">
-                                    {props?.content}
-                                    <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                                </Link>
+
+                                {props?.content}
+                                <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
+
                             </h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="portfolio__text-slider-single">
                             <h2 className="h1">
-                                <Link href="portfolio">
-                                    {props?.content}
-                                    <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                                </Link>
+
+                                {props?.content}
+                                <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
+
                             </h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="portfolio__text-slider-single">
                             <h2 className="h1 str">
-                                <Link href="portfolio">
-                                    {props?.content}
-                                    <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                                </Link>
+
+                                {props?.content}
+                                <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
+
                             </h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="portfolio__text-slider-single">
                             <h2 className="h1">
-                                <Link href="portfolio">
-                                    {props?.content}
-                                    <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                                </Link>
+
+                                {props?.content}
+                                <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
+
                             </h2>
                         </div>
                     </SwiperSlide>
