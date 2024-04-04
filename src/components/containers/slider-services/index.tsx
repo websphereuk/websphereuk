@@ -65,7 +65,7 @@ const SliderServices = () => {
                                         <i className="fa-solid fa-arrow-right"></i>
                                     </span>
                                     <h2>
-                                        <Link href="service-single">{v?.banner?.ServiceTitle}</Link>
+                                        <Link href={`/services/${v?.Link}`}>{v?.banner?.ServiceTitle}</Link>
                                     </h2>
                                     <div className="offer-thumb-hover d-none d-md-block">
                                         <Image src={ball} alt="Image" />
@@ -98,7 +98,7 @@ const SliderServices = () => {
                                     <i className="fa-solid fa-arrow-right"></i>
                                 </span>
                                 <h2>
-                                    <Link href="service-single">{v?.banner?.ServiceTitle}</Link>
+                                    <Link href={`/services/${v?.Link}`}>{v?.banner?.ServiceTitle}</Link>
                                 </h2>
                                 <div className="offer-thumb-hover d-none d-md-block">
                                     <Image src={ball} alt="Image" />

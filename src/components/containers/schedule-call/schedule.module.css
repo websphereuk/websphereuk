@@ -39,9 +39,10 @@
 }
 
 .LogoImg {
-    z-index: 99;
-    top: -84px;
-    left: -15px;
+    z-index: 2;
+    top: -73px;
+    left: -39px;
+    width: 132px;
 }
 
 .Button {

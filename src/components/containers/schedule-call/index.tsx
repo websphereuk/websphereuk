@@ -26,10 +26,10 @@ const ScheduleCall = () => {
                         <Image className={`${style.LeftImg} `} src={LadyCall} alt="" />
                     </div>
                     <div className={`col-lg-6 text-black ${style.boxCol}`}>
-                        {ScheduleCallData.map((d , index) => {
+                        {ScheduleCallData.map((d, index) => {
                             return (
-                                  <BorderBox
-                                  key={index}
+                                <BorderBox
+                                    key={index}
                                     Heading={d?.Name}
                                     SubHeading={d?.step}
                                     Paragraph={d?.content}
