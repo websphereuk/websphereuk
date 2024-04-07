@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import dawn from "public/images/banner/dawn.png";
-interface banenrProps {
-    title? : string
-    para?: string
-}
+
 gsap.registerPlugin(ScrollTrigger);
-const Banner = (props : banenrProps) => {
+const Banner = (data: any) => {
+
+
+
   useEffect(() => {
     const device_width = window.innerWidth;
 
@@ -67,13 +67,15 @@ const Banner = (props : banenrProps) => {
                 </div>
               </div>
               <div className="banner-two__content mx-md-0 mx-3">
-                <h1 className="title-anim">
-                  THE <span>{props?.title}</span> AGENCY FOR BETTER METRICS
-                </h1>
+
+                  <h1 className="">
+                    THE <span>{data?.data?.banner?.ServiceTitle}</span> AGENCY FOR BETTER METRICS
+                  </h1>
                 <div className="banner-two__content-cta section__content-cta">
                   <div className="paragraph">
                     <p>
-                     {props?.para}
+
+                      {data?.data?.banner?.ServicePara}
                     </p>
                   </div>
                   <div className="arrow-wrapper d-none d-lg-block">
@@ -81,7 +83,7 @@ const Banner = (props : banenrProps) => {
                   </div>
                   <div className="cta">
                     <Link href="contact-us" className="btn btn--tertiary">
-                      Schedule a call 
+                      Schedule a call
                       <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                     </Link>
                   </div>

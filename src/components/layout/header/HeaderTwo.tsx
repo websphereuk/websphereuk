@@ -6,15 +6,16 @@ import logo from "public/images/logo.png";
 import logoLight from "public/images/logo-light.png";
 import Offcanvas from "./Offcanvas";
 import NavItem from "./menu/nav-item";
+import ServiceDropdown from "./menu/service-dropdown";
 
 interface HeaderProps {
   openNav: boolean;
   setOpenNav: (value: boolean) => void;
   handleNav: () => void;
-  themeBlack? : boolean;
+  themeBlack?: boolean;
 }
 
-const HeaderTwo = ({ openNav, handleNav, setOpenNav , themeBlack }: HeaderProps) => {
+const HeaderTwo = ({ openNav, handleNav, setOpenNav, themeBlack }: HeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -36,13 +37,12 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav , themeBlack }: HeaderProps)
 
   const defaultClasses = `primary-navbar cmn-nav ${themeBlack && "bg-black"}`;
 
-  const combinedClasses = `${
-    scrolled ? " navbar-active" : " "
-  } ${defaultClasses}`;
+  const combinedClasses = `${scrolled ? " navbar-active" : " "
+    } ${defaultClasses}`;
 
   let logoSrc = logo;
 
- 
+
 
   const router = useRouter();
   if (router.pathname === "/index-two-light") {
@@ -114,24 +114,10 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav , themeBlack }: HeaderProps)
                           </li>
                         </ul>
                       </li>
-                    <NavItem title="ABOUT US" url="/about-us" />
-                     
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Services
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="our-services">Our Services</Link>
-                          </li>
-                          <li>
-                            <Link href="service-single">Service Details</Link>
-                          </li>
-                        </ul>
-                      </li>
+                      <NavItem title="ABOUT US" url="/about-us" />
+
+
+                      <ServiceDropdown />
                       <li className="navbar__item navbar__item--has-children nav-fade">
                         <button
                           aria-label="dropdown menu"
@@ -206,7 +192,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav , themeBlack }: HeaderProps)
                           <li>
                             <Link href="blog-single">Blog Details</Link>
                           </li>
-                          
+
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">

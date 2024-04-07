@@ -465,6 +465,30 @@ export const ServiceData = [
       ServicePara: "Boost your online sales with our e-commerce solutions. From online store development to payment gateway integration, we provide end-to-end solutions to enhance your e-commerce platform."
     },
     Link: "e-commerce-solutions",
+    serviceFaqs: [{
+      question: "What services do you offer in e-commerce solutions?",
+      answer: "We offer a comprehensive range of e-commerce solutions including website design and development, platform selection and customization, integration with payment gateways and third-party services, mobile commerce (m-commerce) development, search engine optimization (SEO), digital marketing, analytics and reporting, and ongoing support and maintenance. Whether you're launching a new e-commerce store or looking to optimize an existing platform, we have the expertise to assist."
+    },
+    {
+      question: "What are the key benefits of e-commerce solutions?",
+      answer: "E-commerce solutions offer several benefits including expanded market reach, increased sales and revenue, reduced operating costs, improved customer experience, enhanced brand visibility, and scalability. By leveraging e-commerce platforms, businesses can tap into global markets, automate processes, and provide seamless shopping experiences across multiple channels."
+    },
+    {
+      question: "What e-commerce platforms do you work with?",
+      answer: "We work with a variety of e-commerce platforms including Shopify, WooCommerce, Magento, BigCommerce, PrestaShop, OpenCart, and custom-built solutions. Our team has expertise in platform selection, customization, and integration to meet the unique requirements of each client and deliver optimal e-commerce solutions."
+    },
+    {
+      question: "Do you provide custom e-commerce website development?",
+      answer: "Yes, we specialize in custom e-commerce website development tailored to the specific needs and goals of each client. Whether you need a simple storefront or a complex multi-vendor marketplace, we can design and develop a custom e-commerce solution that reflects your brand identity, supports your business processes, and drives conversions."
+    },
+    {
+      question: "Do you offer ongoing support and maintenance for e-commerce websites?",
+      answer: "Yes, we provide ongoing support and maintenance services for e-commerce websites to ensure continued performance, security, and functionality. Our team monitors website health, performs updates, resolves issues, and provides technical assistance as needed to ensure optimal operation and user experience."
+    },
+    {
+      question: "What sets your e-commerce solutions apart from others?",
+      answer: "We differentiate ourselves through our expertise, creativity, and commitment to delivering e-commerce solutions that drive results. Our team combines technical proficiency with industry knowledge to design and implement custom e-commerce solutions that meet the unique needs of each client and provide a competitive advantage in the digital marketplace."
+    }],
     customServices: [
       {
         title: 'Online Store Development',
