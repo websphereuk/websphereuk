@@ -6,12 +6,14 @@ import "swiper/swiper-bundle.css";
 import { ServiceData } from "../../../utiles/options/ServiceData";
 import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
 import GeneralHeading from "../general-heading";
+import { useRouter } from "next/router";
 interface ServicesMainProps {
   ThemeBlack?: Boolean;
   AsUseSection?: Boolean;
 
 }
 const ServiceMain = (props: ServicesMainProps) => {
+  const router = useRouter();
   const isItMobile = useCheckMobileScreen();
   const [itemsToShow, setItemsToShow] = useState(isItMobile ? 3 : 6);
   const handleLoadMore = () => {
@@ -81,42 +83,42 @@ const ServiceMain = (props: ServicesMainProps) => {
                 <div className="row">
                   {ServiceData.slice(0, itemsToShow).map((v, index) => {
                     return (
-                      <div key={index} className=" col-lg-4 col-md-6  my-3" >
-                        <div className="service-t-single-wrapper">
-                          <div className="hover-box-sh service-t__slider-single">
+                      <div key={index} onClick={()=>{router.push(` /services/${v?.Link}/ `)}} className=" col-lg-4 col-md-6  my-3" >
+                          <div className="service-t-single-wrapper">
+                            <div className="hover-box-sh service-t__slider-single">
 
-                            <div className="intro">
-                              <span className="sub-title">
-                                {v?.ServiceNumber}
-                                <i className="fa-solid fa-arrow-right"></i>
-                              </span>
+                              <div className="intro">
+                                <span className="sub-title">
+                                  {v?.ServiceNumber}
+                                  <i className="fa-solid fa-arrow-right"></i>
+                                </span>
 
-                              <h4>
+                                <h4>
 
-                                <Link href="service-single" className="title ">{v?.banner?.ServiceTitle}</Link>
-                              </h4>
+                                  <Link href={`/services/${v?.Link}/  `} className="title ">{v?.banner?.ServiceTitle}</Link>
+                                </h4>
+                              </div>
+                              <ul>
+
+                                {
+                                  v?.ServiceFeatures.map((feature, index) => (
+                                    <li key={index}>
+                                      {feature}
+                                    </li>))
+                                }
+                              </ul>
+                              <div className="cta">
+                                <Link href={`/services/${v?.Link}/  `}>
+                                  <i className="icon-arrow-top-right"></i>
+                                  <span>service details</span>
+                                </Link>
+                              </div>
                             </div>
-                            <ul>
 
-                              {
-                                v?.ServiceFeatures.map((feature, index) => (
-                                  <li key={index}>
-                                    {feature}
-                                  </li>))
-                              }
-                            </ul>
-                            <div className="cta">
-                              <Link href={`/services/${v?.Link}/  `}>
-                                <i className="icon-arrow-top-right"></i>
-                                <span>service details</span>
-                              </Link>
-                            </div>
+
                           </div>
-
-
-                        </div>
-
                       </div>
+
                     )
                   })}
                   {itemsToShow < ServiceData.length && (

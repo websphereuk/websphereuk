@@ -5,7 +5,7 @@ import thumb from "public/images/error-thumb.png";
 
 const ErrorMain = () => {
   return (
-    <section className="section error fade-wrapper">
+    <section className="  last-sec section error fade-wrapper">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 col-xl-7">

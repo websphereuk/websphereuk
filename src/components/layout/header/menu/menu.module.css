@@ -1,0 +1,21 @@
+.ServiceDropdown {
+    min-width: 100% !important;
+    max-width: 1900px !important;
+    width: 938px !important;
+    left: -360px !important;
+    right: 0 !important;
+    margin-right: auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.ServiceDropdown::before {
+    left: 45% !important;
+}
+
+.ServiceDropdown a {
+    padding: 26px 18px !important;
+}
+.ServiceDropdown svg{
+    font-size: 14px !important;
+}

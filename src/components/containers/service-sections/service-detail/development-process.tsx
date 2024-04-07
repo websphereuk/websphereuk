@@ -2,7 +2,11 @@ import { DevelopmentPhaseData } from "@/utiles/options/service-details/developme
 import React, { useState } from "react";
 import SlideText from "../../slide-text";
 
-const DevelopmentProcess = () => {
+
+interface DevelopmentProcessProps {
+    className? : string;
+}
+const DevelopmentProcess = (props : DevelopmentProcessProps) => {
 
 
     const [activeIndex, setActiveIndex] = useState(-1);
@@ -12,7 +16,7 @@ const DevelopmentProcess = () => {
     };
 
     return (
-        <section className="section   ux-process fade-wrapper">
+        <section className={`section   ux-process fade-wrapper ${props?.className}`}>
             <div className="row justify-content-center">
 
                 <div className="col-12 col-lg-12">

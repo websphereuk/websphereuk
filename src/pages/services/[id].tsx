@@ -17,10 +17,10 @@ const Services = () => {
     const v = UpdatedArray[0]
     return (
         <Layout themeBlack={true} header={2} footer={2} >
-            <Banner title={v?.banner?.ServiceTitle} para={v?.banner?.ServicePara} />
+            <Banner data={v} />
             <Feature data={v} />
             <ReasonToChoose data={v} />
-            <DevelopmentProcess />
+            <DevelopmentProcess  />
             <VisionToReality />
             <ServiceFaqs data={v}/>
         </Layout>
