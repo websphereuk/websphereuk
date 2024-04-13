@@ -1,0 +1,51 @@
+.uploadBtnWapper {
+    position: relative;
+    overflow: hidden;
+
+    display: block;
+}
+
+.UploaderBtn {
+    display: block;
+    width: 100%;
+    border: 1px dashed gray;
+    color: black;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+
+    font-weight: semibold;
+    text-transform: capitalize;
+}
+
+.UploaderBtn:hover {
+    display: block;
+    width: 100%;
+    border: 1px dashed gray;
+    color: black;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+
+    font-weight: semibold;
+    text-transform: capitalize;
+}
+
+.uploadBtnWapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+}
+
+.uploadText {
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+    left: 0%;
+}
