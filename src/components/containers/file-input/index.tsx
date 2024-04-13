@@ -51,7 +51,7 @@ const FileInput: React.FC<FileInputProps> = (props: FileInputProps) => {
 
                     </div>) : (
                         <div className='font-size-14 py-3 text-danger'>
-                            Maximum file uploads size is 5 MB
+                            Maximum file uploads size is 15 MB
                         </div>
                     )}
 
