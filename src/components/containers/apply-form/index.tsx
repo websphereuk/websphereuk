@@ -28,7 +28,7 @@ const ApplyForm = ({ data }: any) => {
 
 
 
-                const res = await axios.post('/api/apply/apply', values,);
+                const res = await axios.post('/api/apply/apply', submitValues,);
                 toast.success('Thank You For Submitting');
                 resetForm({
                     values: {
