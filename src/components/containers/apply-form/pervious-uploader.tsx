@@ -11,7 +11,11 @@ import { toast } from "react-toastify";
 import FileInput from '../file-input';
 
 const ApplyForm = ({ data }: any) => {
+    const [file, setFile] = useState(null);
 
+    const handleFileChange = (event: any) => {
+        setFile(event.target.files[0]);
+    };
 
     const form = useFormik({
         initialValues: new ApplyEntity(),
@@ -24,12 +28,21 @@ const ApplyForm = ({ data }: any) => {
                     ...values,
                     country: data?.country,
                     positionTitle: data?.position,
+                    file: file // Add file to submission data
                 };
 
+                const formData = new FormData();
+                Object.entries(submitValues).forEach(([key, value]) => {
+                    formData.append(key, value);
+                });
 
-
-                const res = await axios.post('/api/apply/apply', values,);
+                const res = await axios.post('/api/apply/apply', formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                });
                 toast.success('Thank You For Submitting');
+                setFile(null)
                 resetForm({
                     values: {
                         firstName: '',
@@ -128,6 +141,7 @@ const ApplyForm = ({ data }: any) => {
                     </div>
                     <TextArea className="w-100 text-black mb-5" placeholder=" Cover Letter" onChange={form?.handleChange}
                         value={form?.values?.coverLetter} name="coverLetter" />
+                    <FileInput onChange={handleFileChange} DataFile={file} DataSetFile={setFile} />
                     <Button type={"submit"} disabled={form?.isSubmitting} className="w-100 mt-5"  >
                         Apply Now
                     </Button>
