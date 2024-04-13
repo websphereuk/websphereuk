@@ -5,8 +5,8 @@ import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 import multer from 'multer';
 
-const uploadDir = path.join(process.cwd(), 'public', 'apply');
 const dataFilePath = path.join('src/pages/api/apply', 'data.json');
+const uploadDir = path.join(process.cwd(), 'public', 'apply');
 
 if (!fs.existsSync(dataFilePath)) {
   fs.writeFileSync(dataFilePath, '[]', 'utf-8');
@@ -141,3 +141,4 @@ export const config = {
 };
 
 export default handler;
+
