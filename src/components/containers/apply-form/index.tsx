@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useFormik } from "formik";
 import { FileIcon } from "../../../../public/icons/svg";
 import { Button } from "../button";
@@ -8,15 +7,7 @@ import styles from "./apply-form.module.css"
 import { ApplyEntity } from "@/models/apply.entity";
 import axios from "axios";
 import { toast } from "react-toastify";
-import FileInput from '../file-input';
-
 const ApplyForm = ({ data }: any) => {
-    const [file, setFile] = useState(null);
-
-    const handleFileChange = (event: any) => {
-        setFile(event.target.files[0]);
-    };
-
     const form = useFormik({
         initialValues: new ApplyEntity(),
         validationSchema: ApplyEntity.yupSchema(),
@@ -27,22 +18,11 @@ const ApplyForm = ({ data }: any) => {
                 const submitValues = {
                     ...values,
                     country: data?.country,
-                    positionTitle: data?.position,
-                    file: file // Add file to submission data
+                    positionTitle: data?.position
                 };
 
-                const formData = new FormData();
-                Object.entries(submitValues).forEach(([key, value]) => {
-                    formData.append(key, value);
-                });
-
-                const res = await axios.post('/api/apply/apply', formData, {
-                    headers: {
-                        'Content-Type': 'multipart/form-data'
-                    }
-                });
+                const res = await axios.post('/api/apply/apply', submitValues);
                 toast.success('Thank You For Submitting');
-                setFile(null)
                 resetForm({
                     values: {
                         firstName: '',
@@ -55,14 +35,17 @@ const ApplyForm = ({ data }: any) => {
                         coverLetter: ''
                     }
                 });
+                console.log(form?.values, 'values/////////////////////////')
+                console.log(res);
             } catch (error) {
+                console.log(error);
                 toast.error('Error ');
 
             }
         }
 
     })
-    const ali = `awa`
+
 
     return (
         <>
@@ -139,9 +122,11 @@ const ApplyForm = ({ data }: any) => {
                                 className="w-100 mb-5" />
                         </div>
                     </div>
-                    <TextArea className="w-100 text-black mb-5" placeholder=" Cover Letter" onChange={form?.handleChange}
+
+
+                    <TextArea className="w-100 text-black" placeholder=" Cover Letter" onChange={form?.handleChange}
                         value={form?.values?.coverLetter} name="coverLetter" />
-                    <FileInput onChange={handleFileChange} DataFile={file} DataSetFile={setFile} />
+
                     <Button type={"submit"} disabled={form?.isSubmitting} className="w-100 mt-5"  >
                         Apply Now
                     </Button>
@@ -151,4 +136,4 @@ const ApplyForm = ({ data }: any) => {
     )
 }
 
-export default ApplyForm;
+export default ApplyForm
