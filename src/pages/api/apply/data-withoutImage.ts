@@ -2,6 +2,7 @@ import nodemailer from 'nodemailer';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs';
 import path from 'path';
+import { v4 as uuidv4 } from 'uuid';
 
 
 const handler = async (
@@ -103,6 +104,33 @@ const handler = async (
       },
     });
 
+    const newData = {
+      id: uuidv4(), // generate a uxnique id
+      firstName,
+      lastName,
+      email,
+      coverLetter,
+      previousExperience,
+      positionTitle,
+      phone,
+      year,
+      education
+    };
+
+    // if (
+
+    //   !firstName ||
+    //   !lastName ||
+    //   !email ||
+    //   !coverLetter ||
+    //   !previousExperience ||
+    //   !positionTitle ||
+    //   !phone ||
+    //   !year ||
+    //   !education
+    // ) {
+    //   return res.status(400).json({ error: 'All fields are required' });
+    // }
 
     try {
       await transporter.sendMail({
@@ -116,6 +144,10 @@ const handler = async (
       });
 
 
+      const filePath = path.join(process.cwd(), 'src/pages/api/apply', 'data.json');
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8') || '[]');
+      data.push(newData);
+      fs.writeFileSync(filePath, JSON.stringify(data));
 
       res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
