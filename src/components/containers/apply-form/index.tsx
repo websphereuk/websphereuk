@@ -21,7 +21,7 @@ const ApplyForm = ({ data }: any) => {
                     positionTitle: data?.position
                 };
 
-                const res = await axios.post('/api/apply/apply', submitValues);
+                const res = await axios.post('/api/apply', submitValues);
                 toast.success('Thank You For Submitting');
                 resetForm({
                     values: {
