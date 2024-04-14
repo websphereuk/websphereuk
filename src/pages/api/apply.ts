@@ -1,8 +1,5 @@
 import nodemailer from 'nodemailer';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import fs from 'fs';
-import path from 'path';
-
 
 const handler = async (
   req: NextApiRequest,
@@ -103,7 +100,6 @@ const handler = async (
       },
     });
 
-
     try {
       await transporter.sendMail({
         from: email,
@@ -114,8 +110,6 @@ const handler = async (
           'Content-Type': 'text/html', // Set content type to HTML
         },
       });
-
-
 
       res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
