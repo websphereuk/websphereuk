@@ -40,6 +40,7 @@ const ProjectGallery = (data: any) => {
                                 }}
                                 className="poster__slider"
                             >
+                                
 
                                 {
                                     data?.data?.data?.PortfolioGallery?.map((v: any, index: any) => {
