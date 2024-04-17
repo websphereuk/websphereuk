@@ -9,13 +9,14 @@ import videobg from "public/images/banner/video-bg.png";
 import dotlarge from "public/images/agency/dot-large.png";
 import arrow from "public/images/banner/arrow.png";
 
-const HomeThreeBanner = () => {
+const HomeThreeBanner = (data: any) => {
   const [videoActive, setVideoActive] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const handleSlideChange = (swiper: any) => {
     setActiveIndex(swiper.realIndex);
   };
+  console.log(data, 'data============')
 
   return (
     <>
@@ -41,13 +42,52 @@ const HomeThreeBanner = () => {
               <div
                 className="banner-three__slider-single"
                 style={{
-                  backgroundImage: "url('/images/banner/banner-three-bg.png')",
+                  backgroundImage: `url(${data.data.Banner.BannerOne})`,
+
+                  // backgroundImage: "url('/images/projects/detail project/alfatravel-second.png')",
+
                 }}
               >
                 <div className="container">
                   <div className="row justify-content-end">
                     <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                       <div className="banner-three__content">
+                        <h1 className="light-title " style={{ marginLeft: "75px", fontSize: "65px" }}>
+
+                          Awesome IT Services for Your Business
+                        </h1>
+                        <div className="section__content-cta cta">
+                          <div className="arrow-wrapper d-none d-md-block">
+                            <span className="arrow"></span>
+                          </div>
+                          <Link
+                            href="our-services"
+                            className="btn btn--secondary"
+                          >
+                            our services
+                            <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="banner-three__slider-single"
+                style={{
+
+                  backgroundImage: `url(${data.data.Banner.BannerTwo})`,
+
+
+                }}
+              >
+                <div className="container">
+                  <div className="row justify-content-end">
+                    <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
+                      <div className="banner-three__content" style={{ visibility: "hidden" }}>
                         <h1 className="light-title">
                           Awesome IT Services for Your Business
                         </h1>
@@ -73,48 +113,16 @@ const HomeThreeBanner = () => {
               <div
                 className="banner-three__slider-single"
                 style={{
-                  backgroundImage:
-                    "url('/images/banner/banner-two-bg-two.png')",
+                  backgroundImage: `url(${data.data.Banner.BannerThree})`,
+
+
                 }}
               >
                 <div className="container">
                   <div className="row justify-content-end">
                     <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                       <div className="banner-three__content">
-                        <h1 className="light-title">
-                          Awesome IT Services for Your Business
-                        </h1>
-                        <div className="section__content-cta cta">
-                          <div className="arrow-wrapper d-none d-md-block">
-                            <span className="arrow"></span>
-                          </div>
-                          <Link
-                            href="our-services"
-                            className="btn btn--secondary"
-                          >
-                            our services
-                            <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div
-                className="banner-three__slider-single"
-                style={{
-                  backgroundImage:
-                    "url('/images/banner/banner-two-bg-three.png')",
-                }}
-              >
-                <div className="container">
-                  <div className="row justify-content-end">
-                    <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
-                      <div className="banner-three__content">
-                        <h1 className="light-title">
+                        <h1 className="light-title " style={{ marginLeft: "75px", fontSize: "65px" }}>
                           Awesome IT Services for Your Business
                         </h1>
                         <div className="section__content-cta cta">
@@ -210,7 +218,7 @@ const HomeThreeBanner = () => {
             </button>
           </div>
         </div>
-      </section>
+      </section >
       <div
         className={(videoActive ? " video-zoom-in" : " ") + " video-backdrop"}
         onClick={() => setVideoActive(false)}
