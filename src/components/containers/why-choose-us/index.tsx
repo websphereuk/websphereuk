@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
                                     <p className="fw-5">Team members</p>
                                 </div>
                             </div>
-                            <div className="section__content-cta cta-group text-center d-none d-md-block">
+                            <div className="section__content-cta cta-group text-center d-none d-md-flex">
 
 
                                 <Link
