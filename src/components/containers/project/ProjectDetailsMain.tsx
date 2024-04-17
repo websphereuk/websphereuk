@@ -36,10 +36,9 @@ const ProjectDetailsMain = (data: any) => {
                 {data?.data?.ProjectInfo?.Features?.content}
               </p>
               <ul>
-                {data?.data?.ProjectInfo?.Features?.features.map((feature: any) => {
+                {data?.data?.ProjectInfo?.Features?.features.map((feature: any, index: any) => {
                   return (
-
-                    <li>{feature}</li>
+                    <li key={index}>{feature}</li>
                   )
                 })}
 
