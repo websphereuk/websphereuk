@@ -68,9 +68,9 @@ const Banner = (data: any) => {
               </div>
               <div className="banner-two__content mx-md-0 mx-3">
 
-                  <h1 className="">
-                    THE <span>{data?.data?.banner?.ServiceTitle}</span> AGENCY FOR BETTER METRICS
-                  </h1>
+                <h1 className="">
+                  In-depth <span>{data?.data?.banner?.ServiceTitle}</span> Services for Your Digital Needs
+                </h1>
                 <div className="banner-two__content-cta section__content-cta">
                   <div className="paragraph">
                     <p>

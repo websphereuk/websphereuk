@@ -1,4 +1,8 @@
 
+import BannerSlides from '@/components/containers/project-detail/banner-slides';
+import ProjectDetailsMain from '@/components/containers/project/ProjectDetailsMain';
+import UxProcess from '@/components/containers/service-details/UxProcess';
+import DevelopmentProcess from '@/components/containers/service-sections/service-detail/development-process';
 import Layout from '@/components/layout/Layout';
 import { ProjectData } from '@/utiles/options/portfolio-data';
 import { useRouter } from 'next/router'
@@ -9,14 +13,11 @@ const Portfolio = () => {
     return (
 
         <>
-            <Layout themeBlack={true} header={2} footer={1} video={true}>
+            <Layout themeBlack={true} header={2} footer={2} video={true}>
+                <BannerSlides data={v} />
+                <ProjectDetailsMain data={v} />
+                <DevelopmentProcess  className='agency last-sec'/>
 
-               <div className='custom-section-padding'>
-               <h2>{v?.projectHeading}</h2>
-                <h2>{v?.id}</h2>
-                <p>{v?.projectParagraph}</p>
-               </div>
-                {/* Add any other properties you want to display */}
             </Layout>
 
         </>

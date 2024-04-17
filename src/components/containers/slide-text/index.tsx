@@ -5,11 +5,12 @@ import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 interface SlideTextProps {
     content: string;
+    className?:string
 }
 
 const SlideText = (props: SlideTextProps) => {
     return (
-        <section className=" portfolio portfolio-three pb-0">
+        <section className={` portfolio portfolio-three pb-0 ${props?.className}`}>
             <div className="portfolio__text-slider-w">
                 <Swiper
                     slidesPerView="auto"
