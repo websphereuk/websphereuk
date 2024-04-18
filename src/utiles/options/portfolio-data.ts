@@ -66,6 +66,8 @@ export const ProjectData = [
             BannerTwo: `"/images/projects/detail project/kausahal-law/banner/kl-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/kausahal-law/banner/kl-banner-three.png"`,
             MobileBanner: `"/images/projects/detail project/kausahal-law/banner/kl-banner-three.png"`,
+            MobileBannerOne: `"/images/projects/detail project/kausahal-law/banner/kl-mobile-banner-one.png"`,
+            MobileBannerTwo: `"/images/projects/detail project/kausahal-law/banner/kl-mobile-banner-two.png"`,
         },
         PortfolioGallery: [
             KLGalleryOne,
