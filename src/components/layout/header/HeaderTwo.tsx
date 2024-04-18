@@ -64,56 +64,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav, themeBlack }: HeaderProps) 
                   </div>
                   <div className="navbar__menu">
                     <ul>
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Home
-                        </button>
-                        <ul className="navbar__sub-menu navbar__sub-menu--lg">
-                          <li>
-                            <Link href="/">Creative Agency</Link>
-                          </li>
-                          <li>
-                            <Link href="index-light">
-                              Creative Agency Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-two">Digital Agency</Link>
-                          </li>
-                          <li>
-                            <Link href="index-two-light">
-                              Digital Agency Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-three">It Solution</Link>
-                          </li>
-                          <li>
-                            <Link href="index-three-light">
-                              It Solution Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-four">Personal Portfolio</Link>
-                          </li>
-                          <li>
-                            <Link href="index-four-light">
-                              Personal Portfolio Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-five">Interactive Portfolio</Link>
-                          </li>
-                          <li>
-                            <Link href="index-five-light">
-                              Interactive Portfolio Light
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
+                       <NavItem title="HOME" url="/"/>
                       <NavItem title="ABOUT US" url="/about-us" />
 
 
