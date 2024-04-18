@@ -44,7 +44,7 @@ const BannerSlides = (data: any) => {
                             <div
                                 className="banner-three__slider-single"
                                 style={{
-                                    backgroundImage: `url(${data.data.Banner.BannerOne})`,
+                                    backgroundImage: `url(${!isItMobile ? data.data.Banner.BannerOne : data.data.Banner.MobileBannerTwo})`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                     backgroundRepeat: "no-repeat"
@@ -85,7 +85,7 @@ const BannerSlides = (data: any) => {
                                 className="banner-three__slider-single"
                                 style={{
 
-                                    backgroundImage: `url(${data.data.Banner.BannerTwo})`,
+                                    backgroundImage: `url(${!isItMobile ? data.data.Banner.BannerTwo : data.data.Banner.MobileBannerOne})`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                     backgroundRepeat: "no-repeat"
@@ -123,14 +123,16 @@ const BannerSlides = (data: any) => {
                         <SwiperSlide>
                             <div
                                 className="banner-three__slider-single"
-                                style={{
-                                    backgroundImage: `url(${data.data.Banner.BannerThree})`,
-                                    backgroundSize: "cover",
-                                    backgroundPosition: "center",
-                                    backgroundRepeat: "no-repeat"
+                                style={
+
+                                    {
+                                        backgroundImage: `url(${!isItMobile ? data.data.Banner.BannerThree : data.data.Banner.MobileBannerTwo})`,
+                                        backgroundSize: "cover",
+                                        backgroundPosition: "center",
+                                        backgroundRepeat: "no-repeat"
 
 
-                                }}
+                                    }}
                             >
                                 <div className="container">
                                     <div className="row justify-content-end">
@@ -185,7 +187,7 @@ const BannerSlides = (data: any) => {
                                 }
                             >
                                 <span>01</span>
-                                <p>TECHNOLOGY CONSULTANTS</p>
+                                <p>Project Intro</p>
                                 <div className="slider-progress"></div>
                             </div>
                             <div
@@ -195,7 +197,7 @@ const BannerSlides = (data: any) => {
                                 }
                             >
                                 <span>02</span>
-                                <p>SOFTWARE ENGINEERS</p>
+                                <p>Project Detail</p>
                                 <div className="slider-progress"></div>
                             </div>
                             <div
@@ -205,7 +207,7 @@ const BannerSlides = (data: any) => {
                                 }
                             >
                                 <span>03</span>
-                                <p>PRODUCT STRATEGY ADVISORS</p>
+                                <p>Project Feature</p>
                                 <div className="slider-progress"></div>
                             </div>
                         </div>
@@ -214,11 +216,11 @@ const BannerSlides = (data: any) => {
                 <div className="banner-three__meta ban-three-g-meta">
                     <div className="cta">
                         <div className="single">
-                            <h5 className="fw-7">12+</h5>
+                            <h5 className="fw-7">06+</h5>
                             <p className="fw-5">years of experience</p>
                         </div>
                         <div className="single">
-                            <h5 className="fw-7">25k</h5>
+                            <h5 className="fw-7">1k</h5>
                             <p className="fw-5">completed projects</p>
                         </div>
                     </div>

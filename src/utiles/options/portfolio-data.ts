@@ -28,6 +28,9 @@ export const ProjectData = [
             BannerOne: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png"`,
             BannerTwo: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-three.png"`,
+            MobileBannerOne: `"/images/projects/detail project/alfa-travel-paris/banner/alp-mobile-banner-one.png"`,
+            MobileBannerTwo: `"/images/projects/detail project/alfa-travel-paris/banner/alp-mobile-banner-two.png"`,
+
         },
         PortfolioGallery: [
             ALPGalleryOne,
@@ -62,6 +65,9 @@ export const ProjectData = [
             BannerOne: `"/images/projects/detail project/kausahal-law/banner/kl-banner-one.png"`,
             BannerTwo: `"/images/projects/detail project/kausahal-law/banner/kl-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/kausahal-law/banner/kl-banner-three.png"`,
+            MobileBanner: `"/images/projects/detail project/kausahal-law/banner/kl-banner-three.png"`,
+            MobileBannerOne: `"/images/projects/detail project/kausahal-law/banner/kl-mobile-banner-one.png"`,
+            MobileBannerTwo: `"/images/projects/detail project/kausahal-law/banner/kl-mobile-banner-two.png"`,
         },
         PortfolioGallery: [
             KLGalleryOne,
