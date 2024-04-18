@@ -81,13 +81,13 @@ const FooterTwo = () => {
                 <div className="footer__copyright-text text-center text-xl-start">
                   <p>
                     Copyright &copy;
-                    <span id="copyYear">{currentYear}</span> web sphere by{" "}
+                    <span id="copyYear">{currentYear}</span>  {" "}
                     <Link
-                      href="https://themeforest.net/user/UltraDevs"
+                      href="/"
                       target="_blank"
                     >
                       {" "}
-                      UltraDevs
+                      Web Sphere
                     </Link>{" "}
                     . All Rights Reserved
                   </p>

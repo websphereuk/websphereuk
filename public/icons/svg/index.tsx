@@ -28,7 +28,7 @@ export const DataNotFound = () => {
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 1934 1562" width="1934"
                 height="650" preserveAspectRatio="xMidYMid meet"
                 style={{ width: "100%", height: "100%", transform: "translate3d(0px, 0px, 0px)", contentVisibility: "visible" }}>
-                
+
                 <g clip-path="url(#__lottie_element_36)">
                     <g transform="matrix(1,0,0,1,303.7559814453125,795.1959838867188)" opacity="1" style={{ display: "block" }}>
                         <g opacity="1"
@@ -381,7 +381,7 @@ export const DataNotFound = () => {
                         </g>
                     </g>
                     <g transform="matrix(1.000292420387268,0,0,1.000292420387268,361.65350341796875,347.3654479980469)" opacity="1"
-                        style={{display: "block"}}>
+                        style={{ display: "block" }}>
                         <g opacity="1"
                             transform="matrix(0.9848943948745728,-0.1731560230255127,0.1731560230255127,0.9848943948745728,-17.65599822998047,14.866561889648438)">
                             <g opacity="1" transform="matrix(1,0,0,1,77.76499938964844,67.93199920654297)">
@@ -402,7 +402,7 @@ export const DataNotFound = () => {
                         </g>
                     </g>
                     <g transform="matrix(1,0,0,1,907.369384765625,783.1842651367188)" className="awsss" opacity="1"
-                        style={{display: "block"}}>
+                        style={{ display: "block" }}>
                         <g opacity="1" transform="matrix(1,0,0,1,311.46099853515625,251.1790008544922)">
                             <path fill="rgb(255,79,91)" fill-opacity="1"
                                 d=" M42.03099822998047,46.597999572753906 C42.03099822998047,46.597999572753906 -58.84199905395508,-14.402999877929688 -58.84199905395508,-14.402999877929688 C-62.334999084472656,-16.525999069213867 -63.44499969482422,-21.07900047302246 -61.321998596191406,-24.57200050354004 C-61.321998596191406,-24.57200050354004 -50.73699951171875,-41.99399948120117 -50.73699951171875,-41.99399948120117 C-48.61399841308594,-45.48699951171875 -44.060001373291016,-46.597999572753906 -40.56700134277344,-44.47600173950195 C-40.56700134277344,-44.47600173950195 63.44499969482422,18.424999237060547 63.44499969482422,18.424999237060547 C63.44499969482422,18.424999237060547 42.03099822998047,46.597999572753906 42.03099822998047,46.597999572753906z">
@@ -436,8 +436,14 @@ export const DataNotFound = () => {
                     </g>
                 </g>
             </svg>
-            
+
         </>
     )
 }
 
+export const LocationIcon = () => {
+    return (
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" width="46"  x="0" y="0" viewBox="0 0 20 20" xmlSpace="preserve" className=""><g><path d="M10 0C6.7 0 4 2.7 4 6s6 11 6 11 6-7.7 6-11-2.7-6-6-6zm0 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="#ffffff" opacity="1" data-original="#000000" className=""></path><path d="M16.3 11.1c-.3.6-.6 1.2-1 1.8 1.7.6 2.7 1.4 2.7 2.1 0 1.2-3.2 3-8 3s-8-1.8-8-3c0-.7 1-1.5 2.7-2.2-.4-.6-.7-1.2-1-1.8C1.4 12 0 13.4 0 15c0 2.8 4.2 5 9.8 5 5 0 10.2-1.7 10.2-5 0-1.6-1.4-3-3.7-3.9z" fill="#ffffff" opacity="1" data-original="#000000" className=""></path></g></svg>
+    )
+}

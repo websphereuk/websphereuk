@@ -14,6 +14,7 @@ import dfour from "public/images/projects/d-four.png";
 import dfive from "public/images/projects/d-five.png";
 import ProjectGallery from "../project-detail/project-gallery";
 import CardGallery from "../project-detail/card-gallery";
+import { LocationIcon } from "../../../../public/icons/svg";
 
 const ProjectDetailsMain = (data: any) => {
   console.log(data?.data?.ProjectInfo?.Features?.features, 'datasaaaaaaaaaaaaaaaa')
@@ -55,7 +56,7 @@ const ProjectDetailsMain = (data: any) => {
                 <p>{data?.data?.ProjectInfo?.Location}</p>
               </div>
               <div className="thumb">
-                <Image src={iconone} alt="Image" />
+                <LocationIcon/>
               </div>
             </div>
           </div>
@@ -66,7 +67,7 @@ const ProjectDetailsMain = (data: any) => {
                 <p>{data?.data?.ProjectInfo?.Industry}</p>
               </div>
               <div className="thumb">
-                <Image src={icontwo} alt="Image" />
+                <Image src={iconone} alt="Image" />
               </div>
             </div>
           </div>
