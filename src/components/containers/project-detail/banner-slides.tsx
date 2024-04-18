@@ -8,15 +8,17 @@ import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
 import videobg from "public/images/banner/video-bg.png";
 import dotlarge from "public/images/agency/dot-large.png";
 import arrow from "public/images/banner/arrow.png";
+import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
 
 const BannerSlides = (data: any) => {
     const [videoActive, setVideoActive] = useState(false);
     const [activeIndex, setActiveIndex] = useState<number>(0);
-
+    const isItMobile = useCheckMobileScreen();
     const handleSlideChange = (swiper: any) => {
         setActiveIndex(swiper.realIndex);
     };
     console.log(data, 'data============')
+
 
     return (
         <>
@@ -43,8 +45,12 @@ const BannerSlides = (data: any) => {
                                 className="banner-three__slider-single"
                                 style={{
                                     backgroundImage: `url(${data.data.Banner.BannerOne})`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    backgroundRepeat: "no-repeat"
 
                                     // backgroundImage: "url('/images/projects/detail project/alfatravel-second.png')",
+
 
                                 }}
                             >
@@ -52,7 +58,7 @@ const BannerSlides = (data: any) => {
                                     <div className="row justify-content-end">
                                         <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                                             <div className="banner-three__content">
-                                                <h1 className="light-title " style={{ marginLeft: "75px", fontSize: "65px" }}>
+                                                <h1 className="light-title " style={!isItMobile ? { marginLeft: "75px", fontSize: "65px" } : {}}>
 
                                                     Awesome IT Services for Your Business
                                                 </h1>
@@ -80,6 +86,9 @@ const BannerSlides = (data: any) => {
                                 style={{
 
                                     backgroundImage: `url(${data.data.Banner.BannerTwo})`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    backgroundRepeat: "no-repeat"
 
 
                                 }}
@@ -87,7 +96,9 @@ const BannerSlides = (data: any) => {
                                 <div className="container">
                                     <div className="row justify-content-end">
                                         <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
-                                            <div className="banner-three__content" style={{ visibility: "hidden" }}>
+                                            <div className="banner-three__content"
+                                                style={!isItMobile ? { visibility: "hidden" } : {}}
+                                            >
                                                 <h1 className="light-title">
                                                     Awesome IT Services for Your Business
                                                 </h1>
@@ -114,6 +125,9 @@ const BannerSlides = (data: any) => {
                                 className="banner-three__slider-single"
                                 style={{
                                     backgroundImage: `url(${data.data.Banner.BannerThree})`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    backgroundRepeat: "no-repeat"
 
 
                                 }}
@@ -122,7 +136,7 @@ const BannerSlides = (data: any) => {
                                     <div className="row justify-content-end">
                                         <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                                             <div className="banner-three__content">
-                                                <h1 className="light-title " style={{ marginLeft: "75px", fontSize: "65px" }}>
+                                                <h1 className="light-title " style={!isItMobile ? { marginLeft: "75px", fontSize: "65px" } : {}}>
                                                     Awesome IT Services for Your Business
                                                 </h1>
                                                 <div className="section__content-cta cta">
