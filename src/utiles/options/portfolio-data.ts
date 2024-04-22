@@ -16,6 +16,14 @@ import KLGalleryTwo from "../../../public/images/projects/detail project/kausaha
 import KLGalleryThree from "../../../public/images/projects/detail project/kausahal-law/portfolio-gallery/kl-gallery-3.png"
 import KLGalleryFour from "../../../public/images/projects/detail project/kausahal-law/portfolio-gallery/kl-gallery-4.png"
 import KLGalleryFive from "../../../public/images/projects/detail project/kausahal-law/portfolio-gallery/kl-gallery-5.png"
+// ............................Pets Heaven ....................
+import phDarkLogo from "../../../public/images/projects/detail project/pets-Heaven/logo/ph-logo-dark.png"
+import phWhiteLogo from "../../../public/images/projects/detail project/pets-Heaven/logo/ph-logo-white.png"
+import PHGalleryOne from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-1.png"
+import PHGalleryTwo from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-2.png"
+import PHGalleryThree from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-3.png"
+import PHGalleryFour from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-4.png"
+import PHGalleryFive from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-5.png"
 
 export const ProjectData = [
     {
@@ -95,10 +103,41 @@ export const ProjectData = [
     },
     {
         id: '3',
-        projectLogo: KbrLogo,
-        projectHoverLogo: KbrLogoWhite,
-        projectHeading: 'KBR Transport',
-        projectParagraph: "Working closely with our customers comes as second nature. Our whole operation is about integrating our business with yours to create that seamless transition down the supply chain, providing exceptional quality every step of the way. We see our relationships with our clients as partnerships, working together as one team to achieve one common goal and focusing on the same priorities.",
+        projectLogo: phDarkLogo,
+        projectHoverLogo: phWhiteLogo,
+        projectHeading: 'Pets Heaven',
+        projectParagraph: " Welcome to Pets Heaven – Where Passion Meets Paws A Heaven For Pets and Owners At Pets Heaven, we understand the boundless love and companionship pets bring. Our mission is to enhance the well-being of your furry friends by offering top-quality nutrition and a diverse range of accessories. We believe in fostering a community where every wag, purr, and chirp is celebrated.",
+        Banner: {
+            BannerOne: `"/images/projects/detail project/pets-heaven/banner/ph-banner-one.png"`,
+            BannerTwo: `"/images/projects/detail project/pets-heaven/banner/ph-banner-two.png"`,
+            BannerThree: `"/images/projects/detail project/pets-heaven/banner/ph-banner-three.png"`,
+            MobileBanner: `"/images/projects/detail project/pets-heaven/banner/ph-banner-three.png"`,
+            MobileBannerOne: `"/images/projects/detail project/pets-heaven/banner/ph-mobile-banner-one.png"`,
+            MobileBannerTwo: `"/images/projects/detail project/pets-heaven/banner/ph-mobile-banner-two.png"`,
+        },
+        PortfolioGallery: [
+            PHGalleryOne,
+            PHGalleryTwo,
+            PHGalleryThree,
+            PHGalleryFour,
+            PHGalleryFive,
+            PHGalleryOne,
+            PHGalleryTwo,
+            PHGalleryThree,
+            PHGalleryFour,
+
+        ],
+        ProjectInfo: {
+            Overview: "With technology constantly changing, businesses are always looking for new and creative ways to improve their offerings and expand their customer base. One such business came to our group in the early phases of establishing their Web application.We used a cooperative strategy, collaborating closely with the development team of the organization, to overcome these issues. We were able to grasp the needs and preferences of the target audience through extensive user research, which helped us make design decisions.",
+            Features: {
+                content: 'Welcome to Pets Heaven – Where Passion Meets Paws A Heaven For Pets and Owners At Pets Heaven, we understand the boundless love and companionship pets bring.',
+                features: ['High-Quality Nutrition', 'Diverse Range of Accessories', 'Quality Products']
+            },
+            Duration: "April 2023-May 2023", Industry: "E-commerce", Location: "United Kingdom",
+            Description: "The partnership between WebSphere and Pets Heaven epitomizes the pinnacle of collaboration, where challenges morph into avenues for substantial triumph. In the realm of innovation, WebSphere orchestrated a transformative journey within a mere month, reshaping Pets Heaven's digital landscape by seamlessly integrating an e-commerce portal into their website. This extraordinary feat not only underscores WebSphere's technical prowess but also propels Pets Heaven's ascent to becoming a premier brand in the pet market. As we traverse the digital terrain hand in hand, our dedication to pushing the boundaries of possibility remains unwavering. Unified in our pursuit of excellence, we stand on the cusp of boundless potential, continually redefining digital solutions with each endeavor. The collaboration between WebSphere and Pets Heaven is not solely a testament to our shared values but also to the profound impact of partnership itself. As we navigate toward the future, we do so with assurance, cognizant that together, we possess the capacity to mold destinies and actualize aspirations.",
+            conclusion: "In the realm of digital solutions, the collaboration between WebSphere and Pets Heaven stands out as a prime example of innovation and collaboration. WebSphere swiftly and effectively integrated an e-commerce portal into Pets Heaven's website within a month, showcasing the prowess of their team. This accomplishment not only addressed a significant challenge but also unlocked fresh avenues for Pets Heaven's expansion. By melding technical expertise with strategic thinking, WebSphere facilitated Pets Heaven's ascent to a leading position in the pet market. Reflecting on this journey, we recognize the power of teamwork in achieving substantial outcomes. Moving forward, both WebSphere and Pets Heaven are dedicated to continuous improvement, pioneering new frontiers, and embracing novel concepts. Together, they stand poised to continue pushing the boundaries and shaping the future of digital solutions with ingenuity and resolve.",
+
+        }
 
     },
     {
