@@ -89,8 +89,6 @@ const BannerSlides = (data: any) => {
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                     backgroundRepeat: "no-repeat"
-
-
                                 }}
                             >
                                 <div className="container">
