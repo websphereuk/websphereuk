@@ -97,7 +97,7 @@ const BannerSlides = (data: any) => {
                                     <div className="row justify-content-end">
                                         <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                                             <div className="banner-three__content"
-                                                style={isItMobile ? { visibility: "hidden" } : {}}
+                                                style={isItMobile ? { visibility: "hidden" } : {visibility: "hidden"}}
                                             >
                                                 <h1 className="light-title">
                                                     Awesome IT Services for Your Business
