@@ -25,6 +25,16 @@ import PHGalleryThree from "../../../public/images/projects/detail project/pets-
 import PHGalleryFour from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-4.png"
 import PHGalleryFive from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-5.png"
 
+// ............................cleaning maids ....................
+import cmDarkLogo from "../../../public/images/projects/detail project/cleaning-maids/logo/cm-logo-dark.png"
+import cmWhiteLogo from "../../../public/images/projects/detail project/cleaning-maids/logo/cm-logo-white.png"
+import cmGalleryOne from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-1.png"
+import cmGalleryTwo from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-2.png"
+import cmGalleryThree from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-3.png"
+import cmGalleryFour from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-4.png"
+import cmGalleryFive from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-5.png"
+
+
 export const ProjectData = [
     {
         id: '1',
@@ -141,11 +151,42 @@ export const ProjectData = [
 
     },
     {
-        id: '3',
-        projectLogo: KbrLogo,
-        projectHoverLogo: KbrLogoWhite,
-        projectHeading: 'KBR Transport',
-        projectParagraph: "Working closely with our customers comes as second nature. Our whole operation is about integrating our business with yours to create that seamless transition down the supply chain, providing exceptional quality every step of the way. We see our relationships with our clients as partnerships, working together as one team to achieve one common goal and focusing on the same priorities.",
+        id: '4',
+        projectLogo: cmDarkLogo,
+        projectHoverLogo: cmWhiteLogo,
+        projectHeading: 'Ultra Cleaning',
+        projectParagraph: " At Ultra Cleaning, we are dedicated to delivering top-quality cleaning services that leave your space spotless and refreshed. Our expert team uses advanced techniques and eco-friendly products to ensure the highest level of cleanliness. We take pride in our attention to detail and commitment to excellence. Booking our team not only saves you time but also conserves your valuable energy.",
+        Banner: {
+            BannerOne: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png"`,
+            BannerTwo: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-two.png"`,
+            BannerThree: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-three.png"`,
+            MobileBanner: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-three.png"`,
+            MobileBannerOne: `"/images/projects/detail project/cleaning-maids/banner/cm-mobile-banner-one.png"`,
+            MobileBannerTwo: `"/images/projects/detail project/cleaning-maids/banner/cm-mobile-banner-two.png"`,
+        },
+        PortfolioGallery: [
+            cmGalleryOne,
+            cmGalleryTwo,
+            cmGalleryThree,
+            cmGalleryFour,
+            cmGalleryFive,
+            cmGalleryOne,
+            cmGalleryTwo,
+            cmGalleryThree,
+            cmGalleryFour,
+
+        ],
+        ProjectInfo: {
+            Overview: "In a landscape of perpetual technological evolution, enterprises perpetually seek innovative avenues to enhance their products and broaden their customer reach. In one instance, a company approached our team during the nascent stages of crafting their web application. Employing a collaborative approach, we closely engaged with the organization's development team to surmount challenges. Through thorough user research, we gained insights into the target audience's needs and preferences, informing our design choices effectively.",
+            Features: {
+                content: 'At Ultra Cleaning, we are dedicated to delivering top-quality cleaning services that leave your space spotless and refreshed. Our expert team uses advanced techniques and eco-friendly products to ensure the highest level of cleanliness. We take pride in our attention to detail and commitment to excellence. Discover the difference with Ultra Cleaning today.',
+                features: ['Top Quality Cleaning Services', 'User friendly Interface', 'Service Booking Portal']
+            },
+            Duration: "May 2022-June 2022", Industry: "Cleaning Service", Location: "Canada (CA)",
+            Description: "The collaboration between WebSphere and Ultra Cleaning exemplifies the epitome of teamwork in the top cleaning services industry, where challenges are transformed into opportunities for significant achievement. In the realm of innovation, WebSphere embarked on a transformative journey within just a month, reshaping Ultra Cleaning's digital presence by seamlessly integrating an e-commerce platform into their website. This remarkable accomplishment not only showcases WebSphere's technical expertise but also elevates Ultra Cleaning's position as a leading brand in the cleaning services market. As we navigate the digital landscape together, our commitment to pushing the boundaries of what's possible remains steadfast. United in our pursuit of excellence, we stand on the brink of limitless potential, continuously redefining digital solutions with each project. The collaboration between WebSphere and Ultra Cleaning is not just a testament to our shared values but also to the profound impact of partnership itself. As we journey into the future, we do so with confidence, knowing that together, we have the power to shape destinies and achieve our aspirations.",
+            conclusion: "In the domain of top-tier cleaning services, the partnership between WebSphere and Ultra Cleaning shines as a beacon of innovation and collaboration. WebSphere demonstrated remarkable agility and proficiency by seamlessly integrating an e-commerce platform into Ultra Cleaning's website within a short timeframe, showcasing the prowess of their team. This achievement not only tackled a significant challenge but also unlocked fresh avenues for Ultra Cleaning's growth and development. Through the fusion of technical mastery and strategic insight, WebSphere has propelled Ultra Cleaning to the forefront of the cleaning services market. Reflecting on this collaborative journey, we acknowledge the transformative power of teamwork in delivering tangible results. Looking ahead, both WebSphere and Ultra Cleaning remain committed to continuous enhancement, pioneering new approaches, and embracing innovative ideas. Together, they stand ready to push the boundaries further and shape the future of top cleaning services with creativity and determination.",
+
+        }
 
     },
     {
