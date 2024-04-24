@@ -17,8 +17,8 @@ import KLGalleryThree from "../../../public/images/projects/detail project/kausa
 import KLGalleryFour from "../../../public/images/projects/detail project/kausahal-law/portfolio-gallery/kl-gallery-4.png"
 import KLGalleryFive from "../../../public/images/projects/detail project/kausahal-law/portfolio-gallery/kl-gallery-5.png"
 // ............................Pets Heaven ....................
-import phDarkLogo from "../../../public/images/projects/detail project/kausahal-law/logo/PhLogo-dark.png"
-import phWhiteLogo from "../../../public/images/projects/detail project/kausahal-law/logo/PhLogo-white.png"
+import phDarkLogo from "../../../public/images/projects/detail project/pets-heaven/logo/PhLogo-dark.png"
+import phWhiteLogo from "../../../public/images/projects/detail project/pets-heaven/logo/PhLogo-white.png"
 import PHGalleryOne from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-1.png"
 import PHGalleryTwo from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-2.png"
 import PHGalleryThree from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-3.png"
@@ -138,7 +138,7 @@ export const ProjectData = [
 
         ],
         ProjectInfo: {
-            Overview: "With technology constantly changing, businesses are always looking for new and creative ways to improve their offerings and expand their customer base. One such business came to our group in the early phases of establishing their Web application.We used a cooperative strategy, collaborating closely with the development team of the organization, to overcome these issues. We were able to grasp the needs and preferences of the target audience through extensive user research, which helped us make design decisions.",
+            Overview: "With technology constantly changing businesses are always looking for new and creative ways to improve their offerings and expand their customer base. One such business came to our group in the early phases of establishing their Web application.We used a cooperative strategy, collaborating closely with the development team of the organization, to overcome these issues. We were able to grasp the needs and preferences of the target audience through extensive user research, which helped us make design decisions.",
             Features: {
                 content: 'Welcome to Pets Heaven – Where Passion Meets Paws A Heaven For Pets and Owners At Pets Heaven, we understand the boundless love and companionship pets bring.',
                 features: ['High-Quality Nutrition', 'Diverse Range of Accessories', 'Quality Products']
