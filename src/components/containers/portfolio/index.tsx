@@ -10,7 +10,7 @@ import KbrLogo from "../../../../public/images/projects/kbr-logo.158a32bf.png";
 import KbrLogoWhite from "../../../../public/images/projects/kbrlogowhite.png";
 import BoxWithLogo from "../box-with-logo";
 import { Card } from "../card";
-import { ProjectData } from "@/utiles/options/portfolio-data";
+import { ProjectData } from "../../../../public/images/projects/detail project/kausahal-law/logo/portfolio-data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
