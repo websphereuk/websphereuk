@@ -17,8 +17,8 @@ import KLGalleryThree from "../../../public/images/projects/detail project/kausa
 import KLGalleryFour from "../../../public/images/projects/detail project/kausahal-law/portfolio-gallery/kl-gallery-4.png"
 import KLGalleryFive from "../../../public/images/projects/detail project/kausahal-law/portfolio-gallery/kl-gallery-5.png"
 // ............................Pets Heaven ....................
-import phDarkLogo from "/public/images/projects/detail project/pets-Heaven/logo/PhLogo-dark.png"
-import phWhiteLogo from "/public/images/projects/detail project/pets-Heaven/logo/PhLogo-white.png"
+import phDarkLogo from "../../../public/images/projects/detail project/kausahal-law/logo/PhLogo-dark.png"
+import phWhiteLogo from "../../../public/images/projects/detail project/kausahal-law/logo/PhLogo-white.png"
 import PHGalleryOne from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-1.png"
 import PHGalleryTwo from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-2.png"
 import PHGalleryThree from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-3.png"
