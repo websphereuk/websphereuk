@@ -4,7 +4,7 @@ import ProjectDetailsMain from '@/components/containers/project/ProjectDetailsMa
 import UxProcess from '@/components/containers/service-details/UxProcess';
 import DevelopmentProcess from '@/components/containers/service-sections/service-detail/development-process';
 import Layout from '@/components/layout/Layout';
-import { ProjectData } from '../../../public/images/projects/detail project/kausahal-law/logo/portfolio-data';
+import { ProjectData } from '../../utiles/options/portfolio-data';
 import { useRouter } from 'next/router'
 const Portfolio = () => {
     const router = useRouter()
