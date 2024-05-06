@@ -36,7 +36,7 @@ const ApplyForm = ({ data }: any) => {
                     formData.append(key, value);
                 });
 
-                const res = await axios.post(`http://localhost:3000/api/handle-form`, formData, {
+                const res = await axios.post(`${process.env.BACKEND_BASE_URL}/api/handle-form`, formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }
