@@ -34,6 +34,14 @@ import cmGalleryThree from "../../../public/images/projects/detail project/clean
 import cmGalleryFour from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-4.png"
 import cmGalleryFive from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-5.png"
 
+// ..........................................lecto..........................................
+import LectoLogo from "../../../public/images/projects/detail project/lecto/logo/logo.png"
+import lGalleryOne from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-1.png"
+import lGalleryTwo from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-2.png"
+import lGalleryThree from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-3.png"
+import lGalleryFour from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-4.png"
+import lGalleryFive from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-5.png"
+
 
 export const ProjectData = [
     {
@@ -165,15 +173,15 @@ export const ProjectData = [
             MobileBannerTwo: `"/images/projects/detail project/cleaning-maids/banner/cm-mobile-banner-two.png"`,
         },
         PortfolioGallery: [
-            cmGalleryOne,
-            cmGalleryTwo,
-            cmGalleryThree,
-            cmGalleryFour,
-            cmGalleryFive,
-            cmGalleryOne,
-            cmGalleryTwo,
-            cmGalleryThree,
-            cmGalleryFour,
+           cmGalleryOne,
+           cmGalleryTwo,
+           cmGalleryThree,
+           cmGalleryFour,
+           cmGalleryFive,
+           cmGalleryOne,
+           cmGalleryTwo,
+           cmGalleryThree,
+           cmGalleryFour,
 
         ],
         ProjectInfo: {
@@ -190,11 +198,42 @@ export const ProjectData = [
 
     },
     {
-        id: '4',
-        projectLogo: KbrLogo,
-        projectHoverLogo: KbrLogoWhite,
-        projectHeading: 'Aws',
-        projectParagraph: "Working closely with our customers comes as second nature. Our whole operation is about integrating our business with yours to create that seamless transition down the supply chain, providing exceptional quality every step of the way. We see our relationships with our clients as partnerships, working together as one team to achieve one common goal and focusing on the same priorities.",
+        id: '5',
+        projectLogo: LectoLogo,
+        projectHoverLogo: LectoLogo,
+        projectHeading: 'Lacto',
+        projectParagraph: " Country Dairy Farms, established in 2021, produces premium milk from American-imported Holstein Friesian cows for a loading milk processing company. Now expanding our services, Country Dairy Farms offers door-step delivery of fresh milk “Lacto Valley” to our community with exceptional customer care. Our dairy products are sourced from contented, naturally-fed cows.",
+        Banner: {
+            BannerOne: `"/images/projects/detail project/lecto/banner/l-banner-one.png"`,
+            BannerTwo: `"/images/projects/detail project/lecto/banner/l-banner-two.png"`,
+            BannerThree: `"/images/projects/detail project/lecto/banner/l-banner-three.png"`,
+            MobileBanner: `"/images/projects/detail project/lecto/banner/l-banner-three.png"`,
+            MobileBannerOne: `"/images/projects/detail project/lecto/banner/l-mobile-banner-one.png"`,
+            MobileBannerTwo: `"/images/projects/detail project/lecto/banner/l-mobile-banner-two.png"`,
+        },
+        PortfolioGallery: [
+            lGalleryOne,
+            lGalleryTwo,
+            lGalleryThree,
+            lGalleryFour,
+            lGalleryFive,
+            lGalleryOne,
+            lGalleryTwo,
+            lGalleryThree,
+            lGalleryFour,
+
+        ],
+        ProjectInfo: {
+            Overview: "In an ever-evolving technological environment, businesses continuously explore new avenues to improve their products and expand their customer base. For example, a company reached out to our team in the early stages of creating their web application. By working closely with their development team, we tackled challenges together using a collaborative approach. Our in-depth user research provided valuable insights into the preferences and needs of the target audience, guiding our design decisions effectively.",
+            Features: {
+                content: 'Country Dairy Farms, established in 2021, produces premium milk from American-imported Holstein Friesian cows for a loading milk processing company. Now expanding our services, Country Dairy Farms offers door-step delivery of fresh milk “Lacto Valley” to our community with exceptional customer care. Our dairy products are sourced from contented, naturally-fed cows.',
+                features: ['Top Quality Milk Services', 'User friendly Interface', 'Ecommrece Portal']
+            },
+            Duration: "May 2021-June 2021", Industry: "Ecommrece", Location: "Pakistan (Pk)",
+            Description: "Lacto's collaboration with WebSphere epitomizes the essence of teamwork in the top milk service industry, where challenges become opportunities for significant advancement. In the realm of innovation, WebSphere embarked on a transformative journey within a mere month, revamping Lacto's digital footprint by seamlessly integrating an e-commerce platform into their website. This remarkable achievement not only underscores WebSphere's technical prowess but also enhances Lacto's standing as a premier brand in the milk service market. As we navigate the digital landscape hand in hand, our dedication to pushing boundaries remains unwavering. United in our pursuit of excellence, we stand on the threshold of boundless potential, continuously redefining digital solutions with every project. The collaboration between WebSphere and Lacto not only reflects our shared values but also underscores the profound impact of partnership itself. As we forge ahead into the future, we do so with confidence, knowing that together, we possess the ability to shape destinies and realize our aspirations.",
+            conclusion: "In the realm of top-tier milk services, the partnership between WebSphere and Lacto stands as a testament to innovation and collaboration. With remarkable agility and proficiency, WebSphere seamlessly integrated an e-commerce platform into Lacto's website, showcasing their team's prowess. This achievement not only addressed a significant challenge but also opened up new avenues for Lacto's growth and advancement. Through the fusion of technical expertise and strategic vision, WebSphere has propelled Lacto to the forefront of the milk service market. Reflecting on this collaborative journey, we recognize the transformative potential of teamwork in delivering tangible outcomes. Looking forward, both WebSphere and Lacto remain dedicated to continual improvement, pioneering fresh approaches and embracing innovative concepts. Together, they stand poised to push boundaries further and shape the future of top milk services with creativity and resolve.",
+
+        }
 
     },
     {
