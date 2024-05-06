@@ -36,11 +36,12 @@ const ApplyForm = ({ data }: any) => {
                     formData.append(key, value);
                 });
 
-            const res = await axios.post('https:backend.websphereuk.com/api/handle-form', formData, {
+                const res = await axios.post('https://backend.websphereuk.com/api/handle-form', formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }
                 });
+                console.log(res , 'response')
                 toast.success('Thank You For Submitting');
                 setFile(null)
                 resetForm({
