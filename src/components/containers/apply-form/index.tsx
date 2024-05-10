@@ -34,9 +34,10 @@ const ApplyForm = ({ data }: any) => {
                 const formData = new FormData();
                 Object.entries(submitValues).forEach(([key, value]) => {
                     formData.append(key, value);
-                });
-
-                const res = await axios.post(`${process.env.BACKEND_BASE_URL}/api/handle-form`, formData, {
+                })
+                console.log(form?.values , '--------Form')
+ 
+                const res = await axios.post(`https://demo.websphereuk.com/api/handle-form`, formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }
@@ -63,7 +64,8 @@ const ApplyForm = ({ data }: any) => {
         }
 
     })
-    const ali = `awa`
+
+    const ali = form?.values
 
     return (
         <>
