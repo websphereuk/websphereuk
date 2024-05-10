@@ -43,6 +43,27 @@ import lGalleryFour from "../../../public/images/projects/detail project/lecto/p
 import lGalleryFive from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-5.png"
 
 
+// ..........................................Elysia..........................................
+import eDarkLogo from "../../../public/images/projects/detail project/elysia/logo/e-logo-dark.png"
+import eWhiteLogo from "../../../public/images/projects/detail project/elysia/logo/e-logo-white.png"
+import eGalleryOne from "../../../public/images/projects/detail project/elysia/portfolio-gallery/e-gallery-1.png"
+import eGalleryTwo from "../../../public/images/projects/detail project/elysia/portfolio-gallery/e-gallery-2.png"
+import eGalleryThree from "../../../public/images/projects/detail project/elysia/portfolio-gallery/e-gallery-3.png"
+import eGalleryFour from "../../../public/images/projects/detail project/elysia/portfolio-gallery/e-gallery-4.png"
+import eGalleryFive from "../../../public/images/projects/detail project/elysia/portfolio-gallery/e-gallery-5.png"
+
+
+// ..........................................Elysia..........................................
+import pwDarkLogo from "../../../public/images/projects/detail project/pitch-worx/logo/pw-logo-dark.png"
+import pwWhiteLogo from "../../../public/images/projects/detail project/pitch-worx/logo/pw-logo-white.png"
+import pwGalleryOne from "../../../public/images/projects/detail project/pitch-worx/portfolio-gallery/pw-gallery-1.png"
+import pwGalleryTwo from "../../../public/images/projects/detail project/pitch-worx/portfolio-gallery/pw-gallery-2.png"
+import pwGalleryThree from "../../../public/images/projects/detail project/pitch-worx/portfolio-gallery/pw-gallery-3.png"
+import pwGalleryFour from "../../../public/images/projects/detail project/pitch-worx/portfolio-gallery/pw-gallery-4.png"
+import pwGalleryFive from "../../../public/images/projects/detail project/pitch-worx/portfolio-gallery/pw-gallery-5.png"
+
+
+
 export const ProjectData = [
     {
         id: '1',
@@ -173,15 +194,15 @@ export const ProjectData = [
             MobileBannerTwo: `"/images/projects/detail project/cleaning-maids/banner/cm-mobile-banner-two.png"`,
         },
         PortfolioGallery: [
-           cmGalleryOne,
-           cmGalleryTwo,
-           cmGalleryThree,
-           cmGalleryFour,
-           cmGalleryFive,
-           cmGalleryOne,
-           cmGalleryTwo,
-           cmGalleryThree,
-           cmGalleryFour,
+            cmGalleryOne,
+            cmGalleryTwo,
+            cmGalleryThree,
+            cmGalleryFour,
+            cmGalleryFive,
+            cmGalleryOne,
+            cmGalleryTwo,
+            cmGalleryThree,
+            cmGalleryFour,
 
         ],
         ProjectInfo: {
@@ -237,19 +258,81 @@ export const ProjectData = [
 
     },
     {
-        id: '3',
-        projectLogo: KbrLogo,
-        projectHoverLogo: KbrLogoWhite,
-        projectHeading: 'KBR Transport',
-        projectParagraph: "Working closely with our customers comes as second nature. Our whole operation is about integrating our business with yours to create that seamless transition down the supply chain, providing exceptional quality every step of the way. We see our relationships with our clients as partnerships, working together as one team to achieve one common goal and focusing on the same priorities.",
+        id: '6',
+        projectLogo: eDarkLogo,
+        projectHoverLogo: eWhiteLogo,
+        projectHeading: 'Elysia',
+        projectParagraph: "At Elysia, we believe that fashion is more than just clothing; it's a reflection of your personality, your style, and your essence. Step into a world where sophistication meets affordability, where every piece tells a unique story, and where you'll find the perfect ensemble for any occasion. We understand that fashion is deeply personal, which is why we're dedicated to providing premium clothes tailored to your individuality.",
+        Banner: {
+            BannerOne: `"/images/projects/detail project/elysia/banner/e-banner-one.png"`,
+            BannerTwo: `"/images/projects/detail project/elysia/banner/e-banner-two.png"`,
+            BannerThree: `"/images/projects/detail project/elysia/banner/e-banner-three.png"`,
+            MobileBanner: `"/images/projects/detail project/elysia/banner/e-banner-three.png"`,
+            MobileBannerOne: `"/images/projects/detail project/elysia/banner/e-mobile-banner-one.png"`,
+            MobileBannerTwo: `"/images/projects/detail project/elysia/banner/e-mobile-banner-two.png"`,
+        },
+        PortfolioGallery: [
+            eGalleryOne,
+            eGalleryTwo,
+            eGalleryThree,
+            eGalleryFour,
+            eGalleryFive,
+            eGalleryOne,
+            eGalleryTwo,
+            eGalleryThree,
+            eGalleryFour,
+
+        ],
+        ProjectInfo: {
+            Overview: "In a constantly changing technological landscape, businesses are always seeking fresh opportunities to enhance their offerings and broaden their clientele. For instance, one company engaged our team during the initial phases of developing their web application. Through close collaboration with their development team, we collectively addressed challenges, leveraging a collaborative strategy. Our comprehensive user research yielded valuable insights into the preferences and requirements of the target demographic, thereby steering our design choices with precision.",
+            Features: {
+                content: "At Elysia, we believe that fashion is more than just clothing; it's a reflection of your personality, your style, and your essence. Step into a world where sophistication meets affordability, where every piece tells a unique story, and where you'll find the perfect ensemble for any occasion. We understand that fashion is deeply personal, which is why we're providing premium clothes",
+                features: ['Premium Brand Clothing ', 'User friendly Interface', 'Ecommrece Portal']
+            },
+            Duration: "September 2023-October 2023", Industry: "Ecommrece", Location: "Pakistan (Pk)",
+            Description: "Elysia's collaboration with WebSphere epitomizes the essence of teamwork in the top clothing brand and e-commerce domain, where challenges serve as opportunities for significant progress. In the realm of innovation, WebSphere embarked on a transformative journey within a mere month, seamlessly integrating an e-commerce platform into Elysia's website, thereby revamping its digital presence. This remarkable achievement not only underscores WebSphere's technical prowess but also solidifies Elysia's position as a leading brand in the clothing and e-commerce market. As we navigate the digital landscape hand in hand, our dedication to pushing boundaries remains unwavering. United in our pursuit of excellence, we stand on the threshold of boundless potential, continuously redefining digital solutions with every project. The collaboration between WebSphere and Elysia not only reflects our shared values but also underscores the profound impact of partnership itself. As we forge ahead into the future, we do so with confidence, knowing that together, we possess the ability to shape destinies and realize our aspirations.",
+            conclusion: "In the realm of top-tier clothing brands and e-commerce, the collaboration between WebSphere and Elysia exemplifies innovation and partnership. With exceptional agility and expertise, WebSphere seamlessly integrated an e-commerce platform into Elysia's website, showcasing their team's capabilities. This accomplishment not only tackled a significant challenge but also unlocked new pathways for Elysia's growth and progress. Through the fusion of technical proficiency and strategic foresight, WebSphere has propelled Elysia to the forefront of the clothing and e-commerce market. Reflecting on this collaborative journey, we acknowledge the transformative power of teamwork in delivering tangible results. Moving forward, both WebSphere and Elysia remain committed to continuous enhancement, pioneering novel approaches and embracing inventive ideas. Together, they stand ready to push boundaries further and shape the future of top-tier clothing brands and e-commerce with ingenuity and determination",
+
+        }
 
     },
     {
-        id: '3',
-        projectLogo: KbrLogo,
-        projectHoverLogo: KbrLogoWhite,
-        projectHeading: 'KBR Transport',
-        projectParagraph: "Working closely with our customers comes as second nature. Our whole operation is about integrating our business with yours to create that seamless transition down the supply chain, providing exceptional quality every step of the way. We see our relationships with our clients as partnerships, working together as one team to achieve one common goal and focusing on the same priorities.",
+        id: '7',
+        projectLogo: pwDarkLogo,
+        projectHoverLogo: pwWhiteLogo,
+        projectHeading: 'Pitch Worx',
+        projectParagraph: "A decade ago, when we began one of the first presentation design companies in India, our goal was to change how presentations were made. We’ve since had the privilege of working with over 500 clients, all over the world, including startups, SMEs, large corporates and government organizations across the board. With our experience in understanding the industry dynamics and the audience’s mindset.",
+        Banner: {
+            BannerOne: `"/images/projects/detail project/pitch-worx/banner/pw-banner-one.png"`,
+            BannerTwo: `"/images/projects/detail project/pitch-worx/banner/pw-banner-two.png"`,
+            BannerThree: `"/images/projects/detail project/pitch-worx/banner/pw-banner-three.png"`,
+            MobileBanner: `"/images/projects/detail project/pitch-worx/banner/pw-banner-three.png"`,
+            MobileBannerOne: `"/images/projects/detail project/pitch-worx/banner/pw-mobile-banner-one.png"`,
+            MobileBannerTwo: `"/images/projects/detail project/pitch-worx/banner/pw-mobile-banner-two.png"`,
+        },
+        PortfolioGallery: [
+            pwGalleryOne,
+            pwGalleryTwo,
+            pwGalleryThree,
+            pwGalleryFour,
+            pwGalleryFive,
+            pwGalleryOne,
+            pwGalleryTwo,
+            pwGalleryThree,
+            pwGalleryFour,
+
+        ],
+        ProjectInfo: {
+            Overview: "In an ever-evolving technological environment, businesses are perpetually on the lookout for new avenues to improve their services and expand their customer base. As an example, a company enlisted our assistance in the early stages of crafting their web application. Working closely with their development team, we tackled challenges together, employing a collaborative approach. Our extensive user research provided valuable insights into the preferences and needs of the target audience, guiding our design decisions accurately.",
+            Features: {
+                content: "A decade ago, when we began one of the first presentation design companies in India, our goal was to change how presentations were made. We’ve since had the privilege of working with over 500 clients, all over the world, including startups, SMEs, large corporates and government organizations across the board. With our experience in understanding the industry dynamics and the audience’s mindset, we unfold amazing creatives that deliver your brand’s story.",
+                features: ['Presentation Design Company ', 'User friendly Interface', 'Pixel Perfect Design']
+            },
+            Duration: "November 2022-March 2024", Industry: "Portfolio Design", Location: "Dubai (UAE)",
+            Description: "Pitch Worx's collaboration with WebSphere epitomizes the essence of teamwork in the top portfolio design and presentation design domain, where challenges serve as opportunities for significant progress. In the realm of innovation, WebSphere embarked on a transformative journey within a mere six months, seamlessly integrating an e-commerce platform into Pitch Worx's website, thereby revamping its digital presence. This remarkable achievement not only underscores WebSphere's technical prowess but also solidifies Pitch Worx's position as a leading brand in the presentation design market. As we navigate the digital landscape hand in hand, our dedication to pushing boundaries remains unwavering. United in our pursuit of excellence, we stand on the threshold of boundless potential, continuously redefining digital solutions with every project. The collaboration between WebSphere and Pitch Worx not only reflects our shared values but also underscores the profound impact of partnership itself. As we forge ahead into the future, we do so with confidence, knowing that together, we possess the ability to shape destinies and realize our aspirations.",
+            conclusion: "In the realm of top-tier presenting design brands , the collaboration between Pitch Worx and WebSphere epitomizes innovation and partnership. With exceptional agility and expertise, WebSphere seamlessly integrated an e-commerce platform into Pitch Worx's website, showcasing their team's capabilities. This accomplishment not only tackled a significant challenge but also unlocked new pathways for Pitch Worx's growth and progress. Through the fusion of technical proficiency and strategic foresight, WebSphere has propelled Pitch Worx to the forefront of the clothing and e-commerce market. Reflecting on this collaborative journey, we acknowledge the transformative power of teamwork in delivering tangible results. Moving forward, both WebSphere and Pitch Worx remain committed to continuous enhancement, pioneering novel approaches and embracing inventive ideas. Together, they stand ready to push boundaries further and shape the future of top-tier clothing brands and e-commerce with ingenuity and determination.",
+
+        }
 
     },
     {
