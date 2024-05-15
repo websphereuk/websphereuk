@@ -37,7 +37,7 @@ const ApplyForm = ({ data }: any) => {
                 })
                 console.log(form?.values , '--------Form')
  
-                const res = await axios.post(`https://demo.websphereuk.com/api/handle-form`, formData, {
+                const res = await axios.post(`https://backend.aleenaclothing.com/api/handle-form`, formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }
