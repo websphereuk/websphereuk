@@ -34,11 +34,9 @@ const Home = () => {
         <ScheduleCall />
         < Industries />
         <Portfolio />
-        {/* <Problem/> */}
         <OurTheory className="bg-black" />
         <PartnershipsModels />
         <SplineDesign />
-        {/* <ClientFeedbackMain /> */}
         <Testimonial />
 
       </Layout>

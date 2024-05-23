@@ -92,18 +92,20 @@ const handler = async (
     </html>
   `;
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'mail.aleenaclothing.com', // Update with your domain hosting SMTP server
+      port: 465, // Update with the SMTP port (typically 587 or 465)
+      secure: true, // Set to true if using SSL/TLS
       auth: {
-        //This is gmail App Credentials
-        user: 'bilawal.ali2626@gmail.com',
-        pass: 'lscv qztk gedd qkeu',
+        user: "email@aleenaclothing.com", // Update with your email address hosted on your domain
+        pass: 'Bilawal@123', // Update with your email password
       },
     });
+
 
     try {
       await transporter.sendMail({
         from: email,
-        to: 'bilawal.ali2626@gmail.com',
+        to: 'email@aleenaclothing.com',
         subject: `New Contact Form Submission from ${firstName} ${lastName}`,
         html: htmlBody, // Set the HTML body
         headers: {

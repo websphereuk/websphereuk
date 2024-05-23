@@ -35,14 +35,18 @@ const ApplyForm = ({ data }: any) => {
                 Object.entries(submitValues).forEach(([key, value]) => {
                     formData.append(key, value);
                 })
-                console.log(form?.values , '--------Form')
- 
+                console.log(form?.values, '--------Form')
+
                 const res = await axios.post(`https://backend.aleenaclothing.com/api/handle-form`, formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }
+
                 });
-                console.log(res , 'response')
+               
+
+
+                console.log(res, 'response')
                 toast.success('Thank You For Submitting');
                 setFile(null)
                 resetForm({
