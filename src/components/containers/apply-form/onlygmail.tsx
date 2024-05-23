@@ -24,7 +24,7 @@
 //                 const res = await axios.post('/api/apply', submitValues);
 //                 toast.success('Thank You For Submitting');
 //                 resetForm({
-//                     values: {
+//                     values: {                                            
 //                         firstName: '',
 //                         lastName: '',
 //                         email: '',
