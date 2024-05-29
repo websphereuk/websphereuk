@@ -20,7 +20,7 @@ const HomeThreeBanner = (data: any) => {
 
   return (
     <>
-      <section className="banner-three">
+      <section className="banner-three ">
         <div className="banner-three__slider-w banner-three-alt-w">
           <Swiper
             slidesPerView={1}
@@ -42,7 +42,7 @@ const HomeThreeBanner = (data: any) => {
               <div
                 className="banner-three__slider-single"
                 style={{
-                  backgroundImage: `url(${data.data.Banner.BannerOne})`,
+                  backgroundImage: `url(${data.data?.Banner?.BannerOne})`,
 
                   // backgroundImage: "url('/images/projects/detail project/alfatravel-second.png')",
 
@@ -79,7 +79,7 @@ const HomeThreeBanner = (data: any) => {
                 className="banner-three__slider-single"
                 style={{
 
-                  backgroundImage: `url(${data.data.Banner.BannerTwo})`,
+                  backgroundImage: `url(${data?.data?.Banner?.BannerTwo})`,
 
 
                 }}
@@ -113,7 +113,7 @@ const HomeThreeBanner = (data: any) => {
               <div
                 className="banner-three__slider-single"
                 style={{
-                  backgroundImage: `url(${data.data.Banner.BannerThree})`,
+                  backgroundImage: `url(${data?.data?.Banner?.BannerThree})`,
 
 
                 }}
