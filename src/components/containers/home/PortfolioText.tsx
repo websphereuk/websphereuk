@@ -4,19 +4,39 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import one from "public/images/portfolio/one.png";
-import two from "public/images/portfolio/two.png";
-import three from "public/images/portfolio/three.png";
-import four from "public/images/portfolio/four.png";
-import five from "public/images/portfolio/five.png";
-import six from "public/images/portfolio/six.png";
-import seven from "public/images/portfolio/seven.png";
 import dot from "public/images/portfolio/dot.png";
+import SwiperCore from "swiper";
+import { ProjectData } from "@/utiles/options/portfolio-data";
+
+// Import your images dynamically
+const images = [
+  require("public/images/portfolio/one.png"),
+  require("public/images/portfolio/two.png"),
+  require("public/images/portfolio/three.png"),
+  require("public/images/portfolio/four.png"),
+  require("public/images/portfolio/five.png"),
+  require("public/images/portfolio/six.png"),
+  require("public/images/portfolio/seven.png"),
+];
 
 const PortfolioText = () => {
   const [hover, setHover] = useState(0);
+
+  // Your portfolio data
+  const portfolioData = [
+    { title: "Digital Marketing" },
+    { title: "Web Development" },
+    { title: "Graphic Design" },
+    { title: "Content Creation" },
+    { title: "SEO Optimization" },
+    { title: "Social Media Management" },
+    { title: "Branding" },
+  ];
+
+  // SwiperCore.use([Autoplay]); // Uncomment this line if you're using SwiperCore
+
   return (
-    <section className="section portfolio pb-0 fade-wrapper position-relative">
+    <section className="section portfolio pb-0   fade-wrapper position-relative">
       <div className="portfolio__text-slider-w">
         <Swiper
           slidesPerView="auto"
@@ -33,206 +53,45 @@ const PortfolioText = () => {
           }}
           className="portfolio__text-slider"
         >
-          <SwiperSlide>
-            <div className="portfolio__text-slider-single">
-              <h2 className="h1">
-                <Link href="portfolio">
-                  digital portfolio
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="portfolio__text-slider-single">
-              <h2 className="h1 str">
-                <Link href="portfolio">
-                  digital portfolio
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="portfolio__text-slider-single">
-              <h2 className="h1">
-                <Link href="portfolio">
-                  digital portfolio
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="portfolio__text-slider-single">
-              <h2 className="h1 str">
-                <Link href="portfolio">
-                  digital portfolio
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="portfolio__text-slider-single">
-              <h2 className="h1">
-                <Link href="portfolio">
-                  digital portfolio
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="portfolio__text-slider-single">
-              <h2 className="h1 str">
-                <Link href="portfolio">
-                  digital portfolio
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="portfolio__text-slider-single">
-              <h2 className="h1">
-                <Link href="portfolio">
-                  digital portfolio
-                  <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
-                </Link>
-              </h2>
-            </div>
-          </SwiperSlide>
+          {portfolioData.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="portfolio__text-slider-single">
+                <h2 className={`h1 ${index % 2 === 0 ? "" : "str"}`}>
+                  <Link href="portfolio">
+                    {`Case Study Portfolio`}
+                    <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
+                  </Link>
+                </h2>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
-      <div className="container-fluid">
+      <div className="container-fluid last-sec">
         <div className="row gaper">
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className={
-                "portfolio__single topy-tilt fade-top" +
-                (hover === 0 ? " portfolio__single-active" : " ")
-              }
-              onMouseEnter={() => setHover(0)}
-            >
-              <Link href="portfolio">
-                <Image src={one} alt="Image" />
-              </Link>
-              <div className="portfolio__single-content">
+          {ProjectData.slice(0, 7).map((project, index) => (
+            <div key={project.id} className="col-12 col-sm-6 col-xl-3">
+              <div
+                className={
+                  "portfolio__single topy-tilt fade-top" +
+                  (hover === index ? " portfolio__single-active" : " ")
+                }
+                onMouseEnter={() => setHover(index)}
+              >
                 <Link href="portfolio">
-                  <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
+                  <Image style={{}} width={250} height={500} src={`${project?.Banner?.ThumbNailBanner}`} alt="Image" />
                 </Link>
-                <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
-                </h4>
+                <div className="portfolio__single-content">
+                  <Link href="portfolio">
+                    <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
+                  </Link>
+                  <h4>
+                    <Link href="portfolio">{project.projectHeading}</Link>
+                  </h4>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className={
-                "portfolio__single topy-tilt fade-top" +
-                (hover === 1 ? " portfolio__single-active" : " ")
-              }
-              onMouseEnter={() => setHover(1)}
-            >
-              <Link href="portfolio">
-                <Image src={two} alt="Image" />
-              </Link>
-              <div className="portfolio__single-content">
-                <Link href="portfolio">
-                  <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
-                </Link>
-                <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className={
-                "portfolio__single topy-tilt fade-top" +
-                (hover === 2 ? " portfolio__single-active" : " ")
-              }
-              onMouseEnter={() => setHover(2)}
-            >
-              <Link href="portfolio">
-                <Image src={three} alt="Image" />
-              </Link>
-              <div className="portfolio__single-content">
-                <Link href="portfolio">
-                  <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
-                </Link>
-                <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className={
-                "portfolio__single topy-tilt fade-top" +
-                (hover === 3 ? " portfolio__single-active" : " ")
-              }
-              onMouseEnter={() => setHover(3)}
-            >
-              <Link href="portfolio">
-                <Image src={four} alt="Image" />
-              </Link>
-              <div className="portfolio__single-content">
-                <Link href="portfolio">
-                  <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
-                </Link>
-                <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className={
-                "portfolio__single topy-tilt fade-top" +
-                (hover === 4 ? " portfolio__single-active" : " ")
-              }
-              onMouseEnter={() => setHover(4)}
-            >
-              <Link href="portfolio">
-                <Image src={five} alt="Image" />
-              </Link>
-              <div className="portfolio__single-content">
-                <Link href="portfolio">
-                  <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
-                </Link>
-                <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className={
-                "portfolio__single topy-tilt fade-top" +
-                (hover === 5 ? " portfolio__single-active" : " ")
-              }
-              onMouseEnter={() => setHover(5)}
-            >
-              <Link href="portfolio">
-                <Image src={six} alt="Image" />
-              </Link>
-              <div className="portfolio__single-content">
-                <Link href="portfolio">
-                  <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
-                </Link>
-                <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
-                </h4>
-              </div>
-            </div>
-          </div>
+          ))}
           <div className="col-12 col-sm-6 col-xl-3">
             <div className="portfolio__single-alt-wrapper fade-top">
               <div className="portfolio__single-alt topy-tilt">
@@ -247,36 +106,9 @@ const PortfolioText = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className={
-                "portfolio__single topy-tilt fade-top" +
-                (hover === 6 ? " portfolio__single-active" : " ")
-              }
-              onMouseEnter={() => setHover(6)}
-            >
-              <Link href="portfolio">
-                <Image src={seven} alt="Image" />
-              </Link>
-              <div className="portfolio__single-content">
-                <Link href="portfolio">
-                  <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
-                </Link>
-                <h4>
-                  <Link href="portfolio">Digital Marketing</Link>
-                </h4>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <div className="lines d-none d-lg-flex">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
+     
     </section>
   );
 };

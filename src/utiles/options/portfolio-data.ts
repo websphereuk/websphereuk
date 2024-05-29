@@ -88,7 +88,10 @@ export const ProjectData = [
         projectHeading: 'Alfa Travel Paris',
         projectParagraph: "From guided tours of the city of famous landmarks and museums, to customized itineraries that allow travelers to explore at their own pace, Alfa Travel Paris offers a wealth of travel options. With a team of experienced travel consultants, Alfa Travel Paris is able to provide personalized service and expert advice to help make your trip to Paris truly unforgettable",
         Banner: {
+            ThumbNailBanner: `/images/projects/detail project/alfa-travel-paris/thumbnail/thumbnail.png`,
+               ShowCase: `/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png`,
             BannerOne: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png"`,
+
             BannerTwo: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-three.png"`,
             MobileBannerOne: `"/images/projects/detail project/alfa-travel-paris/banner/alp-mobile-banner-one.png"`,
@@ -125,7 +128,10 @@ export const ProjectData = [
         projectHeading: 'Kaushal Law',
         projectParagraph: "At Kaushal Law Corporation , we approach every legal problem with our clients’ interests foremost in mind. Our clients appreciate our efficient, results-oriented approach towards all areas in which we work. We commit ourselves to providing sound advice, creative strategy, and effective negotiations. Attention to detail and keeping our clients well-informed are key parts of our service",
         Banner: {
+            ThumbNailBanner: `/images/projects/detail project/kausahal-law/thumbnail/thumbnail.png`,
+               ShowCase: `/images/projects/detail project/kausahal-law/banner/kl-banner-one.png`,
             BannerOne: `"/images/projects/detail project/kausahal-law/banner/kl-banner-one.png"`,
+
             BannerTwo: `"/images/projects/detail project/kausahal-law/banner/kl-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/kausahal-law/banner/kl-banner-three.png"`,
             MobileBanner: `"/images/projects/detail project/kausahal-law/banner/kl-banner-three.png"`,
@@ -163,7 +169,10 @@ export const ProjectData = [
         projectHeading: 'Pets Heaven',
         projectParagraph: " Welcome to Pets Heaven – Where Passion Meets Paws A Heaven For Pets and Owners At Pets Heaven, we understand the boundless love and companionship pets bring. Our mission is to enhance the well-being of your furry friends by offering top-quality nutrition and a diverse range of accessories. We believe in fostering a community where every wag, purr, and chirp is celebrated.",
         Banner: {
+            ThumbNailBanner: `/images/projects/detail project/pets-heaven/thumbnail/thumbnail.png`,
+               ShowCase: `/images/projects/detail project/pets-heaven/banner/ph-banner-one.png`,
             BannerOne: `"/images/projects/detail project/pets-heaven/banner/ph-banner-one.png"`,
+
             BannerTwo: `"/images/projects/detail project/pets-heaven/banner/ph-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/pets-heaven/banner/ph-banner-three.png"`,
             MobileBanner: `"/images/projects/detail project/pets-heaven/banner/ph-banner-three.png"`,
@@ -202,7 +211,10 @@ export const ProjectData = [
         projectHeading: 'Ultra Cleaning',
         projectParagraph: " At Ultra Cleaning, we are dedicated to delivering top-quality cleaning services that leave your space spotless and refreshed. Our expert team uses advanced techniques and eco-friendly products to ensure the highest level of cleanliness. We take pride in our attention to detail and commitment to excellence. Booking our team not only saves you time but also conserves your valuable energy.",
         Banner: {
+            ThumbNailBanner: `/images/projects/detail project/cleaning-maids/thumbnail/thumbnail.png`,
+               ShowCase: `/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png`,
             BannerOne: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png"`,
+
             BannerTwo: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-three.png"`,
             MobileBanner: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-three.png"`,
@@ -241,7 +253,10 @@ export const ProjectData = [
         projectHeading: 'Lacto',
         projectParagraph: " Country Dairy Farms, established in 2021, produces premium milk from American-imported Holstein Friesian cows for a loading milk processing company. Now expanding our services, Country Dairy Farms offers door-step delivery of fresh milk “Lacto Valley” to our community with exceptional customer care. Our dairy products are sourced from contented, naturally-fed cows.",
         Banner: {
+            ThumbNailBanner: `/images/projects/detail project/lecto/thumbnail/thumbnail.png`,
+               ShowCase: `/images/projects/detail project/lecto/banner/l-banner-one.png`,
             BannerOne: `"/images/projects/detail project/lecto/banner/l-banner-one.png"`,
+
             BannerTwo: `"/images/projects/detail project/lecto/banner/l-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/lecto/banner/l-banner-three.png"`,
             MobileBanner: `"/images/projects/detail project/lecto/banner/l-banner-three.png"`,
@@ -280,7 +295,10 @@ export const ProjectData = [
         projectHeading: 'Elysia',
         projectParagraph: "At Elysia, we believe that fashion is more than just clothing; it's a reflection of your personality, your style, and your essence. Step into a world where sophistication meets affordability, where every piece tells a unique story, and where you'll find the perfect ensemble for any occasion. We understand that fashion is deeply personal, which is why we're dedicated to providing premium clothes tailored to your individuality.",
         Banner: {
+            ThumbNailBanner: `/images/projects/detail project/elysia/thumbnail/thumbnail.png`,
+               ShowCase: `/images/projects/detail project/elysia/banner/e-banner-one.png`,
             BannerOne: `"/images/projects/detail project/elysia/banner/e-banner-one.png"`,
+
             BannerTwo: `"/images/projects/detail project/elysia/banner/e-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/elysia/banner/e-banner-three.png"`,
             MobileBanner: `"/images/projects/detail project/elysia/banner/e-banner-three.png"`,
@@ -319,7 +337,10 @@ export const ProjectData = [
         projectHeading: 'Pitch Worx',
         projectParagraph: "A decade ago, when we began one of the first presentation design companies in Dubai, our goal was to change how presentations were made. We’ve since had the privilege of working with over 500 clients, all over the world, including startups, SMEs, large corporates and government organizations across the board. With our experience in understanding the industry dynamics and the audience’s mindset.",
         Banner: {
+            ThumbNailBanner: `/images/projects/detail project/pitch-worx/thumbnail/thumbnail.png`,
+               ShowCase: `/images/projects/detail project/pitch-worx/banner/pw-banner-one.png`,
             BannerOne: `"/images/projects/detail project/pitch-worx/banner/pw-banner-one.png"`,
+
             BannerTwo: `"/images/projects/detail project/pitch-worx/banner/pw-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/pitch-worx/banner/pw-banner-three.png"`,
             MobileBanner: `"/images/projects/detail project/pitch-worx/banner/pw-banner-three.png"`,
@@ -358,7 +379,10 @@ export const ProjectData = [
         projectHeading: 'Cyber Nexus',
         projectParagraph: "At our marketing agency, we're excited to introduce Cyber Nexus, our latest software innovation designed to revolutionize your digital marketing efforts. Cyber Nexus is a cutting-edge software solution crafted to streamline and enhance your marketing strategies. Whether you're managing campaigns, or optimizing your digital presence, Cyber Nexus offers a comprehensive suite of tools.",
         Banner: {
+            ThumbNailBanner: `/images/projects/detail project/cyber-nexus/banner/zn-mobile-banner-one.png`,
+               ShowCase: `/images/projects/detail project/cyber-nexus/banner/zn-banner-one.png`,
             BannerOne: `"/images/projects/detail project/cyber-nexus/banner/zn-banner-one.png"`,
+
             BannerTwo: `"/images/projects/detail project/cyber-nexus/banner/zn-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/cyber-nexus/banner/zn-banner-three.png"`,
             MobileBanner: `"/images/projects/detail project/cyber-nexus/banner/zn-banner-three.png"`,
@@ -397,7 +421,10 @@ export const ProjectData = [
         projectHeading: 'Vape Shop',
         projectParagraph: "Welcome to our store! We take pride in offering a vast selection of electronic cigarettes, e-liquids, and various vaping accessories to cater to all your needs. Our customers appreciate the extensive range of products we provide, which includes premium segment options for those seeking the highest quality and latest technology, as well as middle-range and budget-friendly categories.",
         Banner: {
+            ThumbNailBanner: `/images/projects/detail project/vape-shop/banner/vs-mobile-banner-one.png`,
+               ShowCase: `/images/projects/detail project/vape-shop/banner/vs-banner-one.png`,
             BannerOne: `"/images/projects/detail project/vape-shop/banner/vs-banner-one.png"`,
+
             BannerTwo: `"/images/projects/detail project/vape-shop/banner/vs-banner-two.png"`,
             BannerThree: `"/images/projects/detail project/vape-shop/banner/vs-banner-three.png"`,
             MobileBanner: `"/images/projects/detail project/vape-shop/banner/vs-banner-three.png"`,
@@ -427,30 +454,6 @@ export const ProjectData = [
             conclusion: "In the realm of leading CRM solutions, the partnership between Vape Shop and WebSphere epitomizes innovation and collaboration. With exceptional agility and expertise, WebSphere seamlessly integrated a CRM Software into Vape Shop's system, showcasing their team's capabilities. This achievement not only addressed a significant challenge but also opened new avenues for Vape Shop's growth and development. By combining technical proficiency with strategic foresight, WebSphere has propelled Vape Shop to the forefront of the CRM and vape market. Reflecting on this collaborative journey, we recognize the transformative power of teamwork in achieving tangible results. Moving forward, both WebSphere and Vape Shop are committed to continuous improvement, pioneering new approaches, and embracing innovative ideas. Together, they are poised to push boundaries further and shape the future of top-tier CRM solutions and the vape market with creativity and determination.",
 
         }
-
-    },
-    {
-        id: '3',
-        projectLogo: KbrLogo,
-        projectHoverLogo: KbrLogoWhite,
-        projectHeading: 'KBR Transport',
-        projectParagraph: "Working closely with our customers comes as second nature. Our whole operation is about integrating our business with yours to create that seamless transition down the supply chain, providing exceptional quality every step of the way. We see our relationships with our clients as partnerships, working together as one team to achieve one common goal and focusing on the same priorities.",
-
-    },
-    {
-        id: '3',
-        projectLogo: KbrLogo,
-        projectHoverLogo: KbrLogoWhite,
-        projectHeading: 'KBR Transport',
-        projectParagraph: "Working closely with our customers comes as second nature. Our whole operation is about integrating our business with yours to create that seamless transition down the supply chain, providing exceptional quality every step of the way. We see our relationships with our clients as partnerships, working together as one team to achieve one common goal and focusing on the same priorities.",
-
-    },
-    {
-        id: '3',
-        projectLogo: KbrLogo,
-        projectHoverLogo: KbrLogoWhite,
-        projectHeading: 'KBR Transport',
-        projectParagraph: "Working closely with our customers comes as second nature. Our whole operation is about integrating our business with yours to create that seamless transition down the supply chain, providing exceptional quality every step of the way. We see our relationships with our clients as partnerships, working together as one team to achieve one common goal and focusing on the same priorities.",
 
     }
     , {
