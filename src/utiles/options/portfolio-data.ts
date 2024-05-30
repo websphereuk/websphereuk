@@ -87,8 +87,9 @@ export const ProjectData = [
         projectHoverLogo: alfaTravelParis,
         projectHeading: 'Alfa Travel Paris',
         projectParagraph: "From guided tours of the city of famous landmarks and museums, to customized itineraries that allow travelers to explore at their own pace, Alfa Travel Paris offers a wealth of travel options. With a team of experienced travel consultants, Alfa Travel Paris is able to provide personalized service and expert advice to help make your trip to Paris truly unforgettable",
+        ThumbNailBanner: `/images/projects/detail project/alfa-travel-paris/banner/thumbnail.png`,
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/alfa-travel-paris/banner/thumbnail.png`,
+            
                ShowCase: `/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png`,
             BannerOne: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png"`,
 
@@ -127,8 +128,9 @@ export const ProjectData = [
         projectHoverLogo: klWhiteLogo,
         projectHeading: 'Kaushal Law',
         projectParagraph: "At Kaushal Law Corporation , we approach every legal problem with our clients’ interests foremost in mind. Our clients appreciate our efficient, results-oriented approach towards all areas in which we work. We commit ourselves to providing sound advice, creative strategy, and effective negotiations. Attention to detail and keeping our clients well-informed are key parts of our service",
+        ThumbNailBanner: `/images/projects/detail project/kausahal-law/banner/thumbnail.png`,
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/kausahal-law/banner/thumbnail.png`,
+            
                ShowCase: `/images/projects/detail project/kausahal-law/banner/kl-banner-one.png`,
             BannerOne: `"/images/projects/detail project/kausahal-law/banner/kl-banner-one.png"`,
 
@@ -168,8 +170,9 @@ export const ProjectData = [
         projectHoverLogo: phWhiteLogo,
         projectHeading: 'Pets Heaven',
         projectParagraph: " Welcome to Pets Heaven – Where Passion Meets Paws A Heaven For Pets and Owners At Pets Heaven, we understand the boundless love and companionship pets bring. Our mission is to enhance the well-being of your furry friends by offering top-quality nutrition and a diverse range of accessories. We believe in fostering a community where every wag, purr, and chirp is celebrated.",
+        ThumbNailBanner: `/images/projects/detail project/pets-heaven/banner/thumbnail.png`,
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/pets-heaven/banner/thumbnail.png`,
+            
                ShowCase: `/images/projects/detail project/pets-heaven/banner/ph-banner-one.png`,
             BannerOne: `"/images/projects/detail project/pets-heaven/banner/ph-banner-one.png"`,
 
@@ -210,8 +213,9 @@ export const ProjectData = [
         projectHoverLogo: cmWhiteLogo,
         projectHeading: 'Ultra Cleaning',
         projectParagraph: " At Ultra Cleaning, we are dedicated to delivering top-quality cleaning services that leave your space spotless and refreshed. Our expert team uses advanced techniques and eco-friendly products to ensure the highest level of cleanliness. We take pride in our attention to detail and commitment to excellence. Booking our team not only saves you time but also conserves your valuable energy.",
+        ThumbNailBanner: `/images/projects/detail project/cleaning-maids/banner/thumbnail.png`,
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/cleaning-maids/banner/thumbnail.png`,
+            
                ShowCase: `/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png`,
             BannerOne: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png"`,
 
@@ -252,8 +256,9 @@ export const ProjectData = [
         projectHoverLogo: LectoLogo,
         projectHeading: 'Lacto',
         projectParagraph: " Country Dairy Farms, established in 2021, produces premium milk from American-imported Holstein Friesian cows for a loading milk processing company. Now expanding our services, Country Dairy Farms offers door-step delivery of fresh milk “Lacto Valley” to our community with exceptional customer care. Our dairy products are sourced from contented, naturally-fed cows.",
+        ThumbNailBanner: `/images/projects/detail project/lecto/banner/thumbnail.png`,
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/lecto/banner/thumbnail.png`,
+            
                ShowCase: `/images/projects/detail project/lecto/banner/l-banner-one.png`,
             BannerOne: `"/images/projects/detail project/lecto/banner/l-banner-one.png"`,
 
@@ -294,8 +299,9 @@ export const ProjectData = [
         projectHoverLogo: eWhiteLogo,
         projectHeading: 'Elysia',
         projectParagraph: "At Elysia, we believe that fashion is more than just clothing; it's a reflection of your personality, your style, and your essence. Step into a world where sophistication meets affordability, where every piece tells a unique story, and where you'll find the perfect ensemble for any occasion. We understand that fashion is deeply personal, which is why we're dedicated to providing premium clothes tailored to your individuality.",
+        ThumbNailBanner: `/images/projects/detail project/elysia/banner/thumbnail.png`,
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/elysia/banner/thumbnail.png`,
+            
                ShowCase: `/images/projects/detail project/elysia/banner/e-banner-one.png`,
             BannerOne: `"/images/projects/detail project/elysia/banner/e-banner-one.png"`,
 
@@ -336,8 +342,9 @@ export const ProjectData = [
         projectHoverLogo: pwWhiteLogo,
         projectHeading: 'Pitch Worx',
         projectParagraph: "A decade ago, when we began one of the first presentation design companies in Dubai, our goal was to change how presentations were made. We’ve since had the privilege of working with over 500 clients, all over the world, including startups, SMEs, large corporates and government organizations across the board. With our experience in understanding the industry dynamics and the audience’s mindset.",
+        ThumbNailBanner: `/images/projects/detail project/pitch-worx/banner/thumbnail.png`,
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/pitch-worx/banner/thumbnail.png`,
+            
                ShowCase: `/images/projects/detail project/pitch-worx/banner/pw-banner-one.png`,
             BannerOne: `"/images/projects/detail project/pitch-worx/banner/pw-banner-one.png"`,
 
@@ -378,8 +385,9 @@ export const ProjectData = [
         projectHoverLogo: znWhiteLogo,
         projectHeading: 'Cyber Nexus',
         projectParagraph: "At our marketing agency, we're excited to introduce Cyber Nexus, our latest software innovation designed to revolutionize your digital marketing efforts. Cyber Nexus is a cutting-edge software solution crafted to streamline and enhance your marketing strategies. Whether you're managing campaigns, or optimizing your digital presence, Cyber Nexus offers a comprehensive suite of tools.",
+        ThumbNailBanner: `/images/projects/detail project/cyber-nexus/banner/zn-mobile-banner-one.png`,
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/cyber-nexus/banner/zn-mobile-banner-one.png`,
+            
                ShowCase: `/images/projects/detail project/cyber-nexus/banner/zn-banner-one.png`,
             BannerOne: `"/images/projects/detail project/cyber-nexus/banner/zn-banner-one.png"`,
 
@@ -420,8 +428,9 @@ export const ProjectData = [
         projectHoverLogo: vsWhiteLogo,
         projectHeading: 'Vape Shop',
         projectParagraph: "Welcome to our store! We take pride in offering a vast selection of electronic cigarettes, e-liquids, and various vaping accessories to cater to all your needs. Our customers appreciate the extensive range of products we provide, which includes premium segment options for those seeking the highest quality and latest technology, as well as middle-range and budget-friendly categories.",
+        ThumbNailBanner: `/images/projects/detail project/vape-shop/banner/vs-mobile-banner-one.png`,
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/vape-shop/banner/vs-mobile-banner-one.png`,
+            
                ShowCase: `/images/projects/detail project/vape-shop/banner/vs-banner-one.png`,
             BannerOne: `"/images/projects/detail project/vape-shop/banner/vs-banner-one.png"`,
 
