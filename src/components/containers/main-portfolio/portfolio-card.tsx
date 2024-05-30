@@ -25,13 +25,13 @@ const PortfolioCard = () => {
         <div className="sub-title">
           Recent Portfolio
         </div>
-        <GeneralHeading className="text-center mb-5" content="Discover Our Latest Innovative IT Solutions"/>
+        <GeneralHeading className="text-center mb-5" content="Discover Our Latest Innovative IT Solutions" />
       </div>
       <div className="portfolio__text-slider-w">
       </div>
       <div className="container  px-4">
         <div className="row gaper ">
-          {ProjectData.slice(2 , 7).reverse().map((project, index) => (
+          {ProjectData.slice(2, 7).reverse().map((project, index) => (
             <div key={project.id} className=" my-4 col-12 col-sm-6 col-xl-4">
               <div
                 className={
@@ -41,7 +41,12 @@ const PortfolioCard = () => {
                 onMouseEnter={() => setHover(index)}
               >
                 <Link href={`portfolio/${project?.id}`}>
-                  <Image style={{}} width={250} height={500} src={`${project?.Banner?.ThumbNailBanner}`} alt="Image" />
+                  {
+                    project?.Banner?.ThumbNailBanner && (
+
+                      <Image width={250} height={550} src={project?.Banner?.ThumbNailBanner} alt="Image" />
+                    )
+                  }
                 </Link>
                 <div className="portfolio__single-content">
                   <Link href={`portfolio/${project?.id}`}>
@@ -69,9 +74,9 @@ const PortfolioCard = () => {
             </div>
           </div>
         </div>
-        
+
       </div>
-     
+
     </section>
   );
 };
