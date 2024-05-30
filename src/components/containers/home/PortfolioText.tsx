@@ -79,7 +79,7 @@ const PortfolioText = () => {
                 onMouseEnter={() => setHover(index)}
               >
                 <Link href="portfolio">
-                  <Image style={{}} width={250} height={500} src={`${project?.Banner?.ThumbNailBanner}`} alt="Image" />
+                  <Image style={{}} width={250} height={500} src={`${project?.ThumbNailBanner}`} alt="Image" />
                 </Link>
                 <div className="portfolio__single-content">
                   <Link href="portfolio">
