@@ -250,7 +250,7 @@ export const ProjectData = [
         id: '5',
         projectLogo: LectoLogo,
         projectHoverLogo: LectoLogo,
-        projectHeading: 'Lactoo',
+        projectHeading: 'Lacto',
         projectParagraph: " Country Dairy Farms, established in 2021, produces premium milk from American-imported Holstein Friesian cows for a loading milk processing company. Now expanding our services, Country Dairy Farms offers door-step delivery of fresh milk “Lacto Valley” to our community with exceptional customer care. Our dairy products are sourced from contented, naturally-fed cows.",
         Banner: {
             ThumbNailBanner: `/images/projects/detail project/lecto/banner/thumbnail.png`,
