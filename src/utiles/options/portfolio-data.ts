@@ -1,5 +1,4 @@
-import KbrLogo from "../../../public/images/projects/kbr-logo.158a32bf.png"
-import KbrLogoWhite from "../../../public/images/projects/kbrlogowhite.png";
+
 // ...............................ALP Stand For AlfaTaravelParis....................
 import alfaTravelParis from "../../../public/images/projects/detail project/alfa-travel-paris/logo/alp-logo.png"
 import ALPGalleryOne from "../../../public/images/projects/detail project/alfa-travel-paris/portfolio-gallery/alp-gallery-1.png"
@@ -7,8 +6,9 @@ import ALPGalleryTwo from "../../../public/images/projects/detail project/alfa-t
 import ALPGalleryThree from "../../../public/images/projects/detail project/alfa-travel-paris/portfolio-gallery/alp-gallery-3.png"
 import ALPGalleryFour from "../../../public/images/projects/detail project/alfa-travel-paris/portfolio-gallery/alp-gallery-4.png"
 import ALPGalleryFive from "../../../public/images/projects/detail project/alfa-travel-paris/portfolio-gallery/alp-gallery-5.png"
+import ALThumbnail from "../../../public/images/projects/detail project/alfa-travel-paris/banner/thumbnail.png"
 // ..................... kaushal Law ................
-
+import klThumbnail from "../../../public/images/projects/detail project/kausahal-law/banner/thumbnail.png"
 import klDarkLogo from "../../../public/images/projects/detail project/kausahal-law/logo/kl-logo-dark.png"
 import klWhiteLogo from "../../../public/images/projects/detail project/kausahal-law/logo/kl-logo-white.png"
 import KLGalleryOne from "../../../public/images/projects/detail project/kausahal-law/portfolio-gallery/kl-gallery-1.png"
@@ -24,7 +24,7 @@ import PHGalleryTwo from "../../../public/images/projects/detail project/pets-he
 import PHGalleryThree from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-3.png"
 import PHGalleryFour from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-4.png"
 import PHGalleryFive from "../../../public/images/projects/detail project/pets-heaven/portfolio-gallery/ph-gallery-5.png"
-
+import PHThumbnail from "../../../public/images/projects/detail project/pets-heaven/banner/thumbnail.png"
 // ............................cleaning maids ....................
 import cmDarkLogo from "../../../public/images/projects/detail project/cleaning-maids/logo/cm-logo-dark.png"
 import cmWhiteLogo from "../../../public/images/projects/detail project/cleaning-maids/logo/cm-logo-white.png"
@@ -33,7 +33,7 @@ import cmGalleryTwo from "../../../public/images/projects/detail project/cleanin
 import cmGalleryThree from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-3.png"
 import cmGalleryFour from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-4.png"
 import cmGalleryFive from "../../../public/images/projects/detail project/cleaning-maids/portfolio-gallery/cm-gallery-5.png"
-
+import cmThumbnail from "../../../public/images/projects/detail project/cleaning-maids/banner/thumbnail.png"
 // ..........................................lecto..........................................
 import LectoLogo from "../../../public/images/projects/detail project/lecto/logo/logo.png"
 import lGalleryOne from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-1.png"
@@ -41,7 +41,7 @@ import lGalleryTwo from "../../../public/images/projects/detail project/lecto/po
 import lGalleryThree from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-3.png"
 import lGalleryFour from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-4.png"
 import lGalleryFive from "../../../public/images/projects/detail project/lecto/portfolio-gallery/l-gallery-5.png"
-
+import lThumbnail from "../../../public/images/projects/detail project/lecto/banner/thumbnail.png"
 
 // ..........................................Elysia..........................................
 import eDarkLogo from "../../../public/images/projects/detail project/elysia/logo/e-logo-dark.png"
@@ -51,7 +51,7 @@ import eGalleryTwo from "../../../public/images/projects/detail project/elysia/p
 import eGalleryThree from "../../../public/images/projects/detail project/elysia/portfolio-gallery/e-gallery-3.png"
 import eGalleryFour from "../../../public/images/projects/detail project/elysia/portfolio-gallery/e-gallery-4.png"
 import eGalleryFive from "../../../public/images/projects/detail project/elysia/portfolio-gallery/e-gallery-5.png"
-
+import eThumbnail from "../../../public/images/projects/detail project/elysia/banner/thumbnail.png"
 
 // ..........................................Pitch Wrox..........................................
 import pwDarkLogo from "../../../public/images/projects/detail project/pitch-worx/logo/pw-logo-dark.png"
@@ -61,7 +61,7 @@ import pwGalleryTwo from "../../../public/images/projects/detail project/pitch-w
 import pwGalleryThree from "../../../public/images/projects/detail project/pitch-worx/portfolio-gallery/pw-gallery-3.png"
 import pwGalleryFour from "../../../public/images/projects/detail project/pitch-worx/portfolio-gallery/pw-gallery-4.png"
 import pwGalleryFive from "../../../public/images/projects/detail project/pitch-worx/portfolio-gallery/pw-gallery-5.png"
-
+import pwThumbnail from "../../../public/images/projects/detail project/pitch-worx/banner/thumbnail.png"
 // ..........................................cyber Nexus..........................................
 import znDarkLogo from "../../../public/images/projects/detail project/cyber-nexus/logo/zn-logo-dark.png"
 import znWhiteLogo from "../../../public/images/projects/detail project/cyber-nexus/logo/zn-logo-white.png"
@@ -70,7 +70,7 @@ import znGalleryTwo from "../../../public/images/projects/detail project/cyber-n
 import znGalleryThree from "../../../public/images/projects/detail project/cyber-nexus/portfolio-gallery/zn-gallery-3.png"
 import znGalleryFour from "../../../public/images/projects/detail project/cyber-nexus/portfolio-gallery/zn-gallery-4.png"
 import znGalleryFive from "../../../public/images/projects/detail project/cyber-nexus/portfolio-gallery/zn-gallery-5.png"
-
+import znThumbnail from "../../../public/images/projects/detail project/cyber-nexus/banner/zn-mobile-banner-one.png"
 // ..........................................Vape Shop..........................................
 import vsDarkLogo from "../../../public/images/projects/detail project/vape-shop/logo/vs-logo-dark.png"
 import vsWhiteLogo from "../../../public/images/projects/detail project/vape-shop/logo/vs-logo-white.png"
@@ -79,6 +79,7 @@ import vsGalleryTwo from "../../../public/images/projects/detail project/vape-sh
 import vsGalleryThree from "../../../public/images/projects/detail project/vape-shop/portfolio-gallery/vs-gallery-3.png"
 import vsGalleryFour from "../../../public/images/projects/detail project/vape-shop/portfolio-gallery/vs-gallery-4.png"
 import vsGalleryFive from "../../../public/images/projects/detail project/vape-shop/portfolio-gallery/vs-gallery-5.png"
+import vsThumbnail from "../../../public/images/projects/detail project/vape-shop/portfolio-gallery/vs-gallery-5.png"
 
 export const ProjectData = [
     {
@@ -87,10 +88,13 @@ export const ProjectData = [
         projectHoverLogo: alfaTravelParis,
         projectHeading: 'Alfa Travel Paris',
         projectParagraph: "From guided tours of the city of famous landmarks and museums, to customized itineraries that allow travelers to explore at their own pace, Alfa Travel Paris offers a wealth of travel options. With a team of experienced travel consultants, Alfa Travel Paris is able to provide personalized service and expert advice to help make your trip to Paris truly unforgettable",
-        ThumbNailBanner: `/images/projects/detail project/alfa-travel-paris/banner/thumbnail.png`,
+        ThumbNail: [
+            ALThumbnail
+
+        ],
         Banner: {
-            
-               ShowCase: `/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png`,
+
+            ShowCase: `/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png`,
             BannerOne: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png"`,
 
             BannerTwo: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-two.png"`,
@@ -128,10 +132,13 @@ export const ProjectData = [
         projectHoverLogo: klWhiteLogo,
         projectHeading: 'Kaushal Law',
         projectParagraph: "At Kaushal Law Corporation , we approach every legal problem with our clients’ interests foremost in mind. Our clients appreciate our efficient, results-oriented approach towards all areas in which we work. We commit ourselves to providing sound advice, creative strategy, and effective negotiations. Attention to detail and keeping our clients well-informed are key parts of our service",
-        ThumbNailBanner: `/images/projects/detail project/kausahal-law/banner/thumbnail.png`,
+        ThumbNail: [
+            klThumbnail
+
+        ],
         Banner: {
-            
-               ShowCase: `/images/projects/detail project/kausahal-law/banner/kl-banner-one.png`,
+
+            ShowCase: `/images/projects/detail project/kausahal-law/banner/kl-banner-one.png`,
             BannerOne: `"/images/projects/detail project/kausahal-law/banner/kl-banner-one.png"`,
 
             BannerTwo: `"/images/projects/detail project/kausahal-law/banner/kl-banner-two.png"`,
@@ -170,10 +177,13 @@ export const ProjectData = [
         projectHoverLogo: phWhiteLogo,
         projectHeading: 'Pets Heaven',
         projectParagraph: " Welcome to Pets Heaven – Where Passion Meets Paws A Heaven For Pets and Owners At Pets Heaven, we understand the boundless love and companionship pets bring. Our mission is to enhance the well-being of your furry friends by offering top-quality nutrition and a diverse range of accessories. We believe in fostering a community where every wag, purr, and chirp is celebrated.",
-        ThumbNailBanner: `/images/projects/detail project/pets-heaven/banner/thumbnail.png`,
+        ThumbNail: [
+            PHThumbnail
+
+        ],
         Banner: {
-            
-               ShowCase: `/images/projects/detail project/pets-heaven/banner/ph-banner-one.png`,
+
+            ShowCase: `/images/projects/detail project/pets-heaven/banner/ph-banner-one.png`,
             BannerOne: `"/images/projects/detail project/pets-heaven/banner/ph-banner-one.png"`,
 
             BannerTwo: `"/images/projects/detail project/pets-heaven/banner/ph-banner-two.png"`,
@@ -213,10 +223,13 @@ export const ProjectData = [
         projectHoverLogo: cmWhiteLogo,
         projectHeading: 'Ultra Cleaning',
         projectParagraph: " At Ultra Cleaning, we are dedicated to delivering top-quality cleaning services that leave your space spotless and refreshed. Our expert team uses advanced techniques and eco-friendly products to ensure the highest level of cleanliness. We take pride in our attention to detail and commitment to excellence. Booking our team not only saves you time but also conserves your valuable energy.",
-        ThumbNailBanner: `/images/projects/detail project/cleaning-maids/banner/thumbnail.png`,
+        ThumbNail: [
+            cmThumbnail
+
+        ],
         Banner: {
-            
-               ShowCase: `/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png`,
+
+            ShowCase: `/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png`,
             BannerOne: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png"`,
 
             BannerTwo: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-two.png"`,
@@ -256,10 +269,13 @@ export const ProjectData = [
         projectHoverLogo: LectoLogo,
         projectHeading: 'Lacto',
         projectParagraph: " Country Dairy Farms, established in 2021, produces premium milk from American-imported Holstein Friesian cows for a loading milk processing company. Now expanding our services, Country Dairy Farms offers door-step delivery of fresh milk “Lacto Valley” to our community with exceptional customer care. Our dairy products are sourced from contented, naturally-fed cows.",
-        ThumbNailBanner: `/images/projects/detail project/lecto/banner/thumbnail.png`,
+        ThumbNail: [
+            lThumbnail
+
+        ],
         Banner: {
-            
-               ShowCase: `/images/projects/detail project/lecto/banner/l-banner-one.png`,
+
+            ShowCase: `/images/projects/detail project/lecto/banner/l-banner-one.png`,
             BannerOne: `"/images/projects/detail project/lecto/banner/l-banner-one.png"`,
 
             BannerTwo: `"/images/projects/detail project/lecto/banner/l-banner-two.png"`,
@@ -299,10 +315,13 @@ export const ProjectData = [
         projectHoverLogo: eWhiteLogo,
         projectHeading: 'Elysia',
         projectParagraph: "At Elysia, we believe that fashion is more than just clothing; it's a reflection of your personality, your style, and your essence. Step into a world where sophistication meets affordability, where every piece tells a unique story, and where you'll find the perfect ensemble for any occasion. We understand that fashion is deeply personal, which is why we're dedicated to providing premium clothes tailored to your individuality.",
-        ThumbNailBanner: `/images/projects/detail project/elysia/banner/thumbnail.png`,
+        ThumbNail: [
+            eThumbnail
+
+        ],
         Banner: {
-            
-               ShowCase: `/images/projects/detail project/elysia/banner/e-banner-one.png`,
+
+            ShowCase: `/images/projects/detail project/elysia/banner/e-banner-one.png`,
             BannerOne: `"/images/projects/detail project/elysia/banner/e-banner-one.png"`,
 
             BannerTwo: `"/images/projects/detail project/elysia/banner/e-banner-two.png"`,
@@ -342,10 +361,13 @@ export const ProjectData = [
         projectHoverLogo: pwWhiteLogo,
         projectHeading: 'Pitch Worx',
         projectParagraph: "A decade ago, when we began one of the first presentation design companies in Dubai, our goal was to change how presentations were made. We’ve since had the privilege of working with over 500 clients, all over the world, including startups, SMEs, large corporates and government organizations across the board. With our experience in understanding the industry dynamics and the audience’s mindset.",
-        ThumbNailBanner: `/images/projects/detail project/pitch-worx/banner/thumbnail.png`,
+        ThumbNail: [
+            pwThumbnail
+
+        ],
         Banner: {
-            
-               ShowCase: `/images/projects/detail project/pitch-worx/banner/pw-banner-one.png`,
+
+            ShowCase: `/images/projects/detail project/pitch-worx/banner/pw-banner-one.png`,
             BannerOne: `"/images/projects/detail project/pitch-worx/banner/pw-banner-one.png"`,
 
             BannerTwo: `"/images/projects/detail project/pitch-worx/banner/pw-banner-two.png"`,
@@ -385,10 +407,13 @@ export const ProjectData = [
         projectHoverLogo: znWhiteLogo,
         projectHeading: 'Cyber Nexus',
         projectParagraph: "At our marketing agency, we're excited to introduce Cyber Nexus, our latest software innovation designed to revolutionize your digital marketing efforts. Cyber Nexus is a cutting-edge software solution crafted to streamline and enhance your marketing strategies. Whether you're managing campaigns, or optimizing your digital presence, Cyber Nexus offers a comprehensive suite of tools.",
-        ThumbNailBanner: `/images/projects/detail project/cyber-nexus/banner/zn-mobile-banner-one.png`,
+        ThumbNail: [
+            znThumbnail
+
+        ],
         Banner: {
-            
-               ShowCase: `/images/projects/detail project/cyber-nexus/banner/zn-banner-one.png`,
+
+            ShowCase: `/images/projects/detail project/cyber-nexus/banner/zn-banner-one.png`,
             BannerOne: `"/images/projects/detail project/cyber-nexus/banner/zn-banner-one.png"`,
 
             BannerTwo: `"/images/projects/detail project/cyber-nexus/banner/zn-banner-two.png"`,
@@ -428,10 +453,13 @@ export const ProjectData = [
         projectHoverLogo: vsWhiteLogo,
         projectHeading: 'Vape Shop',
         projectParagraph: "Welcome to our store! We take pride in offering a vast selection of electronic cigarettes, e-liquids, and various vaping accessories to cater to all your needs. Our customers appreciate the extensive range of products we provide, which includes premium segment options for those seeking the highest quality and latest technology, as well as middle-range and budget-friendly categories.",
-        ThumbNailBanner: `/images/projects/detail project/vape-shop/banner/vs-mobile-banner-one.png`,
+        ThumbNail: [
+            vsThumbnail
+
+        ],
         Banner: {
-            
-               ShowCase: `/images/projects/detail project/vape-shop/banner/vs-banner-one.png`,
+
+            ShowCase: `/images/projects/detail project/vape-shop/banner/vs-banner-one.png`,
             BannerOne: `"/images/projects/detail project/vape-shop/banner/vs-banner-one.png"`,
 
             BannerTwo: `"/images/projects/detail project/vape-shop/banner/vs-banner-two.png"`,

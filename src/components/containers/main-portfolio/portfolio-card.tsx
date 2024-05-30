@@ -42,9 +42,9 @@ const PortfolioCard = () => {
               >
                 <Link href={`portfolio/${project?.id}`}>
                   {
-                    project?.ThumbNailBanner && (
+                    project?.ThumbNail && (
 
-                      <Image width={250} height={550} src={project?.ThumbNailBanner} alt="Image" />
+                      <Image width={250} height={550} src={project?.ThumbNail[0]} alt="Image" />
                     )
                   }
                 </Link>
