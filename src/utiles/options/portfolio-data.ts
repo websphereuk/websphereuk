@@ -88,7 +88,7 @@ export const ProjectData = [
         projectHeading: 'Alfa Travel Paris',
         projectParagraph: "From guided tours of the city of famous landmarks and museums, to customized itineraries that allow travelers to explore at their own pace, Alfa Travel Paris offers a wealth of travel options. With a team of experienced travel consultants, Alfa Travel Paris is able to provide personalized service and expert advice to help make your trip to Paris truly unforgettable",
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/alfa-travel-paris/thumbnail/thumbnail.png`,
+            ThumbNailBanner: `/images/projects/detail project/alfa-travel-paris/banner/thumbnail.png`,
                ShowCase: `/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png`,
             BannerOne: `"/images/projects/detail project/alfa-travel-paris/banner/alp-banner-one.png"`,
 
@@ -128,7 +128,7 @@ export const ProjectData = [
         projectHeading: 'Kaushal Law',
         projectParagraph: "At Kaushal Law Corporation , we approach every legal problem with our clients’ interests foremost in mind. Our clients appreciate our efficient, results-oriented approach towards all areas in which we work. We commit ourselves to providing sound advice, creative strategy, and effective negotiations. Attention to detail and keeping our clients well-informed are key parts of our service",
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/kausahal-law/thumbnail/thumbnail.png`,
+            ThumbNailBanner: `/images/projects/detail project/kausahal-law/banner/thumbnail.png`,
                ShowCase: `/images/projects/detail project/kausahal-law/banner/kl-banner-one.png`,
             BannerOne: `"/images/projects/detail project/kausahal-law/banner/kl-banner-one.png"`,
 
@@ -169,7 +169,7 @@ export const ProjectData = [
         projectHeading: 'Pets Heaven',
         projectParagraph: " Welcome to Pets Heaven – Where Passion Meets Paws A Heaven For Pets and Owners At Pets Heaven, we understand the boundless love and companionship pets bring. Our mission is to enhance the well-being of your furry friends by offering top-quality nutrition and a diverse range of accessories. We believe in fostering a community where every wag, purr, and chirp is celebrated.",
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/pets-heaven/thumbnail/thumbnail.png`,
+            ThumbNailBanner: `/images/projects/detail project/pets-heaven/banner/thumbnail.png`,
                ShowCase: `/images/projects/detail project/pets-heaven/banner/ph-banner-one.png`,
             BannerOne: `"/images/projects/detail project/pets-heaven/banner/ph-banner-one.png"`,
 
@@ -211,7 +211,7 @@ export const ProjectData = [
         projectHeading: 'Ultra Cleaning',
         projectParagraph: " At Ultra Cleaning, we are dedicated to delivering top-quality cleaning services that leave your space spotless and refreshed. Our expert team uses advanced techniques and eco-friendly products to ensure the highest level of cleanliness. We take pride in our attention to detail and commitment to excellence. Booking our team not only saves you time but also conserves your valuable energy.",
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/cleaning-maids/thumbnail/thumbnail.png`,
+            ThumbNailBanner: `/images/projects/detail project/cleaning-maids/banner/thumbnail.png`,
                ShowCase: `/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png`,
             BannerOne: `"/images/projects/detail project/cleaning-maids/banner/cm-banner-one.png"`,
 
@@ -250,10 +250,10 @@ export const ProjectData = [
         id: '5',
         projectLogo: LectoLogo,
         projectHoverLogo: LectoLogo,
-        projectHeading: 'Lacto',
+        projectHeading: 'Lactoo',
         projectParagraph: " Country Dairy Farms, established in 2021, produces premium milk from American-imported Holstein Friesian cows for a loading milk processing company. Now expanding our services, Country Dairy Farms offers door-step delivery of fresh milk “Lacto Valley” to our community with exceptional customer care. Our dairy products are sourced from contented, naturally-fed cows.",
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/lecto/thumbnail/thumbnail.png`,
+            ThumbNailBanner: `/images/projects/detail project/lecto/banner/thumbnail.png`,
                ShowCase: `/images/projects/detail project/lecto/banner/l-banner-one.png`,
             BannerOne: `"/images/projects/detail project/lecto/banner/l-banner-one.png"`,
 
@@ -295,7 +295,7 @@ export const ProjectData = [
         projectHeading: 'Elysia',
         projectParagraph: "At Elysia, we believe that fashion is more than just clothing; it's a reflection of your personality, your style, and your essence. Step into a world where sophistication meets affordability, where every piece tells a unique story, and where you'll find the perfect ensemble for any occasion. We understand that fashion is deeply personal, which is why we're dedicated to providing premium clothes tailored to your individuality.",
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/elysia/thumbnail/thumbnail.png`,
+            ThumbNailBanner: `/images/projects/detail project/elysia/banner/thumbnail.png`,
                ShowCase: `/images/projects/detail project/elysia/banner/e-banner-one.png`,
             BannerOne: `"/images/projects/detail project/elysia/banner/e-banner-one.png"`,
 
@@ -337,7 +337,7 @@ export const ProjectData = [
         projectHeading: 'Pitch Worx',
         projectParagraph: "A decade ago, when we began one of the first presentation design companies in Dubai, our goal was to change how presentations were made. We’ve since had the privilege of working with over 500 clients, all over the world, including startups, SMEs, large corporates and government organizations across the board. With our experience in understanding the industry dynamics and the audience’s mindset.",
         Banner: {
-            ThumbNailBanner: `/images/projects/detail project/pitch-worx/thumbnail/thumbnail.png`,
+            ThumbNailBanner: `/images/projects/detail project/pitch-worx/banner/thumbnail.png`,
                ShowCase: `/images/projects/detail project/pitch-worx/banner/pw-banner-one.png`,
             BannerOne: `"/images/projects/detail project/pitch-worx/banner/pw-banner-one.png"`,
 
