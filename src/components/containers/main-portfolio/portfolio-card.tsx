@@ -44,7 +44,7 @@ const PortfolioCard = () => {
                   {
                     project?.ThumbNailBanner && (
 
-                      <Image src={project?.ThumbNailBanner} alt={`${project?.ThumbNailBanner}`} />
+                      <Image width={250} height={550} src={project?.ThumbNailBanner} alt="Image" />
                     )
                   }
                 </Link>
