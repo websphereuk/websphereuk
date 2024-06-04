@@ -44,7 +44,7 @@ const PortfolioCard = () => {
                   {
                     project?.ThumbNail && (
 
-                      <Image width={250} height={550} src={project?.ThumbNail[0]} alt="Image" />
+                      <Image  src={project?.ThumbNail[0]} alt="Image" />
                     )
                   }
                 </Link>
@@ -63,9 +63,9 @@ const PortfolioCard = () => {
             <div className="portfolio__single-alt-wrapper fade-top">
               <div className="portfolio__single-alt topy-tilt">
                 <h4>
-                  <Link href="portfolio">Schedule a Call</Link>
+                  <Link href="/contact-us">Schedule a Call</Link>
                 </h4>
-                <Link href="portfolio" className="arr">
+                <Link href="/contact-us" className="arr">
                   <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                 </Link>
                 <Image src={dot} alt="Image" className="dot-one" />
