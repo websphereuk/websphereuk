@@ -18,6 +18,8 @@ import VideoModal from "./VideoModal";
 import ScrollProgressBtn from "./ScrollProgressBtn";
 import CustomCursor from "./CustomCursor";
 import SplitType from "split-type";
+import { title } from "process";
+import { Metadata } from "next";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -28,6 +30,14 @@ type LayoutProps = {
   video?: React.ReactNode;
   themeBlack?: Boolean;
 };
+export const metadata: Metadata = {
+  title: {
+    default: "WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services",
+    template: "%s - Web Sphere Uk "
+  },
+  description: "WebSphere LLC specializes in innovative web and mobile app development, e-commerce solutions, blockchain technology, AI &amp; ML, and more. Catering to diverse industries, our expert team delivers cutting-edge technology solutions to transform your business vision into reality. Discover how we can upscale your digital presence",
+}
+
 
 const Layout = ({
   children,
@@ -173,17 +183,10 @@ const Layout = ({
 
   return (
     <Fragment>
+
       <Head>
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="shortcut icon"
-          href="/images/favicon.png"
-          type="image/x-icon"
-        />
-        <title>WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services</title>
-        <meta name="description" content="WebSphere LLC specializes in innovative web and mobile app development, e-commerce solutions, blockchain technology, AI &amp; ML, and more. Catering to diverse industries, our expert team delivers cutting-edge technology solutions to transform your business vision into reality. Discover how we can upscale your digital presence"></meta>
-        <meta name="keywords" content="Web Development, Mobile App Development, E-Commerce Development, Blockchain Development, AI and ML Solutions, DevOps Services, Salesforce Development, Microsoft Power Platform, Game Development, Technology Solutions for Businesses"></meta>
       </Head>
       <div className={combinedClassName}>
         {header === 1 && (

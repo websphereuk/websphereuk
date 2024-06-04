@@ -1,33 +1,28 @@
 import React, { useEffect, useState } from "react";
 import Layout from "@/components/layout/Layout";
-import HomeOneBanner from "@/components/layout/banner/about-us-banner";
-import Agency from "@/components/containers/home/Agency";
-import PortfolioText from "@/components/containers/home/PortfolioText";
-import HomeOffer from "@/components/containers/home/HomeOffer";
-import HomeTestimonial from "@/components/containers/home/HomeTestimonial";
-import HomeBlog from "@/components/containers/home/HomeBlog";
-import HomeSponsor from "@/components/containers/home/HomeSponsor";
-import NextPage from "@/components/containers/home/NextPage";
 import BannerVideo from "@/components/layout/banner/banner-video";
 import ServiceMain from "@/components/containers/service-sections/ServiceMain";
 import Industries from "@/components/containers/industries/Industries";
-import gsap from "gsap";
-import Loader from "@/components/containers/loader";
 import ScheduleCall from "@/components/containers/schedule-call/index";
 import PartnershipsModels from "@/components/containers/partnership-models";
 import Testimonial from "@/components/containers/testimonial";
 import OurTheory from "@/components/containers/our-theory";
 import SplineDesign from "@/components/containers/spline-design";
 import Portfolio from "@/components/containers/portfolio";
-import Problem from "@/components/containers/portfolio/problem";
-import ClientFeedbackMain from "@/components/containers/ClientFeedbackMain";
-import AnimatedText from "@/components/containers/animated-text";
+import Head from "next/head";
 
 const Home = () => {
 
   return (
-
     <>
+      <Head>
+        <title>Home  || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services</title>
+        <meta
+          name="description"
+          content=" WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies"
+          key="desc"
+        />
+      </Head>
       <Layout themeBlack={true} header={2} footer={2} video={false}>
         <BannerVideo />
         <ServiceMain ThemeBlack />

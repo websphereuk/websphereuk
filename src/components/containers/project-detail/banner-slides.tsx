@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
-import videobg from "public/images/banner/video-bg.png";
+import videobg from "../../../../public/images/projects/videobg.jpg";
 import dotlarge from "public/images/agency/dot-large.png";
 import arrow from "public/images/banner/arrow.png";
 import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
@@ -58,19 +58,22 @@ const BannerSlides = (data: any) => {
                                     <div className="row justify-content-end">
                                         <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                                             <div className="banner-three__content" style={isItMobile ? { visibility: "hidden" } : {}}>
-                                                <h1 className="light-title " style={!isItMobile ? { marginLeft: "75px", fontSize: "65px" } : {}}>
+                                                <h1 className="light-title text-capitalize" style={!isItMobile ? { marginLeft: "75px", fontSize: "65px" } : {}}>
 
-                                                    Awesome IT Services for Your Business
+
+                                                    Presenting our
+                                                    <span style={{ color: "#55e6a5" }}> {data?.data?.projectHeading} </span>
+                                                    masterpiece
                                                 </h1>
                                                 <div className="section__content-cta cta">
                                                     <div className="arrow-wrapper d-none d-md-block">
                                                         <span className="arrow"></span>
                                                     </div>
                                                     <Link
-                                                        href="our-services"
+                                                        href="/contact-us"
                                                         className="btn btn--secondary"
                                                     >
-                                                        our services
+                                                        Schedule A Call
                                                         <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                                                     </Link>
                                                 </div>
@@ -95,10 +98,11 @@ const BannerSlides = (data: any) => {
                                     <div className="row justify-content-end">
                                         <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
                                             <div className="banner-three__content"
-                                                style={isItMobile ? { visibility: "hidden" } : {visibility: "hidden"}}
+                                                style={isItMobile ? { visibility: "hidden" } : { visibility: "hidden" }}
                                             >
                                                 <h1 className="light-title">
-                                                    Awesome IT Services for Your Business
+                                                    A closer look at
+                                                    <span style={{ color: "#55e6a5" }}> {data?.data?.projectHeading} </span> success
                                                 </h1>
                                                 <div className="section__content-cta cta">
                                                     <div className="arrow-wrapper d-none d-md-block">
@@ -137,18 +141,19 @@ const BannerSlides = (data: any) => {
                                         <div className="col-12 col-lg-9 offset-lg-3 col-xl-7 offset-xl-4">
 
                                             <div className="banner-three__content" style={isItMobile ? { visibility: "hidden" } : {}}>
-                                                <h1 className="light-title " style={!isItMobile ? { marginLeft: "75px", fontSize: "65px" } : {}}>
-                                                    Awesome IT Services for Your Business
+                                                <h1 className="light-title text-capitalize" style={!isItMobile ? { marginLeft: "75px", fontSize: "65px" } : {}}>
+                                                Showcasing our
+                                                    <span style={{ color: "#55e6a5" }}> {data?.data?.projectHeading} </span> achievement
                                                 </h1>
                                                 <div className="section__content-cta cta">
                                                     <div className="arrow-wrapper d-none d-md-block">
                                                         <span className="arrow"></span>
                                                     </div>
                                                     <Link
-                                                        href="our-services"
+                                                        href="/contact-us"
                                                         className="btn btn--secondary"
                                                     >
-                                                        our services
+                                                        Schedule A Call
                                                         <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                                                     </Link>
                                                 </div>
@@ -224,7 +229,7 @@ const BannerSlides = (data: any) => {
                         </div>
                     </div>
                     <div className="banner-three__video">
-                        <Image src={videobg} alt="Image" />
+                        <Image src={videobg} width={250} height={187} alt="Image" />
                         <button
                             className="video-frame video-btn"
                             onClick={() => setVideoActive(true)}
@@ -243,7 +248,7 @@ const BannerSlides = (data: any) => {
                         className="video-container"
                         onClick={(e: any) => e.stopPropagation()}
                     >
-                        {videoActive && <YoutubeEmbed embedId="fSv6UgCkuTU" />}
+                        {videoActive && <YoutubeEmbed embedId="_qZmPEIWt2Y?si=eKoU4d55b0r9JO84" />}
                         <button
                             aria-label="close video popup"
                             className="close-video-popup"

@@ -7,16 +7,27 @@ import PortfolioMain from "@/components/containers/PortfolioMain";
 import ProjectMain from "@/components/containers/project/ProjectMain";
 import PartnershipsModels from "@/components/containers/partnership-models";
 import Testimonial from "@/components/containers/testimonial";
+import Head from "next/head";
 
 const OurPortfolio = () => {
     return (
-        <Layout header={2} footer={2} video={0}>
-            <CmnBanner title="Portfolio" navigation="Case Study" content="Explore our portfolio showcasing cutting-edge IT solutions that have transformed businesses across various industries." />
-            <PortfolioCard />
-            < PartnershipsModels/>
-            <CaseStudyGallery />
-            <Testimonial/>
-        </Layout>
+        <>
+            <Head >
+                <title>{`ShowCase  || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services`}</title>
+                <meta
+                    name="description"
+                    content={`Explore our portfolio showcasing cutting-edge IT solutions that have transformed businesses across various industries.`}
+                    key="desc"
+                />
+            </Head>
+            <Layout header={2} footer={2} video={0}>
+                <CmnBanner title="Portfolio" navigation="Case Study" content="Explore our portfolio showcasing cutting-edge IT solutions that have transformed businesses across various industries." />
+                <PortfolioCard />
+                < PartnershipsModels />
+                <CaseStudyGallery />
+                <Testimonial />
+            </Layout>
+        </>
     );
 };
 
