@@ -1,11 +1,12 @@
 import GeneralHeading from "../general-heading"
 
-
+import styles from "./spline.module.css"
 const SplineDesign = () => {
     const VideoSource = '/video/night-snow.mp4'
 
     return (
-        <div className="position-relative d-none d-lg-block h-100">
+        <div className={`position-relative d-none d-lg-block h-100 ${styles.spline}`}>
+           
             <video autoPlay muted loop={true} className="w-100">
                 <source src={VideoSource} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -19,4 +20,4 @@ const SplineDesign = () => {
     )
 }
 
-export default SplineDesign
+export default SplineDesign;
