@@ -6,6 +6,7 @@ import styles from "../../../components/containers/career-box/career-box.module.
 import { useRouter } from 'next/router'
 import FormFields from '@/components/containers/form-feilds';
 import ApplyForm from '@/components/containers/apply-form';
+import Head from 'next/head';
 const CareerDetails = () => {
   const router = useRouter()
   const UpdatedArray = CareerData.filter(obj => obj.id === router.query.id);
@@ -14,6 +15,14 @@ const CareerDetails = () => {
   return (
 
     <>
+      <Head >
+        <title>{`${v?.title} || Careers at Web Sphere UK -  Choose the right path now`}</title>
+        <meta
+          name="description"
+          content={` At Web Sphere UK , we provide our employees with unlimited growth potential. Check out our careers page to find the right job for you!`}
+          key="desc"
+        />
+      </Head>
       <Layout header={2} footer={2} themeBlack >
         <div className="bg-white ">
           <div className="container">
@@ -31,7 +40,7 @@ const CareerDetails = () => {
                     <ul className='mt-3'>
                       {
                         v?.Description?.Responsibilities.map((r, index) => (
-                          <li className='text-dark mx-3' style={{ listStyle: "disc" , }} key={index}>
+                          <li className='text-dark mx-3' style={{ listStyle: "disc", }} key={index}>
                             {r}
                           </li>))
                       }
@@ -56,7 +65,7 @@ const CareerDetails = () => {
                   </div>
                 </div>
                 <div className={`col-lg-5 mt-4 text-black ${styles?.applysection}`}>
-                  <ApplyForm  data={v}/>
+                  <ApplyForm data={v} />
                 </div>
               </div>
             </div>
