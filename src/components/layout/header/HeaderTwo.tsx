@@ -7,6 +7,7 @@ import logoLight from "public/images/logo-light.png";
 import Offcanvas from "./Offcanvas";
 import NavItem from "./menu/nav-item";
 import ServiceDropdown from "./menu/service-dropdown";
+import Head from "next/head";
 
 interface HeaderProps {
   openNav: boolean;
@@ -51,6 +52,10 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav, themeBlack }: HeaderProps) 
 
   return (
     <>
+    <Head>
+    <meta name="p:domain_verify" content="5f4d8ea30723fd63299c2ec859ee75cc"/>
+       
+      </Head>
       <header className={`header `}>
         <div className={combinedClasses}>
           <div className="container">
