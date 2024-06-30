@@ -1,0 +1,46 @@
+.checkboxWrapper {
+    height: max-content;
+    margin: 0px 5px;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+    opacity: 1;
+}
+
+.checkboxWrapper:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.checkboxWrapper input {
+    display: none;
+}
+
+.checkboxWrapper input + label:hover {
+    border: 1px solid #42e695;
+}
+
+.checkboxWrapper input + label {
+    display: flex;
+    width: max-content;
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+}
+
+.checkboxWrapper input:checked + label {
+    border: 1px solid #42e695;
+    background-color: #42e6954f;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.myLabel {
+    padding: 0.25rem;
+    font-size: 16px;
+    color: grey;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}

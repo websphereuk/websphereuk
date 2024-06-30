@@ -7,6 +7,7 @@ import BannerImage from "public/images/banner/about-banner.png";
 import star from "public/images/star.png";
 import videoframe from "public/images/video-frame.png";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
+import { socialLinks } from "@/utiles/options/sociallinks";
 
 gsap.registerPlugin(ScrollTrigger);
 const AboutUsBanner = () => {
@@ -89,13 +90,13 @@ const AboutUsBanner = () => {
           <Link href="tel:+923494747712">Call : +923494747712</Link>
         </div>
         <div className="banner-right-text banner-social-text d-none d-md-flex">
-          <Link href="https://www.instagram.com/" target="_blank">
+          <Link href={`${socialLinks?.Instagram}`} target="_blank">
             instagram
           </Link>
-          <Link href="https://www.pinterest.com/" target="_blank">
+          <Link href={`${socialLinks?.Linkedin}`} target="_blank">
             Linkedin
           </Link>
-          <Link href="https://www.facebook.com/" target="_blank">
+          <Link href={`${socialLinks?.Facebook}`} target="_blank">
             facebook
           </Link>
         </div>
@@ -123,7 +124,7 @@ const AboutUsBanner = () => {
             className="video-container"
             onClick={(e: any) => e.stopPropagation()}
           >
-            {videoActive && <YoutubeEmbed embedId="fSv6UgCkuTU" />}
+            {videoActive && <YoutubeEmbed embedId="_qZmPEIWt2Y?si=eKoU4d55b0r9JO84" />}
             <button
               aria-label="close video popup"
               className="close-video-popup"

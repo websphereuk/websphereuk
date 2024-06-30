@@ -82,7 +82,7 @@ const Banner = (data: any) => {
                     <span className="arrow"></span>
                   </div>
                   <div className="cta">
-                    <Link href="contact-us" className="btn btn--tertiary">
+                    <Link href="/contact-us" className="btn btn--tertiary">
                       Schedule a call
                       <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                     </Link>

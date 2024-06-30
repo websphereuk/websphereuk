@@ -6,6 +6,7 @@ import BorderBox from "../../border-box"
 import GeneralHeading from "../../general-heading"
 import { Button } from "../../button"
 import { VisionToRealtyData } from "@/utiles/options/service-details/vision-to-reality-data"
+import Link from "next/link"
 
 const VisionToReality = () => {
 
@@ -39,7 +40,12 @@ const VisionToReality = () => {
                                 />
                             )
                         })}
-                        <Button className={`${style.VisionToRealityButton} font-bold `} >Schedule A Call</Button>
+                        <Link href="/contact-us">
+                            <Button className={`${style.VisionToRealityButton} font-bold `} >
+
+                                Schedule A Call
+                            </Button>
+                        </Link>
                     </div>
 
 

@@ -9,6 +9,7 @@ import videobg from "../../../../public/images/projects/videobg.jpg";
 import dotlarge from "public/images/agency/dot-large.png";
 import arrow from "public/images/banner/arrow.png";
 import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
+import { socialLinks } from "@/utiles/options/sociallinks";
 
 const BannerSlides = (data: any) => {
     const [videoActive, setVideoActive] = useState(false);
@@ -142,7 +143,7 @@ const BannerSlides = (data: any) => {
 
                                             <div className="banner-three__content" style={isItMobile ? { visibility: "hidden" } : {}}>
                                                 <h1 className="light-title text-capitalize" style={!isItMobile ? { marginLeft: "75px", fontSize: "65px" } : {}}>
-                                                Showcasing our
+                                                    Showcasing our
                                                     <span style={{ color: "#55e6a5" }}> {data?.data?.projectHeading} </span> achievement
                                                 </h1>
                                                 <div className="section__content-cta cta">
@@ -166,16 +167,16 @@ const BannerSlides = (data: any) => {
                     </Swiper>
                 </div>
                 <div className="social justify-content-center justify-content-lg-end">
-                    <Link href="https://www.facebook.com/" target="_blank">
+                    <Link href={`${socialLinks?.Facebook}`} target="_blank">
                         <i className="fa-brands fa-facebook-f"></i>
                     </Link>
-                    <Link href="https://www.twitter.com/" target="_blank">
-                        <i className="fa-brands fa-twitter"></i>
+                    <Link href={`${socialLinks?.Youtube}`} target="_blank">
+                        <i className="fa-brands fa-youtube"></i>
                     </Link>
-                    <Link href="https://www.pinterest.com/" target="_blank">
+                    <Link href={`${socialLinks?.Linkedin}`} target="_blank">
                         <i className="fa-brands fa-linkedin-in"></i>
                     </Link>
-                    <Link href="https://www.instagram.com/" target="_blank">
+                    <Link href={`${socialLinks?.Instagram}`} target="_blank">
                         <i className="fa-brands fa-instagram"></i>
                     </Link>
                 </div>
