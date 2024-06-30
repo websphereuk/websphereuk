@@ -1,7 +1,27 @@
+
+import Web from "../../../public/icons/services-icon/web.svg"
+import App from "../../../public/icons/services-icon/app.svg"
+import UI from "../../../public/icons/services-icon/ui&ux.svg"
+import DigitalMarketing from "../../../public/icons/services-icon/digital.svg"
+import Cloud from "../../../public/icons/services-icon/cloud.png"
+import Devops from "../../../public/icons/services-icon/devops.png"
+import Data from "../../../public/icons/services-icon/data.png"
+import IT from "../../../public/icons/services-icon/consultant.png"
+import ECommerce from "../../../public/icons/services-icon/ecommerce.png"
+import BlockChain from "../../../public/icons/services-icon/blockchain.png"
+import AI from "../../../public/icons/services-icon/artificial-intelligence.png"
+import Software from "../../../public/icons/services-icon/software-development.png"
+
+
+
+
+
+
 export const ServiceData = [
   {
     ServiceNumber: "01",
     banner: {
+      Icon: Web,
       ServiceTitle: "Web Development",
       ServicePara: "We specialize in crafting custom websites tailored to your business needs. Our services include responsive design, frontend and backend development, database integration, and e-commerce solutions."
     },
@@ -60,6 +80,7 @@ export const ServiceData = [
   {
     ServiceNumber: "02",
     banner: {
+      Icon: App,
       ServiceTitle: "App Development",
       ServicePara: "Our app development services cover iOS and Android platforms, providing native and cross-platform apps with a focus on user interface design, testing, debugging, and deployment."
     },
@@ -117,6 +138,7 @@ export const ServiceData = [
   {
     ServiceNumber: "03",
     banner: {
+      Icon: UI,
       ServiceTitle: "UI/UX Design",
       ServicePara: "We excel in creating intuitive user experiences through wireframing, prototyping, and user research. Our visual and interaction design services ensure usability and user satisfaction."
     },
@@ -174,7 +196,9 @@ export const ServiceData = [
   },
   {
     ServiceNumber: "04",
+    Icon: DigitalMarketing,
     banner: {
+      Icon: DigitalMarketing,
       ServiceTitle: "Digital Marketing",
       ServicePara: "Our digital marketing strategies encompass SEO, social media, content creation, email marketing, and analytics. We help businesses grow their online presence and reach their target audience effectively."
     },
@@ -255,6 +279,8 @@ export const ServiceData = [
       answer: "The process for deploying applications on the cloud typically involves assessing requirements, designing the architecture, provisioning resources, deploying the application, testing functionality, and monitoring performance. We follow a structured approach to ensure successful deployment and optimization."
     },],
     banner: {
+      Icon: Cloud,
+
       ServiceTitle: "Cloud Computing",
       ServicePara: "We offer comprehensive cloud computing solutions including IaaS, PaaS, and SaaS. Our expertise in cloud security and scalability ensures reliable and efficient cloud services for your business."
     },
@@ -288,6 +314,7 @@ export const ServiceData = [
   {
     ServiceNumber: "06",
     banner: {
+      Icon: Devops,
       ServiceTitle: "DevOps",
       ServicePara: "Unlock the full potential of your digital infrastructure with our comprehensive DevOps services. From streamlining development workflows to optimizing deployment pipelines, our team of experts offers tailored solutions to enhance collaboration, automate processes, and accelerate software delivery"
     },
@@ -347,6 +374,8 @@ export const ServiceData = [
   {
     ServiceNumber: "07",
     banner: {
+      Icon: Data,
+
       ServiceTitle: "Data Analytics",
       ServicePara: "Leverage the power of data with our analytics services. From data visualization to predictive analytics, our solutions help businesses gain valuable insights and make informed decisions."
     },
@@ -429,6 +458,7 @@ export const ServiceData = [
       answer: "Yes, we offer IT training and knowledge transfer as part of our consulting services to help clients build internal capabilities, upskill their teams, and leverage technology effectively. Whether you need training on specific tools, processes, or best practices, we can develop customized training programs to meet your needs."
     },],
     banner: {
+      Icon: IT,
       ServiceTitle: "IT Consulting",
       ServicePara: "Get expert guidance on technology with our IT consulting services. We provide technology assessment, strategic planning, project management, and risk management solutions to optimize your IT infrastructure."
     },
@@ -461,6 +491,7 @@ export const ServiceData = [
   {
     ServiceNumber: "09",
     banner: {
+      Icon: ECommerce,
       ServiceTitle: "E-commerce Solutions",
       ServicePara: "Boost your online sales with our e-commerce solutions. From online store development to payment gateway integration, we provide end-to-end solutions to enhance your e-commerce platform."
     },
@@ -543,6 +574,8 @@ export const ServiceData = [
       },
     ],
     banner: {
+      Icon: BlockChain,
+
       ServiceTitle: "Blockchain Development",
       ServicePara: "Explore the potential of blockchain with our development services. From smart contract development to decentralized applications, we offer innovative solutions to revolutionize your business with blockchain technology."
     },
@@ -599,6 +632,7 @@ export const ServiceData = [
       answer: "Ensuring the accuracy and reliability of AI models is a top priority for us. We follow best practices in data preprocessing, feature engineering, model selection, and evaluation to ensure that our AI models perform optimally and deliver accurate results. We also conduct rigorous testing and validation to assess the robustness and reliability of our models before deployment."
     },],
     banner: {
+      Icon: AI,
       ServiceTitle: "Artificial Intelligence",
       ServicePara: "Experience the future of technology with our AI solutions. From machine learning to natural language processing, computer vision, and chatbots, we deliver AI-powered solutions to drive business growth."
     },
@@ -657,6 +691,7 @@ export const ServiceData = [
       },
     ],
     banner: {
+      Icon: Software,
       ServiceTitle: "Software Maintenance",
       ServicePara: "Keep your software running smoothly with our maintenance services. From bug fixing and updates to performance optimization and security patches, we ensure your software remains reliable and secure."
     },

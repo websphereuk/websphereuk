@@ -1,6 +1,7 @@
 import Link from "next/link"
 import style from "./menu.module.css"
 import { ServiceData } from "@/utiles/options/ServiceData"
+import Image from "next/image"
 const ServiceDropdown = () => {
     return (
         <li className="navbar__item navbar__item--has-children nav-fade">
@@ -9,7 +10,7 @@ const ServiceDropdown = () => {
                 className="navbar__dropdown-label"
             >
                 <Link href={'/our-services'}>
-                Services
+                    Services
                 </Link>
             </button>
             <ul className={`navbar__sub-menu  ${style.ServiceDropdown} `}>
@@ -19,12 +20,17 @@ const ServiceDropdown = () => {
                             return (
                                 <>
                                     <div className="col-lg-3" key={index}>
-                                        <li>
-                                            <Link href={`/services/${v?.Link}/`}>
-                                              
+                                        <div className="d-flex  align-items-center ">
+                                            <li> <Image src={v?.banner?.Icon} alt="" /> </li>
+                                            <li>
+                                                <Link href={`/services/${v?.Link}/`}>
 
-                                                {v?.banner.ServiceTitle}</Link>
-                                        </li>
+
+                                                    {v?.banner.ServiceTitle}</Link>
+                                            </li>
+
+                                        </div>
+
                                     </div>
                                 </>
                             )

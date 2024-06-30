@@ -196,7 +196,7 @@ const HomeThreeBanner = () => {
               <p className="fw-5">years of experience</p>
             </div>
             <div className="single">
-              <h5 className="fw-7">25k</h5>
+              <h5 className="fw-7">1K</h5>
               <p className="fw-5">completed projects</p>
             </div>
           </div>

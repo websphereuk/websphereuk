@@ -948,3 +948,6 @@ i {
   border: 1px solid var(--primary-color);
   color: white !important;
 }
+.removeline a::before{
+  display: none !important;
+}

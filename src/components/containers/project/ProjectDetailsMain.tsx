@@ -74,7 +74,7 @@ const ProjectDetailsMain = (data: any) => {
           <div className="col-12 col-sm-6 col-xl-4">
             <div className="project-d-o__single fade-top">
               <div className="content">
-                <h5>Project Duration</h5>
+                <h5>Duration</h5>
                 <p style={{maxWidth:"151px,"}}>{data?.data?.ProjectInfo?.Duration}</p>
               </div>
               <div className="thumb">
