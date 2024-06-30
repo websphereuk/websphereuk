@@ -14,7 +14,7 @@ export const Button: React.FC<ButtonProps> = ({ children, className, disabled, t
         <button
             type={type}
             onClick={onClick}
-            className={`${className} ${styles.customBtn} ${disabled ? 'opacity-50' : ''} cursor-pointer`}
+            className={`${className} ${styles.customBtn} ${disabled ? 'opacity-75' : ''} cursor-pointer`}
             disabled={disabled}
         >
             {children}

@@ -60,7 +60,7 @@ const FooterTwo = () => {
               <div className="footer-two__right ">
 
                 <div className="section__content-cta mt-0 text-lg-end">
-                  <AnimatedText content="websphereuk@gmail.com" />
+                  <AnimatedText content="info@websphereuk.com" />
                 </div>
                 <div className="section__content-cta">
                   <SociaLinks />
@@ -87,7 +87,7 @@ const FooterTwo = () => {
                       target="_blank"
                     >
                       {" "}
-                      Web Sphere
+                      Web Sphere UK
                     </Link>{" "}
                     . All Rights Reserved
                   </p>

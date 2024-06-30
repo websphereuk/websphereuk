@@ -1,17 +1,20 @@
-
+import React from 'react';
 import style from "./general-heading.module.css";
+
 interface GeneralHeadingProps {
-    textBlack?: Boolean,
-    textWhite?: Boolean,
-    content: string , 
-    className?:string,
-}
-const GeneralHeading = (props: GeneralHeadingProps) => {
-    return (
-        <div className={`${style.typography} ${props?.textBlack && "text-black"} ${props?.textWhite && "text-white"} ${props?.className}`}>
-            {props?.content}
-        </div>
-    )
+    textBlack?: boolean;
+    textWhite?: boolean;
+    content: string;
+    className?: string;
 }
 
-export default GeneralHeading
+const GeneralHeading: React.FC<GeneralHeadingProps> = ({ textBlack, textWhite, content, className }) => {
+    return (
+        <div
+            className={`${style.typography} ${textBlack ? "text-black" : ""} ${textWhite ? "text-white" : ""} ${className || ""}`}
+            dangerouslySetInnerHTML={{ __html: content }}
+        />
+    );
+};
+
+export default GeneralHeading;

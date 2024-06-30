@@ -1,0 +1,31 @@
+.ActiveDigitElement {
+    font-size: 35px;
+    font-weight: 700;
+    background: #42e695;
+    padding: 11px;
+    border-radius: 100%;
+    border: 1px dashed white;
+}
+
+.DigitElement {
+    font-size: 35px;
+    font-weight: 700;
+    background: #6d6d6d;
+    padding: 11px;
+    border-radius: 100%;
+    color: #aeaeae;
+}
+
+
+/* .bar::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    width: 41%;
+    height: 20px;
+    background-color: #42e695;
+
+} */
+ .padding0{
+    padding: 0px !important;
+ }

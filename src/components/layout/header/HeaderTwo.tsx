@@ -8,6 +8,7 @@ import Offcanvas from "./Offcanvas";
 import NavItem from "./menu/nav-item";
 import ServiceDropdown from "./menu/service-dropdown";
 import Head from "next/head";
+import { Button } from "@/components/containers/button";
 
 interface HeaderProps {
   openNav: boolean;
@@ -52,9 +53,9 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav, themeBlack }: HeaderProps) 
 
   return (
     <>
-    <Head>
-    <meta name="p:domain_verify" content="5f4d8ea30723fd63299c2ec859ee75cc"/>
-       
+      <Head>
+        <meta name="p:domain_verify" content="5f4d8ea30723fd63299c2ec859ee75cc" />
+
       </Head>
       <header className={`header `}>
         <div className={combinedClasses}>
@@ -80,9 +81,12 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav, themeBlack }: HeaderProps) 
                   </div>
                   <div className="navbar__options resposive-talk-button">
                     <div className="navbar__mobile-options d-none d-sm-flex">
-                      <Link href="/contact-us" className="btn btn--secondary">
-                        Let&apos;s Talk
-                      </Link>
+                      <Button className=" HeaderCOntactButton py-3">
+                        <Link href="/contact-us" className=" text-white  px-4 ">
+                          Schedule A Call
+
+                        </Link>
+                      </Button>
                     </div>
                     <button
                       className="open-mobile-menu d-flex d-xl-none"

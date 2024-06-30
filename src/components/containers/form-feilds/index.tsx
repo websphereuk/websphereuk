@@ -9,6 +9,7 @@ interface FormFieldProps extends ComponentProps<'input'> {
     className?: string;
     type: string;
     title?: string;
+    labelClassName?: string;
 }
 const FormFields: React.FC<FormFieldProps> = ({
     name,
@@ -21,12 +22,15 @@ const FormFields: React.FC<FormFieldProps> = ({
     onFocus,
     onBlur,
     className,
-    labelText
+    labelText,
+    labelClassName
 
 }) => {
     return (
         <label className='w-100 text-start' htmlFor="">
-            {labelText}
+            <span className={`${labelClassName}`}>
+                {labelText}
+            </span>
             <div className={styles.formFieldWrapper}>
                 <input
                     name={name}
