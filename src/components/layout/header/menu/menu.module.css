@@ -1,8 +1,8 @@
 .ServiceDropdown {
     min-width: 100% !important;
     max-width: 1900px !important;
-    width: 938px !important;
-    left: -360px !important;
+    width: 1063px !important;
+    left: -433px !important;
     right: 0 !important;
     margin-right: auto !important;
     padding-left: 20px !important;
@@ -16,6 +16,16 @@
 .ServiceDropdown a {
     padding: 26px 18px !important;
 }
-.ServiceDropdown svg{
+
+.ServiceDropdown svg {
     font-size: 14px !important;
+}
+
+@media screen {}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1362px) {
+    .ServiceDropdown {
+        width: 892px !important;
+        left: -355px !important;
+    }
 }
