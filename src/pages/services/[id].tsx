@@ -25,6 +25,13 @@ const Services = () => {
                     content={v?.banner?.ServicePara}
                     key="desc"
                 />
+                      <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="canonical" href={`https://websphereuk.com/service/${router.query.id}`} />
+                <meta property="og:title" content={`${v?.banner?.ServiceTitle} || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services`} />
+                <meta property="og:description" content={v?.banner?.ServicePara} />
+                <meta property="og:url" content={`https://websphereuk.com/service/${router.query.id}`} />
+                <meta property="og:type" content="article" />
+                <meta name="robots" content="index, follow" />
             </Head>
             <Layout themeBlack={true} header={2} footer={2} >
                 <Banner data={v} />
