@@ -1,0 +1,9 @@
+    User-agent: *
+    Disallow: /private/
+    Disallow: /tmp/
+    Disallow: /admin/
+
+    Allow: /admin/public-info/
+    Allow: /public/
+
+    Sitemap: https://websphereuk.com/sitemap.xml
