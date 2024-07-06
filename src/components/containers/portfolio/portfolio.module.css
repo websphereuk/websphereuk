@@ -33,7 +33,7 @@ width: 140px;
     transition-duration: .5s;
 }
 
-.box:hover div,
+.box:hover h3,
 .box:hover p {
     color: white !important;
 }

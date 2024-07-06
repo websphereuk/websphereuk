@@ -5,8 +5,8 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { ServiceData } from "../../../utiles/options/ServiceData";
 import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
-import GeneralHeading from "../general-heading";
 import { useRouter } from "next/router";
+import SeoFriendlyHeading from "@/components/heading/seo-friendly-heading";
 interface ServicesMainProps {
   ThemeBlack?: Boolean;
   AsUseSection?: Boolean;
@@ -34,8 +34,9 @@ const ServiceMain = (props: ServicesMainProps) => {
                   Services We Offer
                   <i className="fa-solid fa-arrow-down"></i>
                 </span>
-
-                <GeneralHeading content="Dominate Your Industry with IT Power " />
+                
+                  <SeoFriendlyHeading content="Dominate Your Industry with IT Power " />
+                
 
                 <div className="paragraph mt-4 mb-5 mx-md-5">
                   <p>
@@ -83,40 +84,40 @@ const ServiceMain = (props: ServicesMainProps) => {
                 <div className="row">
                   {ServiceData.slice(0, itemsToShow).map((v, index) => {
                     return (
-                      <div key={index} onClick={()=>{router.push(` /services/${v?.Link}/ `)}} className=" col-lg-4 col-md-6  my-3" >
-                          <div className="service-t-single-wrapper">
-                            <div className="hover-box-sh service-t__slider-single">
+                      <div key={index} onClick={() => { router.push(` /services/${v?.Link}/ `) }} className=" col-lg-4 col-md-6  my-3" >
+                        <div className="service-t-single-wrapper">
+                          <div className="hover-box-sh service-t__slider-single">
 
-                              <div className="intro">
-                                <span className="sub-title">
-                                  {v?.ServiceNumber}
-                                  <i className="fa-solid fa-arrow-right"></i>
-                                </span>
+                            <div className="intro">
+                              <span className="sub-title">
+                                {v?.ServiceNumber}
+                                <i className="fa-solid fa-arrow-right"></i>
+                              </span>
 
-                                <h4>
+                              <div >
 
-                                  <Link href={`/services/${v?.Link}/  `} className="title ">{v?.banner?.ServiceTitle}</Link>
-                                </h4>
-                              </div>
-                              <ul>
-
-                                {
-                                  v?.ServiceFeatures.map((feature, index) => (
-                                    <li key={index}>
-                                      {feature}
-                                    </li>))
-                                }
-                              </ul>
-                              <div className="cta">
-                                <Link href={`/services/${v?.Link}/  `}>
-                                  <i className="icon-arrow-top-right"></i>
-                                  <span>service details</span>
-                                </Link>
+                                <Link  href={`/services/${v?.Link}/  `} className="title " style={{fontSize:"30px" , fontWeight:"700"}}>{v?.banner?.ServiceTitle}</Link>
                               </div>
                             </div>
+                            <ul>
 
-
+                              {
+                                v?.ServiceFeatures.map((feature, index) => (
+                                  <li key={index}>
+                                    {feature}
+                                  </li>))
+                              }
+                            </ul>
+                            <div className="cta">
+                              <Link href={`/services/${v?.Link}/  `}>
+                                <i className="icon-arrow-top-right"></i>
+                                <span>service details</span>
+                              </Link>
+                            </div>
                           </div>
+
+
+                        </div>
                       </div>
 
                     )
