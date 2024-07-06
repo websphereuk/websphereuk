@@ -59,9 +59,9 @@ const BoxWithLogo = (props: BoxWithLogoProps) => {
                             <Image className={`${props?.HoverImgClass}`} src={props?.HoverImg || ''} alt="" />
                         )
                     }
-                    <div className={`${style.Heading}`}>
+                    <h3 className={`text-black ${style.Heading}`}>
                         {props?.Heading}
-                    </div>
+                    </h3>
                     <p className={`${style.Paragraph}`}>
                         {props?.Paragraph}
                     </p>

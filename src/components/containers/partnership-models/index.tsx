@@ -16,7 +16,7 @@ const PartnershipsModels = () => {
                     <div className="sub-title text-black">
                         Types of Partnership Models
                     </div>
-                    <GeneralHeading content="Innovative Partnership Strategies" />
+                    <GeneralHeading textBlack content="Innovative Partnership Strategies" />
                 </div>
                 <div className="container mt-5">
                     <div className="row justify-content-center">

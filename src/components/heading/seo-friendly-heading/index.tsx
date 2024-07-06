@@ -1,20 +1,20 @@
 import React from 'react';
-import style from "./general-heading.module.css";
+import style from "./seo-friendly-heading.module.css";
 
-interface GeneralHeadingProps {
+interface SeoFriendlyHeadingProps {
     textBlack?: boolean;
     textWhite?: boolean;
     content: string;
     className?: string;
 }
 
-const GeneralHeading: React.FC<GeneralHeadingProps> = ({ textBlack, textWhite, content, className }) => {
+const SeoFriendlyHeading: React.FC<SeoFriendlyHeadingProps> = ({ textBlack, textWhite, content, className }) => {
     return (
-        <h2
+        <h1
             className={`${style.typography} ${textBlack ? "text-black" : ""} ${textWhite ? "text-white" : ""} ${className || ""}`}
             dangerouslySetInnerHTML={{ __html: content }}
         />
     );
 };
 
-export default GeneralHeading;
+export default SeoFriendlyHeading;
