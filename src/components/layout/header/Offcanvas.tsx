@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "public/images/logo.png";
 import { ServiceData } from "@/utiles/options/ServiceData";
+import { socialLinks } from "@/utiles/options/sociallinks";
+import SociaLinks from "@/components/containers/social-links";
 
 interface HeaderProps {
   openNav: boolean;
@@ -141,28 +143,28 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
           </div>
           <div className="offcanvas-menu__social social nav-fade">
             <Link
-              href="https://www.facebook.com/"
+              href={`${socialLinks?.Facebook}`}
               target="_blank"
               aria-label="share us on facebook"
             >
               <i className="fa-brands fa-facebook-f"></i>
             </Link>
             <Link
-              href="https://www.twitter.com/"
+              href={`${socialLinks?.Youtube}`}
               target="_blank"
-              aria-label="share us on twitter"
+              aria-label="share us on youtube"
             >
-              <i className="fa-brands fa-twitter"></i>
+              <i className="fa-brands fa-youtube"></i>
             </Link>
             <Link
-              href="https://www.pinterest.com/"
+              href={`${socialLinks?.Linkedin}`}
               target="_blank"
-              aria-label="share us on pinterest"
+              aria-label="share us on linkedin"
             >
               <i className="fa-brands fa-linkedin-in"></i>
             </Link>
             <Link
-              href="https://www.instagram.com/"
+              href={`${socialLinks?.Instagram}`}
               target="_blank"
               aria-label="share us on instagram"
             >
