@@ -55,7 +55,10 @@ const VisionToReality = () => {
                 </div>
 
             </div>
-        </div>
+
+        </div >
+
+
     )
 }
 
