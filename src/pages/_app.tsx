@@ -17,6 +17,7 @@ import Loader from "@/components/containers/loader";
 import gsap from "gsap";
 
 import { ToastContainer } from 'react-toastify';
+import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = useState(false);
@@ -43,6 +44,18 @@ export default function App({ Component, pageProps }: AppProps) {
 
 
     <>
+      <Head >
+        <title>
+          WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services
+        </title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies" key="desc" />
+        <link rel="canonical" href="https://websphereuk.com/" />
+        <meta name="p:domain_verify" content="5f4d8ea30723fd63299c2ec859ee75cc" />
+
+      </Head>
       <div className="loader-bg">
         <div className="loader">
 

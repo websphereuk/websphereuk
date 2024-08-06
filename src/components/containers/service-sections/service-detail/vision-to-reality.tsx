@@ -1,5 +1,5 @@
 import style from "./services-detail.module.css"
-import LadyCall from "../../../../../public/images/VisionToReailty.jpg"
+import LadyCall from "../../../../../public/images/VisionToReailty.jpeg"
 import Logo from "/public/images/schedule-call/logoW.png"
 import Image from "next/image"
 import BorderBox from "../../border-box"
@@ -55,7 +55,10 @@ const VisionToReality = () => {
                 </div>
 
             </div>
-        </div>
+
+        </div >
+
+
     )
 }
 
