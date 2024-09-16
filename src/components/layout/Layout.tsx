@@ -185,8 +185,21 @@ const Layout = ({
     <Fragment>
 
       <Head>
-        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <Head>
+          <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link
+            rel="shortcut icon"
+            href="/favicon.png"
+            type="image/x-icon"
+          />
+          <title>Home || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services</title>
+          <meta name="keywords" content="WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies" />
+          <meta
+            name="description"
+            content="WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies"
+          />
+        </Head>
       </Head>
       <div className={combinedClassName}>
         {header === 1 && (

@@ -16,7 +16,7 @@ const DevelopmentProcess = (props : DevelopmentProcessProps) => {
     };
 
     return (
-        <section className={`section   ux-process fade-wrapper ${props?.className}`}>
+        <section className={`section   ux-process  ${props?.className}`}>
             <div className="row justify-content-center">
 
                 <div className="col-12 col-lg-12">

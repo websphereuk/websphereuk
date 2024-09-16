@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "public/icons/font-awesome/css/all.css";
 
 // custom icons
-// import "public/icons/glyphter/css/";
 import "public/icons/glyphter/css/websphere.css";
 
 // main scss
@@ -20,16 +19,17 @@ import { ToastContainer } from 'react-toastify';
 import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true); // Initialize as true
 
   useEffect(() => {
+    // Wait for the loader to run for a certain time, then hide it and show content
     const timer = setTimeout(() => {
       gsap.to(".loader", {
         duration: 0.5,
         opacity: 0,
         scale: 0.5,
         onComplete: () => {
-          setLoading(true);
+          setLoading(false); // Set loading to false only after the loader animation completes
           gsap.fromTo(
             ".content",
             { opacity: 0 },
@@ -37,14 +37,14 @@ export default function App({ Component, pageProps }: AppProps) {
           );
         },
       });
-    }, 1500);
+    }, 1500); // Set the loader timeout to 1.5 seconds
+
     return () => clearTimeout(timer);
   }, []);
+
   return (
-
-
     <>
-      <Head >
+      <Head>
         <title>
           WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services
         </title>
@@ -54,28 +54,24 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies" key="desc" />
         <link rel="canonical" href="https://websphereuk.com/" />
         <meta name="p:domain_verify" content="5f4d8ea30723fd63299c2ec859ee75cc" />
-
       </Head>
-      <div className="loader-bg">
-        <div className="loader">
 
-          {!loading && <Loader />}
+      {!loading && (
+        <div className="content">
+          <Suspense fallback={<div>Loading...</div>}>
+            <ToastContainer />
+            <Component {...pageProps} />
+          </Suspense>
         </div>
-      </div>
-      <div className="content">
+      )}
 
-        {
-          loading && (
-            <>
-              <Suspense fallback={<div>Loading...</div>}>
-                <ToastContainer />
-                <Component {...pageProps} />
-              </Suspense>
-            </>
-          )
-        }
-      </div>
-
+      {loading && (
+        <div className="loader-bg">
+          <div className="loader">
+            <Loader />
+          </div>
+        </div>
+      )}
     </>
   );
 }

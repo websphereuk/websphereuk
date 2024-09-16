@@ -7,7 +7,7 @@ const ServiceFaqs = (data: any) => {
 
 
     return (
-        <section className="section agency last-sec faq fade-wrapper">
+        <section className="section agency last-sec faq ">
             <div className="container">
                 <div className="row gaper my-4 align-items-center">
                     <div className="col-12  text-center">

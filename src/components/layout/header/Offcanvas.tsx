@@ -93,7 +93,7 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="navbar__item nav-fade">
-                  <Link href="/about">About</Link>
+                  <Link href="/about-us">About</Link>
                 </li>
 
                 <li className="navbar__item navbar__item--has-children nav-fade">
