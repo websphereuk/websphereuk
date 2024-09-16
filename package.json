@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "compress-images": "node compress-images.js",
     "start": "next start",
     "lint": "next lint"
   },

@@ -951,3 +951,7 @@ i {
 .removeline a::before{
   display: none !important;
 }
+
+img {
+  pointer-events: none !important;
+}
