@@ -72,6 +72,7 @@ export default function App({ Component, pageProps }: AppProps) {
           WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services
         </title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="description" content="WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies" key="desc" />
