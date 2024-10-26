@@ -955,3 +955,7 @@ i {
 img {
   pointer-events: none !important;
 }
+.primary-navbar .navbar__sub-menu a::before, .primary-navbar .navbar__sub-menu button::before{
+display: none !important;
+
+}
