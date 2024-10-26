@@ -6,6 +6,7 @@ export const getServerSideProps = async ({ res }) => {
 
   const staticPagesPath = [
     '/',
+    'favicon.ico',
     'about-us',
     'our-services',
     'our-portfolio',
