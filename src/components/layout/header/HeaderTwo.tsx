@@ -55,7 +55,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav, themeBlack }: HeaderProps) 
     <>
       <Head>
         <meta name="p:domain_verify" content="5f4d8ea30723fd63299c2ec859ee75cc" />
-
+        <meta name="google-site-verification" content="XgJHgWwKI_b6nA7_BojGknss4b-ftrkrzp2oqoF107U" />
       </Head>
       <header className={`header `}>
         <div className={combinedClasses}>
