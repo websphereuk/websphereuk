@@ -10,7 +10,7 @@ export default function Document() {
         <meta name="robots" content="index, follow" />
         <meta name="p:domain_verify" content="5f4d8ea30723fd63299c2ec859ee75cc" />
         
-
+        <meta name="google-site-verification" content="JqRuLPTVN_JnzHbSg-FgP6-lNQAeakyn1sy5iIvCN4E" />
       </Head>
       <body>
         <Main />

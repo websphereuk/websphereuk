@@ -19,21 +19,28 @@ interface HomeProps {
 
 const Home = ({ Title, Description }: HomeProps) => {
 
-const ImageUrl = "https://websphereuk.com/images/websphereseo.png"
+  const ImageUrl = "https://websphereuk.com/images/websphereseo.png"
   return (
     <>
       <Head>
         <title>{Title}</title>
-        <meta name="p:domain_verify" content="5f4d8ea30723fd63299c2ec859ee75cc" />
-        <meta name="description" content={Description} key="desc" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+        <meta name="title" content={Title} />
+        <meta name="description" content={Description} />
         <link rel="canonical" href="https://websphereuk.com/" />
-        <meta property="og:title" content="Home || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services" />
+        <meta property="og:title" content={Title} />
         <meta property="og:description" content={Description} />
         <meta property="og:url" content="https://websphereuk.com/" />
         <meta property="og:image" content={ImageUrl} />
-        <meta property="og:image:secure_url" content={ImageUrl} />
         <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+
+
+
+
+
+
         <meta name="robots" content="index, follow" />
       </Head>
       <Layout themeBlack={true} header={2} footer={2} video={false}>
@@ -62,4 +69,7 @@ export async function getStaticProps() {
     },
   };
 }
+
+
+
 
