@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
 import videoframe from "public/images/video-frame.png";
-interface OurTheoryProps  {
-    className? : string
+interface OurTheoryProps {
+    className?: string
 }
 const OurTheory = (props: OurTheoryProps) => {
     const [hover, setHover] = useState(1);
@@ -79,9 +79,11 @@ const OurTheory = (props: OurTheoryProps) => {
                                 </span>
                                 <h5>Discover & Strategy.</h5>
                                 <div
+                                    role="img"
+                                    aria-label="Our Theory - Discover & Strategy Process"
                                     className="work-thumb-hover d-none d-md-block"
                                     style={{
-                                        backgroundImage: "url('/images/work/thumb-one.png')",
+                                        backgroundImage: "url('/images/work/our-theory.png')",
                                     }}
                                 ></div>
                             </div>
@@ -100,9 +102,11 @@ const OurTheory = (props: OurTheoryProps) => {
                                 </span>
                                 <h5>Wireframes & User-flows</h5>
                                 <div
+                                 role="img"
+                                    aria-label="Our Theory - Wireframes & User-flows"
                                     className="work-thumb-hover d-none d-md-block"
                                     style={{
-                                        backgroundImage: "url('/images/work/thumb-one.png')",
+                                        backgroundImage: "url('/images/work/our-theory.png')",
                                     }}
                                 ></div>
                             </div>
@@ -121,9 +125,11 @@ const OurTheory = (props: OurTheoryProps) => {
                                 </span>
                                 <h5>Hi-Fidelity design</h5>
                                 <div
+                                  role="img"
+                                    aria-label="Our Theory - Hi-Fidelity design"
                                     className="work-thumb-hover d-none d-md-block"
                                     style={{
-                                        backgroundImage: "url('/images/work/thumb-one.png')",
+                                        backgroundImage: "url('/images/work/our-theory.png')",
                                     }}
                                 ></div>
                             </div>
@@ -142,9 +148,11 @@ const OurTheory = (props: OurTheoryProps) => {
                                 </span>
                                 <h5>Development Phase</h5>
                                 <div
+                                     role="img"
+                                    aria-label="Our Theory - Hi-Fidelity design"
                                     className="work-thumb-hover d-none d-md-block"
                                     style={{
-                                        backgroundImage: "url('/images/work/thumb-one.png')",
+                                        backgroundImage: "url('/images/work/our-theory.png')",
                                     }}
                                 ></div>
                             </div>
@@ -155,7 +163,7 @@ const OurTheory = (props: OurTheoryProps) => {
                     className="video-frame video-btn d-none d-md-flex"
                     onClick={() => setVideoActive(true)}
                 >
-                    <Image src={videoframe} alt="Image" />
+                    <Image src={videoframe} alt="Video Frame - Creative agency" />
                     <i className="fa-sharp fa-solid fa-play"></i>
                 </button>
             </section>
@@ -168,7 +176,7 @@ const OurTheory = (props: OurTheoryProps) => {
                         className="video-container"
                         onClick={(e: any) => e.stopPropagation()}
                     >
-                        {videoActive && <YoutubeEmbed embedId="fSv6UgCkuTU" />}
+                        {videoActive && <YoutubeEmbed embedId="_qZmPEIWt2Y?si=eKoU4d55b0r9JO84" />}
                         <button
                             aria-label="close video popup"
                             className="close-video-popup"

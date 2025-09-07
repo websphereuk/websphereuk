@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import logo from "public/images/logo.png";
-import logoLight from "public/images/logo-light.png";
+import logoLight from "public/images/logo.png";
 import Offcanvas from "./Offcanvas";
 
 interface HeaderProps {

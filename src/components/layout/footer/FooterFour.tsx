@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import logo from "public/images/logo.png";
-import logoLight from "public/images/logo-light.png";
+import logoLight from "public/images/logo.png";
 
 const FooterFour = () => {
   const currentYear = new Date().getFullYear();

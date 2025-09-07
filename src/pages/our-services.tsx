@@ -18,7 +18,6 @@ const OurServices = () => {
           content="Empower your business to lead the industry with cutting-edge IT solutions. Our comprehensive services harness the power of technology to propel your company to the forefront of innovation and success"
           key="desc"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://websphereuk.com/our-services" />
         <meta property="og:title" content="Our Services || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services" />
         <meta property="og:description" content="Empower your business to lead the industry with cutting-edge IT solutions. Our comprehensive services harness the power of technology to propel your company to the forefront of innovation and success" />

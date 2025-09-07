@@ -26,7 +26,7 @@ const ServiceFaqs = (data: any) => {
                 <div className="row gaper align-items-center">
                     <div className="col-12 col-lg-6">
                         <div className="faq__thumb fade-left">
-                            <Image src={faqs} alt="Image" />
+                            <Image src={faqs} alt={`${data?.data?.banner?.ServiceTitle} FAQS`} />
                         </div>
                     </div>
                     <div className="col-12 col-lg-6">

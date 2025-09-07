@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
-const CardGallery = (data : any) => {
+const CardGallery = (data: any) => {
     return (
 
         <>
@@ -38,12 +38,12 @@ const CardGallery = (data : any) => {
                     className="project-d__slider"
                 >
                     {
-                        data?.data?.data?.PortfolioGallery?.map((v: any , index : any) => {
+                        data?.data?.data?.PortfolioGallery?.map((v: any, index: any) => {
                             return (
                                 <>
                                     <SwiperSlide key={index}>
                                         <div className="poster__slider-single">
-                                            <Image src={v} alt="Image" />
+                                            <Image src={v} alt={`${data?.data?.data?.projectHeading} show gallery - Photo ${index + 1}`} />
                                         </div>
                                     </SwiperSlide>
                                 </>

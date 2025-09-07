@@ -48,7 +48,7 @@ const ProjectGallery = (data: any) => {
                                             <>
                                                 <SwiperSlide key={index}>
                                                     <div className="poster__slider-single">
-                                                        <Image src={v} alt="Image" />
+                                                        <Image src={v} alt={`${data?.data?.data?.projectHeading}- Project Gallery Photo ${index + 1}`} />
                                                     </div>
                                                 </SwiperSlide>
                                             </>

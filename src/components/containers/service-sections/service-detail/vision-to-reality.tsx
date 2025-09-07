@@ -1,6 +1,6 @@
 import style from "./services-detail.module.css"
 import LadyCall from "../../../../../public/images/VisionToReailty.jpeg"
-import Logo from "/public/images/schedule-call/logoW.png"
+import Logo from "/public/images/schedule-call/websphereuk-logo.png"
 import Image from "next/image"
 import BorderBox from "../../border-box"
 import GeneralHeading from "../../general-heading"
@@ -23,9 +23,9 @@ const VisionToReality = () => {
                 <div className="row my-5 align-items-center">
                     <div className={`col-lg-6  ${style.VisionToRealityLeftColImg} position-relative`}>
                         <div>
-                            <Image src={Logo} className={`position-absolute d-lg-block d-none  ${style.VisionToRealityLogoImg}`} width={80} alt="" />
+                            <Image src={Logo} className={`position-absolute d-lg-block d-none  ${style.VisionToRealityLogoImg}`} width={80} alt="WebSphereUk Logo" />
                         </div>
-                        <Image className={`${style.VisionToRealityLeftImg} `} src={LadyCall} alt="" />
+                        <Image className={`${style.VisionToRealityLeftImg} `} src={LadyCall} alt="WebSphereUk - Vision to Reality Process" />
                     </div>
                     <div className={`col-lg-6 text-black ${style.VisionToRealityboxCol}`}>
                         {VisionToRealtyData.map((d, index) => {

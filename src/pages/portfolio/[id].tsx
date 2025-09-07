@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 import Head from 'next/head';
 const Portfolio = () => {
     const router = useRouter()
-    const UpdatedArray = ProjectData.filter(obj => obj.id === router.query.id);
+    const UpdatedArray = ProjectData.filter(obj => obj.projectLink === router.query.id);
     const v = UpdatedArray[0]
     return (
 

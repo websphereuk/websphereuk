@@ -17,7 +17,6 @@ import CardGallery from "../project-detail/card-gallery";
 import { LocationIcon } from "../../../../public/icons/svg";
 
 const ProjectDetailsMain = (data: any) => {
-  console.log(data?.data?.ProjectInfo?.Features?.features, 'datasaaaaaaaaaaaaaaaa')
   return (
     <section className="section project-d">
       <div className="container">
@@ -67,7 +66,7 @@ const ProjectDetailsMain = (data: any) => {
                 <p>{data?.data?.ProjectInfo?.Industry}</p>
               </div>
               <div className="thumb">
-                <Image src={iconone} alt="Image" />
+                <Image src={iconone} alt="industry icon" />
               </div>
             </div>
           </div>
@@ -78,7 +77,7 @@ const ProjectDetailsMain = (data: any) => {
                 <p style={{maxWidth:"151px,"}}>{data?.data?.ProjectInfo?.Duration}</p>
               </div>
               <div className="thumb">
-                <Image src={iconthree} alt="Image" />
+                <Image src={iconthree} alt="Duration icon" />
               </div>
             </div>
           </div>

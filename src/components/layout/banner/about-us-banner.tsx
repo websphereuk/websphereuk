@@ -81,10 +81,10 @@ const AboutUsBanner = () => {
         </div>
         <Image
           src={BannerImage}
-          alt="Image"
+          alt="About Us banner – We are creative digital agency "
           className="banner-one-thumb d-none d-sm-block g-ban-one"
         />
-        <Image src={star} alt="Image" className="star" />
+        <Image src={star} alt=" Background Star " className="star" />
         <div className="banner-left-text banner-social-text d-none d-md-flex">
           <Link href="mailto:info.websphereuk@gmail.com">mail : info.websphereuk</Link>
           <Link href="tel:+923494747712">Call : +923494747712</Link>
@@ -104,7 +104,7 @@ const AboutUsBanner = () => {
           className="video-frame video-btn d-lg-block d-none"
           onClick={() => setVideoActive(true)}
         >
-          <Image src={videoframe} alt="Image" priority />
+          <Image src={videoframe} alt="Video Frame - Creative agency" priority />
           <i className="fa-sharp fa-solid fa-play"></i>
         </button>
         <div className="d-lg-flex lines d-none">

@@ -51,7 +51,7 @@ const OurStory = () => {
              
               <Image
                 src={GirlImage}
-                alt="Image"
+                alt="Our Story Highlights"
                 className="thumb-two fade-right"
                 priority
               />
@@ -59,10 +59,10 @@ const OurStory = () => {
           </div>
         </div>
       </div>
-      <Image src={star} alt="Image" className="star" />
-      <Image src={star} alt="Image" className="star-two" />
-      <Image src={dotlarge} alt="Image" className="dot" />
-      <Image src={dotlarge} alt="Image" className="dot-two" />
+      <Image src={star} alt="Background Star" className="star" />
+      <Image src={star} alt="Background Star" className="star-two" />
+      <Image src={dotlarge} alt="Background Dot" className="dot" />
+      <Image src={dotlarge} alt="Background Dot" className="dot-two" />
     </section>
   );
 };

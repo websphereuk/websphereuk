@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import logo from "public/images/logo.png";
-import logoLight from "public/images/logo-light.png";
+import logoLight from "public/images/logo.png";
 import Offcanvas from "./Offcanvas";
 import NavItem from "./menu/nav-item";
 import ServiceDropdown from "./menu/service-dropdown";
@@ -62,7 +62,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav, themeBlack }: HeaderProps) 
                 <nav className="navbar p-0">
                   <div className="navbar__logo">
                     <Link href="/" aria-label="go to home">
-                      <Image src={logoSrc} priority alt="Image" />
+                      <Image src={logoSrc} priority alt={`WebSphereUK Logo`} />
                     </Link>
                   </div>
                   <div className="navbar__menu">

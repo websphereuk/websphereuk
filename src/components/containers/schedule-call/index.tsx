@@ -1,7 +1,7 @@
 import GeneralHeading from "../general-heading"
 import style from "./schedule.module.css"
-import LadyCall from "../../../../public/images/schedule-call/thinking.300bce33.png"
-import Logo from "../../../../public/images/schedule-call/logoW.png"
+import LadyCall from "../../../../public/images/schedule-call/lady-manager.png"
+import Logo from "../../../../public/images/schedule-call/websphereuk-logo.png"
 import Image from "next/image"
 import { Button } from "../button"
 import BorderBox from "../border-box"
@@ -21,9 +21,9 @@ const ScheduleCall = () => {
                 <div className="row my-5 align-items-center">
                     <div className={`col-lg-6  ${style.LeftColImg} position-relative`}>
                         <div>
-                            <Image src={Logo} className={`position-absolute d-lg-block d-none  ${style.LogoImg}`} width={80} alt="" />
+                            <Image src={Logo} className={`position-absolute d-lg-block d-none  ${style.LogoImg}`} width={80} alt="WebSphereUk Logo" />
                         </div>
-                        <Image className={`${style.LeftImg} `} src={LadyCall} alt="" />
+                        <Image className={`${style.LeftImg} `} src={LadyCall} alt="Mastering Project Excellence - Lady manager planning strategies" />
                     </div>
                     <div className={`col-lg-6 text-black ${style.boxCol}`}>
                         {ScheduleCallData.map((d, index) => {

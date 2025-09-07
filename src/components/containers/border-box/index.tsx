@@ -16,7 +16,7 @@ const BorderBox = (props: BorderBoxProps) => {
                 {
                     !!Boolean(props?.Arrow) && (
                         <div>
-                            <Image className={`position-absolute ${style.arrowIcon}`} width={120} src={Arrow} alt="" />
+                            <Image className={`position-absolute ${style.arrowIcon}`} width={120} src={Arrow} alt="Next Step Arrow" />
                         </div>
                     )
                 }

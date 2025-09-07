@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import star from "public/images/star.png";
 import dotlarge from "public/images/agency/dot-large.png";
-import clutch from "public/images/agency/clutch.png";
 import thumbthree from "public/images/about.png";
 
 const WhyChooseUs = () => {
@@ -13,7 +12,7 @@ const WhyChooseUs = () => {
                 <div className="row gaper align-items-center">
                     <div className="col-12 col-lg-6">
                         <div className="agency__thumb">
-                            <Image src={thumbthree} alt="Image" className="fade-left" />
+                            <Image src={thumbthree} alt="About - Why Choose us " className="fade-left" />
                         </div>
                     </div>
                     <div className="col-12 col-lg-6">
@@ -49,7 +48,7 @@ const WhyChooseUs = () => {
 
 
                                 <Link
-                                    href="contact-us"
+                                    href="/our-services"
                                     className="btn btn--primary text-capitalize"
                                 >
                                     Explore Services
@@ -61,7 +60,7 @@ const WhyChooseUs = () => {
                                     Get In Touch
                                 </Link>
                                 <Link
-                                    href="contact-us"
+                                    href="/portfolio"
                                     className="btn btn--primary text-capitalize"
                                 >
                                     Explore Portfolio
@@ -72,8 +71,8 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
             </div>
-            <Image src={star} alt="Image" className="star" />
-            <Image src={dotlarge} alt="Image" className="dot-large" />
+            <Image src={star} alt="Background Star" className="star" />
+            <Image src={dotlarge} alt="Background Dot" className="dot-large" />
         </section>
     );
 };

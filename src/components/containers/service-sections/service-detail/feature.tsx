@@ -1,15 +1,11 @@
 import Image from "next/image"
-import { Button } from "../../button"
 import { Card } from "../../card"
 import GeneralHeading from "../../general-heading"
 import style from "./services-detail.module.css"
-import Girl from "../../../../../public/images/updated-s.png"
+import Girl from "../../../../../public/images/websphereuk-service.png"
 
 const Feature = (data: any) => {
-    console.log('====================================');
 
-    console.log(data?.data?.customServices, 'data?.data?.customServices');
-    console.log('====================================');
     return (
         <>
             <div className="section agency">
@@ -24,7 +20,7 @@ const Feature = (data: any) => {
                             <GeneralHeading className="text-start mx-3 text-md-center" content={`Unleashing the Power of ${data?.data?.banner?.ServiceTitle} Services`} />
                         </div>
                         <div className={`col-lg-6 ${style?.ImageSection} `}>
-                            <Image src={Girl} alt="" />
+                            <Image src={Girl} alt={`WebSphereUk - ${data?.data?.banner?.ServiceTitle} Feature`} />
                         </div>
                         <div className={`col-lg-6 px-3 ${style?.featureSection}`}>
                             <div className={`row ${style?.Row}`}>

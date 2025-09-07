@@ -34,7 +34,7 @@ const OurMission = () => {
         <div className="row gaper">
         <div className="col-12 col-lg-6 d-lg-none   d-block ">
             <div className="mission-s__single fade-top d-flex">
-              <Image src={Mission} alt="Image" />
+              <Image src={Mission} alt="Our Mission - Core Values" />
             </div>
           </div>
           <div className="col-12 col-lg-6">
@@ -49,12 +49,12 @@ const OurMission = () => {
           </div>
           <div className="col-12 col-lg-6 d-lg-block  d-none ">
             <div className="mission-s__single fade-top d-flex">
-              <Image src={Mission} alt="Image" />
+              <Image src={Mission} alt="Our Mission - Core Values" />
             </div>
           </div>
           <div className="col-12 col-lg-6 d-lg-block  ">
             <div className="mission-s__single fade-top d-flex">
-              <Image src={Vision} alt="Image" />
+              <Image src={Vision} alt="Our Vision - Business Goals" />
             </div>
           </div>
           <div className="col-12 col-lg-6">

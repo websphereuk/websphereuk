@@ -93,7 +93,7 @@ const Testimonial = () => {
                           <hr />
                           <div className="author">
                             <div className="thumb">
-                              <Image className="testimonialImg" src={v?.author.avatar ? v?.author.avatar : avatar} alt="Image" />
+                              <Image className="testimonialImg" src={v?.author.avatar ? v?.author.avatar : avatar} alt={`Happy Client - ${v?.author?.name}`} />
                             </div>
                             <div className="author-meta">
                               <h5>{v?.author?.name}</h5>

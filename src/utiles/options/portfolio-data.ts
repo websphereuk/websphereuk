@@ -83,6 +83,7 @@ import vsThumbnail from "../../../public/images/projects/detail project/vape-sho
 
 export const ProjectData = [
     {
+        projectLink: "alfa-travel-paris" , 
         id: '1',
         projectLogo: alfaTravelParis,
         projectHoverLogo: alfaTravelParis,
@@ -119,7 +120,7 @@ export const ProjectData = [
             Overview: "In the ever-evolving landscape of technology, companies often seek innovative solutions to enhance their products and reach a broader audience. One such company approached our team for assistance in developing their Web application during its nascent stages.To address these challenges, we adopted a collaborative approach, working closely with the company's development team. Extensive user research allowed us to understand the target audience's needs and preferences, informing our design decisions.   ",
             Features: {
                 content: 'Alfa Travel distinguishes itself through its exceptional web platform, boasting a sleek and intuitive user interface that enhances the booking experience',
-                features: ['Streamlined Booking and Payment Process', 'Responsive Mobile-Friendly Design', 'Interactive Destination Exploration Interface']
+                features: ['Booking & Payment Process', 'Responsive Layouts', 'Tours Explorer']
             },
             Duration: "Nov 2023-Dec 2023", Industry: "Hospitality & Tourism", Location: "France Paris",
             Description: "The partnership between WebSphere and Alfa Travel Paris epitomizes the epitome of collaboration, where challenges metamorphose into opportunities for resounding success. In the crucible of innovation, WebSphere deftly orchestrated a transformative journey within a mere month, revolutionizing Alfa Travel Paris's digital footprint by seamlessly embedding a booking portal into their website. This remarkable feat not only underscored WebSphere's technical prowess but also served as a catalyst for Alfa Travel Paris's ascent to the summit of top travel brands. As we traverse the digital landscape together, our commitment to pushing the boundaries of possibility remains unwavering. United in our pursuit of excellence, we stand poised on the precipice of limitless potential, perpetually redefining the contours of digital solutions with each endeavor. The collaboration between WebSphere and Alfa Travel Paris is not just a testament to our shared values but a testament to the transformative power of partnership itself. As we chart a course towards the future, we do so with conviction, knowing that together, we have the capability to shape destinies and realize dreams.",
@@ -127,6 +128,7 @@ export const ProjectData = [
         }
     },
     {
+        projectLink: "kbr-transport" , 
         id: '2',
         projectLogo: klDarkLogo,
         projectHoverLogo: klWhiteLogo,
@@ -172,6 +174,7 @@ export const ProjectData = [
         }
     },
     {
+        projectLink: "pets-heaven" , 
         id: '3',
         projectLogo: phDarkLogo,
         projectHoverLogo: phWhiteLogo,
@@ -218,6 +221,7 @@ export const ProjectData = [
 
     },
     {
+        projectLink: "ultra-cleaning" , 
         id: '4',
         projectLogo: cmDarkLogo,
         projectHoverLogo: cmWhiteLogo,
@@ -264,6 +268,7 @@ export const ProjectData = [
 
     },
     {
+        projectLink: "country-dairy-farm" , 
         id: '5',
         projectLogo: LectoLogo,
         projectHoverLogo: LectoLogo,
@@ -310,6 +315,7 @@ export const ProjectData = [
 
     },
     {
+        projectLink: "elysia" , 
         id: '6',
         projectLogo: eDarkLogo,
         projectHoverLogo: eWhiteLogo,
@@ -356,6 +362,7 @@ export const ProjectData = [
 
     },
     {
+        projectLink: "pitch" , 
         id: '7',
         projectLogo: pwDarkLogo,
         projectHoverLogo: pwWhiteLogo,
@@ -402,6 +409,8 @@ export const ProjectData = [
 
     },
     {
+        projectLink: "cyber-nexus" , 
+
         id: '8',
         projectLogo: znDarkLogo,
         projectHoverLogo: znWhiteLogo,
@@ -448,6 +457,7 @@ export const ProjectData = [
 
     },
     {
+        projectLink: "vape-shop" , 
         id: '9',
         projectLogo: vsDarkLogo,
         projectHoverLogo: vsWhiteLogo,

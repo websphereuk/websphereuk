@@ -44,6 +44,8 @@ const BannerSlides = (data: any) => {
                         <SwiperSlide>
                             <div
                                 className="banner-three__slider-single"
+                                role="img"
+                                aria-label={`${data?.data?.projectHeading} project mockup showcase`}
                                 style={{
                                     backgroundImage: `url(${!isItMobile ? data.data.Banner.BannerOne : data.data.Banner.MobileBannerTwo})`,
                                     backgroundSize: "cover",
@@ -87,6 +89,8 @@ const BannerSlides = (data: any) => {
                         <SwiperSlide>
                             <div
                                 className="banner-three__slider-single"
+                                role="img"
+                                aria-label={`${data?.data?.projectHeading} project detail banner highlighting`}
                                 style={{
 
                                     backgroundImage: `url(${!isItMobile ? data.data.Banner.BannerTwo : data.data.Banner.MobileBannerOne})`,
@@ -126,6 +130,8 @@ const BannerSlides = (data: any) => {
                         <SwiperSlide>
                             <div
                                 className="banner-three__slider-single"
+                                role="img"
+                                aria-label={`${data?.data?.projectHeading} collaboration with WebSphereUK`}
                                 style={
 
                                     {
@@ -180,8 +186,8 @@ const BannerSlides = (data: any) => {
                         <i className="fa-brands fa-instagram"></i>
                     </Link>
                 </div>
-                <Image src={arrow} alt="Image" className="arrow-img" />
-                <Image src={dotlarge} alt="Image" className="dot-img" />
+                <Image src={arrow} alt="Background Arrow " className="arrow-img" />
+                <Image src={dotlarge} alt="Background Dot" className="dot-img" />
                 <div className="banner-three__slider-progress-wrapper">
                     <div className="container">
                         <div className="banner-three__slider-progress">
@@ -230,7 +236,7 @@ const BannerSlides = (data: any) => {
                         </div>
                     </div>
                     <div className="banner-three__video">
-                        <Image src={videobg} width={250} height={187} alt="Image" />
+                        <Image src={videobg}  width={250} height={187} alt="Video Fall Back Image" />
                         <button
                             className="video-frame video-btn"
                             onClick={() => setVideoActive(true)}

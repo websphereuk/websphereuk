@@ -14,6 +14,7 @@ const CmnBanner = ({ title, navigation, parent, parentLink, content }: BannerPro
     <>
       <section
         className="cmn-banner bg-img"
+      
         style={{ backgroundImage: "url('/images/banner/cmn-banner-bg.png')" }}
       >
         <div className="container">

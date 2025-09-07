@@ -7,7 +7,6 @@ import "swiper/swiper-bundle.css";
 import one from "public/images/teams/one.png";
 import two from "public/images/teams/two.png";
 import three from "public/images/teams/three.png";
-import four from "public/images/teams/four.png";
 import five from "public/images/teams/five.png";
 import six from "public/images/teams/six.png";
 import seven from "public/images/teams/seven.png";
@@ -80,8 +79,8 @@ const TeamMembers = () => {
               <div className="team-s__slider-single">
                 <div className="team-wrap">
                   <div className="thumb">
-                    <Link href="team-single">
-                      <Image src={one} alt="Image" />
+                    <Link href="#">
+                      <Image src={one} alt="John Smith - Senior Engineer" />
                     </Link>
                     <div
                       className="thumb__content"
@@ -89,12 +88,11 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Strong foundations lead to strong results. I ensure our systems are built to last.”
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="#">John Smith</Link>
                       </h4>
                       <p>Senior engineer</p>
                       <div className="social-alt">
@@ -125,16 +123,14 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="#">John Smith</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>Senior engineer</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Expert in backend systems & infrastructure. Ensures scalability, reliability, and efficiency.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
@@ -163,8 +159,7 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        “Strong foundations lead to strong results. I ensure our systems are built to last.”
                       </p>
                     </div>
                     <div className="social">
@@ -205,8 +200,8 @@ const TeamMembers = () => {
               <div className="team-s__slider-single">
                 <div className="team-wrap">
                   <div className="thumb">
-                    <Link href="team-single">
-                      <Image src={two} alt="Image" />
+                    <Link href="#">
+                      <Image src={two} alt="Michael Johnson - Product Designer" />
                     </Link>
                     <div
                       className="thumb__content"
@@ -214,14 +209,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Design should not just look good, it should feel effortless to use.”
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="#">Michael Johnson</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>Sr. Product Designer</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -250,16 +244,14 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="#">Michael Johnson</Link>
                       </h5>
                       <p>Sr. Product Designer</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Crafts intuitive and engaging designs that balance creativity and functionality.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
@@ -288,8 +280,7 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        “Design should not just look good, it should feel effortless to use.”
                       </p>
                     </div>
                     <div className="social">
@@ -329,9 +320,10 @@ const TeamMembers = () => {
             <SwiperSlide>
               <div className="team-s__slider-single">
                 <div className="team-wrap">
+                  {/* Thumbnail Section */}
                   <div className="thumb">
-                    <Link href="team-single">
-                      <Image src={three} alt="Image" />
+                    <Link href="#">
+                      <Image src={three} alt="David Miller - Full Stack Developer" />
                     </Link>
                     <div
                       className="thumb__content"
@@ -339,14 +331,14 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Code should be clean, scalable, and future-proof. That’s what I
+                          deliver.”
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="#">David Miller</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>Full Stack Developer</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -363,35 +355,37 @@ const TeamMembers = () => {
                           <i className="fa-brands fa-twitter"></i>
                         </Link>
                         <Link
-                          href="https://www.pinterest.com/"
+                          href="https://www.linkedin.com/"
                           target="_blank"
-                          aria-label="share us on pinterest"
+                          aria-label="share us on linkedin"
                         >
                           <i className="fa-brands fa-linkedin-in"></i>
                         </Link>
                       </div>
                     </div>
                   </div>
+
+                  {/* Content Section */}
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="#">David Miller</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>Full Stack Developer</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Bridges backend and frontend, creating seamless, high-performing
+                        applications. Passionate about writing maintainable code and
+                        building future-proof systems.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Wireframe</p>
+                            <p>Frontend Development</p>
                           </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
+                          <div className="skill-bar-wrapper" data-percent="85%">
                             <div className="skill-bar">
                               <div className="skill-bar-percent">
                                 <span className="percent-value"></span>
@@ -401,7 +395,7 @@ const TeamMembers = () => {
                         </div>
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Visual Design</p>
+                            <p>Backend Systems</p>
                           </div>
                           <div className="skill-bar-wrapper" data-percent="90%">
                             <div className="skill-bar">
@@ -413,8 +407,8 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Focused on scalability, clean architecture, and delivering products
+                        that perform flawlessly across platforms.
                       </p>
                     </div>
                     <div className="social">
@@ -433,9 +427,9 @@ const TeamMembers = () => {
                         <i className="fa-brands fa-twitter"></i>
                       </Link>
                       <Link
-                        href="https://www.pinterest.com/"
+                        href="https://www.linkedin.com/"
                         target="_blank"
-                        aria-label="share us on pinterest"
+                        aria-label="share us on linkedin"
                       >
                         <i className="fa-brands fa-linkedin-in"></i>
                       </Link>
@@ -451,12 +445,14 @@ const TeamMembers = () => {
                 </div>
               </div>
             </SwiperSlide>
+
+
             <SwiperSlide>
               <div className="team-s__slider-single">
                 <div className="team-wrap">
                   <div className="thumb">
-                    <Link href="team-single">
-                      <Image src={four} alt="Image" />
+                    <Link href="#">
+                      <Image src={five} alt="James Wilson - UI/UX Designer" />
                     </Link>
                     <div
                       className="thumb__content"
@@ -464,14 +460,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Good design is invisible. It just works without being noticed.”
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="#">James Wilson</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>UI/UX Designer</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -488,9 +483,9 @@ const TeamMembers = () => {
                           <i className="fa-brands fa-twitter"></i>
                         </Link>
                         <Link
-                          href="https://www.pinterest.com/"
+                          href="https://www.linkedin.com/"
                           target="_blank"
-                          aria-label="share us on pinterest"
+                          aria-label="share us on linkedin"
                         >
                           <i className="fa-brands fa-linkedin-in"></i>
                         </Link>
@@ -500,23 +495,21 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="#">James Wilson</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>UI/UX Designer</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Designs visually appealing, smooth, and user-friendly interfaces across devices.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
                             <p>Wireframe</p>
                           </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
+                          <div className="skill-bar-wrapper" data-percent="80%">
                             <div className="skill-bar">
                               <div className="skill-bar-percent">
                                 <span className="percent-value"></span>
@@ -538,8 +531,7 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Ensures every interface is intuitive, aesthetically pleasing, and responsive.
                       </p>
                     </div>
                     <div className="social">
@@ -558,9 +550,9 @@ const TeamMembers = () => {
                         <i className="fa-brands fa-twitter"></i>
                       </Link>
                       <Link
-                        href="https://www.pinterest.com/"
+                        href="https://www.linkedin.com/"
                         target="_blank"
-                        aria-label="share us on pinterest"
+                        aria-label="share us on linkedin"
                       >
                         <i className="fa-brands fa-linkedin-in"></i>
                       </Link>
@@ -576,12 +568,14 @@ const TeamMembers = () => {
                 </div>
               </div>
             </SwiperSlide>
+
+
             <SwiperSlide>
               <div className="team-s__slider-single">
                 <div className="team-wrap">
                   <div className="thumb">
-                    <Link href="team-single">
-                      <Image src={five} alt="Image" />
+                    <Link href="#">
+                      <Image src={six} alt="Daniel Anderson - Marketing Head" />
                     </Link>
                     <div
                       className="thumb__content"
@@ -589,14 +583,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Great marketing connects people with solutions they actually need.”
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="#">Daniel Anderson</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>Marketing Head</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -613,9 +606,9 @@ const TeamMembers = () => {
                           <i className="fa-brands fa-twitter"></i>
                         </Link>
                         <Link
-                          href="https://www.pinterest.com/"
+                          href="https://www.linkedin.com/"
                           target="_blank"
-                          aria-label="share us on pinterest"
+                          aria-label="share us on linkedin"
                         >
                           <i className="fa-brands fa-linkedin-in"></i>
                         </Link>
@@ -625,23 +618,21 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="#">Daniel Anderson</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>Marketing Head</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Leads creative marketing strategies that drive growth and brand recognition.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Wireframe</p>
+                            <p>Strategy</p>
                           </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
+                          <div className="skill-bar-wrapper" data-percent="85%">
                             <div className="skill-bar">
                               <div className="skill-bar-percent">
                                 <span className="percent-value"></span>
@@ -651,7 +642,7 @@ const TeamMembers = () => {
                         </div>
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Visual Design</p>
+                            <p>Branding</p>
                           </div>
                           <div className="skill-bar-wrapper" data-percent="90%">
                             <div className="skill-bar">
@@ -663,8 +654,7 @@ const TeamMembers = () => {
                         </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Focuses on connecting audiences with meaningful experiences and impactful campaigns.
                       </p>
                     </div>
                     <div className="social">
@@ -683,9 +673,9 @@ const TeamMembers = () => {
                         <i className="fa-brands fa-twitter"></i>
                       </Link>
                       <Link
-                        href="https://www.pinterest.com/"
+                        href="https://www.linkedin.com/"
                         target="_blank"
-                        aria-label="share us on pinterest"
+                        aria-label="share us on linkedin"
                       >
                         <i className="fa-brands fa-linkedin-in"></i>
                       </Link>
@@ -701,12 +691,15 @@ const TeamMembers = () => {
                 </div>
               </div>
             </SwiperSlide>
+
+
+
             <SwiperSlide>
               <div className="team-s__slider-single">
                 <div className="team-wrap">
                   <div className="thumb">
-                    <Link href="team-single">
-                      <Image src={six} alt="Image" />
+                    <Link href="#">
+                      <Image src={seven} alt="Thomas Lee - QA Engineer" />
                     </Link>
                     <div
                       className="thumb__content"
@@ -714,14 +707,13 @@ const TeamMembers = () => {
                     >
                       <div className="info">
                         <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
+                          “Quality is not tested at the end, it’s built in from the start.”
                         </p>
                       </div>
                       <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
+                        <Link href="#">Thomas Lee</Link>
                       </h4>
-                      <p>Senior engineer</p>
+                      <p>QA Engineer</p>
                       <div className="social-alt">
                         <Link
                           href="https://www.facebook.com/"
@@ -738,9 +730,9 @@ const TeamMembers = () => {
                           <i className="fa-brands fa-twitter"></i>
                         </Link>
                         <Link
-                          href="https://www.pinterest.com/"
+                          href="https://www.linkedin.com/"
                           target="_blank"
-                          aria-label="share us on pinterest"
+                          aria-label="share us on linkedin"
                         >
                           <i className="fa-brands fa-linkedin-in"></i>
                         </Link>
@@ -750,33 +742,19 @@ const TeamMembers = () => {
                   <div className="content">
                     <div className="intro">
                       <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
+                        <Link href="#">Thomas Lee</Link>
                       </h5>
-                      <p>Sr. Product Designer</p>
+                      <p>QA Engineer</p>
                     </div>
                     <hr />
                     <div className="inner">
                       <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
+                        Ensures top performance, security, and reliability in every product we deliver.
                       </p>
                       <div className="skill-wrap">
                         <div className="skill-bar-single">
                           <div className="skill-bar-title">
-                            <p>Wireframe</p>
-                          </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
-                            <div className="skill-bar">
-                              <div className="skill-bar-percent">
-                                <span className="percent-value"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="skill-bar-single">
-                          <div className="skill-bar-title">
-                            <p>Visual Design</p>
+                            <p>Testing</p>
                           </div>
                           <div className="skill-bar-wrapper" data-percent="90%">
                             <div className="skill-bar">
@@ -786,10 +764,21 @@ const TeamMembers = () => {
                             </div>
                           </div>
                         </div>
+                        <div className="skill-bar-single">
+                          <div className="skill-bar-title">
+                            <p>Automation</p>
+                          </div>
+                          <div className="skill-bar-wrapper" data-percent="85%">
+                            <div className="skill-bar">
+                              <div className="skill-bar-percent">
+                                <span className="percent-value"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
+                        Committed to delivering flawless, reliable, and high-quality applications.
                       </p>
                     </div>
                     <div className="social">
@@ -808,9 +797,9 @@ const TeamMembers = () => {
                         <i className="fa-brands fa-twitter"></i>
                       </Link>
                       <Link
-                        href="https://www.pinterest.com/"
+                        href="https://www.linkedin.com/"
                         target="_blank"
-                        aria-label="share us on pinterest"
+                        aria-label="share us on linkedin"
                       >
                         <i className="fa-brands fa-linkedin-in"></i>
                       </Link>
@@ -826,131 +815,7 @@ const TeamMembers = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className="team-s__slider-single">
-                <div className="team-wrap">
-                  <div className="thumb">
-                    <Link href="team-single">
-                      <Image src={seven} alt="Image" />
-                    </Link>
-                    <div
-                      className="thumb__content"
-                      style={{ backgroundImage: "url('/images/teams/bg.png')" }}
-                    >
-                      <div className="info">
-                        <p>
-                          “Lorem ipsum dolor sit amet consectetur adipiscing
-                          elit
-                        </p>
-                      </div>
-                      <h4>
-                        <Link href="team-single">Sana p. Lesh</Link>
-                      </h4>
-                      <p>Senior engineer</p>
-                      <div className="social-alt">
-                        <Link
-                          href="https://www.facebook.com/"
-                          target="_blank"
-                          aria-label="share us on facebook"
-                        >
-                          <i className="fa-brands fa-facebook-f"></i>
-                        </Link>
-                        <Link
-                          href="https://www.twitter.com/"
-                          target="_blank"
-                          aria-label="share us on twitter"
-                        >
-                          <i className="fa-brands fa-twitter"></i>
-                        </Link>
-                        <Link
-                          href="https://www.pinterest.com/"
-                          target="_blank"
-                          aria-label="share us on pinterest"
-                        >
-                          <i className="fa-brands fa-linkedin-in"></i>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="content">
-                    <div className="intro">
-                      <h5>
-                        <Link href="team-single">Hershel J. Jackson</Link>
-                      </h5>
-                      <p>Sr. Product Designer</p>
-                    </div>
-                    <hr />
-                    <div className="inner">
-                      <p>
-                        Aenean sed fringilla purus, sed convallis sem. Morbi
-                        fringilla nulla tempus, cursus mauris in, placerat
-                        libero. Morbi tincidunt venenatis
-                      </p>
-                      <div className="skill-wrap">
-                        <div className="skill-bar-single">
-                          <div className="skill-bar-title">
-                            <p>Wireframe</p>
-                          </div>
-                          <div className="skill-bar-wrapper" data-percent="75%">
-                            <div className="skill-bar">
-                              <div className="skill-bar-percent">
-                                <span className="percent-value"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="skill-bar-single">
-                          <div className="skill-bar-title">
-                            <p>Visual Design</p>
-                          </div>
-                          <div className="skill-bar-wrapper" data-percent="90%">
-                            <div className="skill-bar">
-                              <div className="skill-bar-percent">
-                                <span className="percent-value"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        Morbi non urna fringilla, luctus arcu vel, malesuada
-                        est. Vestibulum at lorem feugiat
-                      </p>
-                    </div>
-                    <div className="social">
-                      <Link
-                        href="https://www.facebook.com/"
-                        target="_blank"
-                        aria-label="share us on facebook"
-                      >
-                        <i className="fa-brands fa-facebook-f"></i>
-                      </Link>
-                      <Link
-                        href="https://www.twitter.com/"
-                        target="_blank"
-                        aria-label="share us on twitter"
-                      >
-                        <i className="fa-brands fa-twitter"></i>
-                      </Link>
-                      <Link
-                        href="https://www.pinterest.com/"
-                        target="_blank"
-                        aria-label="share us on pinterest"
-                      >
-                        <i className="fa-brands fa-linkedin-in"></i>
-                      </Link>
-                      <Link
-                        href="https://www.instagram.com/"
-                        target="_blank"
-                        aria-label="share us on instagram"
-                      >
-                        <i className="fa-brands fa-instagram"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+
           </Swiper>
         </div>
         <div className="slide-group">

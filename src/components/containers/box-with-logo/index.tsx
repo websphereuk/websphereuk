@@ -2,7 +2,7 @@
 import Image, { StaticImageData } from "next/image";
 import { Card } from "../card";
 import style from "./box-with-logo.module.css";
-import Logo from "../../../../public/images/schedule-call/logoW.png";
+import Logo from "../../../../public/images/schedule-call/websphereuk-logo.png";
 import { Button } from "../button";
 import Link from "next/link";
 
@@ -27,6 +27,8 @@ interface BoxWithLogoProps {
     duration?: string;
     country?: string;
     numberboxClass?: string;
+    DarkLogoAltText?:string;
+    LightLogoAltText?:string;
 }
 const BoxWithLogo = (props: BoxWithLogoProps) => {
     return (
@@ -35,7 +37,7 @@ const BoxWithLogo = (props: BoxWithLogoProps) => {
                 <Card className={`${style.box} ${props?.className}`}>
                     {
                         !!Boolean(props?.Logo) && (
-                            <Image className={`bg-black ${style.logo} ${props?.LogoImg}`} src={Logo} alt='' />
+                            <Image className={`bg-black ${style.logo} ${props?.LogoImg}`} src={Logo} alt='WebSphereUk Logo' />
                         )
                     }
                     <div className="">
@@ -51,12 +53,12 @@ const BoxWithLogo = (props: BoxWithLogoProps) => {
 
                     {
                         !!Boolean(props?.Img) && (
-                            <Image className={`${props?.ImgClass}`} src={props?.Img || ''} alt="" />
+                            <Image className={`${props?.ImgClass}`} src={props?.Img || ''} alt={`Dark Logo - ${props?.LightLogoAltText}`} />
                         )
                     }
                     {
                         !!Boolean(props?.HoverImg) && (
-                            <Image className={`${props?.HoverImgClass}`} src={props?.HoverImg || ''} alt="" />
+                            <Image className={`${props?.HoverImgClass}`} src={props?.HoverImg || ''} alt={`Light Logo - ${props?.LightLogoAltText}`} />
                         )
                     }
                     <h3 className={`text-black ${style.Heading}`}>

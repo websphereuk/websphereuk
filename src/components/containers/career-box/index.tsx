@@ -6,10 +6,10 @@ import { Card } from '../card';
 import FormFields from '../form-feilds';
 import SelectFields from '../SelectFields';
 import GeneralHeading from '../general-heading';
-import NotFoundData from "../../../../public/images/noodataaa.png"
+import NotFoundData from "../../../../public/images/no-data-found.png"
 import { Button } from '../button';
 import Image from 'next/image';
-import { DataNotFound } from '../../../../public/icons/svg';
+
 
 const CareerBox = () => {
     const [searchTerm, setSearchTerm] = useState("");

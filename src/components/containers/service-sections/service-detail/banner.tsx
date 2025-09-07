@@ -93,7 +93,7 @@ const Banner = (data: any) => {
           </div>
         </div>
       </div>
-      <Image src={dawn} alt="Image" className="dawn" />
+      <Image src={dawn} alt="Service Banner Star" className="dawn" />
     </section>
   );
 };

@@ -80,7 +80,7 @@ const CaseStudyGallery = () => {
                           <div className="portfolio__single topy-tilt">
                             <Link href={`/portfolio/${v?.id}`}>
                               {v?.PortfolioGallery && (
-                                <Image  src={v?.PortfolioGallery?.[4]} style={{objectPosition:"center"}} alt={`${v.projectHeading}`} />
+                                <Image  src={v?.PortfolioGallery?.[4]} style={{objectPosition:"center"}} alt={`${v.projectHeading} Project Gallery Image showcasing design and highlights`} />
                               )}
                             </Link>
                             <div className="portfolio__single-content">

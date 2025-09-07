@@ -42,7 +42,7 @@ const FooterTwo = () => {
               <div className="footer-two__left">
                 <div className="logo">
                   <Link href="/">
-                    <Image className="my-3 " width={248} src={logo} priority alt="Image" />
+                    <Image className="my-3 " width={248} src={logo} priority alt="WebSphereUK Logo" />
                   </Link>
                 </div>
                 <div className="paragraph">
@@ -87,7 +87,7 @@ const FooterTwo = () => {
                       target="_blank"
                     >
                       {" "}
-                      Web Sphere UK
+                      WebSphereUK
                     </Link>{" "}
                     . All Rights Reserved
                   </p>
