@@ -5,7 +5,7 @@ import { Card } from "../card";
 import GeneralHeading from "../general-heading";
 import { industriesCard } from "@/utiles/options/industries-data";
 const Industries = () => {
-  const para = " As a top player in technology, we, under the WebSphere banner, specialize in creating cutting-edge web applications and software solutions. Focused on surpassing industry standards, our commitment to excellence ensures innovative and reliable products. Our track record speaks for itself, with a flawless 100% success rate. At WebSphere, we stay ahead of the curve, using our expertise to deliver services that truly impress our clients."
+  const para = " As a top player in technology, we, under the Websphere UK banner, specialize in creating cutting-edge web applications and software solutions. Focused on surpassing industry standards, our commitment to excellence ensures innovative and reliable products. Our track record speaks for itself, with a flawless 100% success rate. At Websphere UK, we stay ahead of the curve, using our expertise to deliver services that truly impress our clients."
   const MainHeading = "Leading with Innovation and Excellence"
 
   return (

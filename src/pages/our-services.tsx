@@ -12,14 +12,14 @@ const OurServices = () => {
   return (
     <>
       <Head>
-        <title>Our Services || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services</title>
+        <title>Our Services || Websphere UK | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services</title>
         <meta
           name="description"
           content="Empower your business to lead the industry with cutting-edge IT solutions. Our comprehensive services harness the power of technology to propel your company to the forefront of innovation and success"
           key="desc"
         />
         <link rel="canonical" href="https://websphereuk.com/our-services" />
-        <meta property="og:title" content="Our Services || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services" />
+        <meta property="og:title" content="Our Services || Websphere UK | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services" />
         <meta property="og:description" content="Empower your business to lead the industry with cutting-edge IT solutions. Our comprehensive services harness the power of technology to propel your company to the forefront of innovation and success" />
         <meta property="og:url" content="https://websphereuk.com/our-services" />
         <meta property="og:type" content="website" />

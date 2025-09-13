@@ -21,7 +21,7 @@ const ScheduleCall = () => {
                 <div className="row my-5 align-items-center">
                     <div className={`col-lg-6  ${style.LeftColImg} position-relative`}>
                         <div>
-                            <Image src={Logo} className={`position-absolute d-lg-block d-none  ${style.LogoImg}`} width={80} alt="WebSphereUk Logo" />
+                            <Image src={Logo} className={`position-absolute d-lg-block d-none  ${style.LogoImg}`} width={80} alt="Websphere Uk Logo" />
                         </div>
                         <Image className={`${style.LeftImg} `} src={LadyCall} alt="Mastering Project Excellence - Lady manager planning strategies" />
                     </div>

@@ -20,7 +20,7 @@ const Feature = (data: any) => {
                             <GeneralHeading className="text-start mx-3 text-md-center" content={`Unleashing the Power of ${data?.data?.banner?.ServiceTitle} Services`} />
                         </div>
                         <div className={`col-lg-6 ${style?.ImageSection} `}>
-                            <Image src={Girl} alt={`WebSphereUk - ${data?.data?.banner?.ServiceTitle} Feature`} />
+                            <Image src={Girl} alt={`Websphere UK - ${data?.data?.banner?.ServiceTitle} Feature`} />
                         </div>
                         <div className={`col-lg-6 px-3 ${style?.featureSection}`}>
                             <div className={`row ${style?.Row}`}>

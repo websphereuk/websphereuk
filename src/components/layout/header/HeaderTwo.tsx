@@ -62,7 +62,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav, themeBlack }: HeaderProps) 
                 <nav className="navbar p-0">
                   <div className="navbar__logo">
                     <Link href="/" aria-label="go to home">
-                      <Image src={logoSrc} priority alt={`WebSphereUK Logo`} />
+                      <Image src={logoSrc} priority alt={`Websphere UK Logo`} />
                     </Link>
                   </div>
                   <div className="navbar__menu">

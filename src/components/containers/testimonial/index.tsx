@@ -14,7 +14,7 @@ import useCheckMobileScreen from "@/components/hook/use-check-mobile-screen";
 const Testimonial = () => {
   const testimonialsData = [
     {
-      quote: "Working with Websphere was an absolute delight! Their team truly understood our vision and brought it to life with their incredible web development skills. Highly recommended!",
+      quote: "Working with Websphere UK was an absolute delight! Their team truly understood our vision and brought it to life with their incredible web development skills. Highly recommended!",
       author: {
         name: "Emily Johnson",
         role: "Client",
@@ -22,7 +22,7 @@ const Testimonial = () => {
       }
     },
     {
-      quote: "Websphere didn't just create a website for us; they crafted an experience. Their dedication and creativity exceeded all our expectations. Thank you for making our business shine!",
+      quote: "Websphere UK didn't just create a website for us; they crafted an experience. Their dedication and creativity exceeded all our expectations. Thank you for making our business shine!",
       author: {
         name: "John Davis",
         role: "Client",
@@ -30,7 +30,7 @@ const Testimonial = () => {
       }
     },
     {
-      quote: "Websphere's web development services have been a game-changer for us. Their ability to listen to our needs and deliver innovative solutions has been invaluable.",
+      quote: "Websphere UK's web development services have been a game-changer for us. Their ability to listen to our needs and deliver innovative solutions has been invaluable.",
       author: {
         name: "Sarah Thompson",
         role: "Client",
@@ -38,7 +38,7 @@ const Testimonial = () => {
       }
     },
     {
-      quote: "From start to finish, working with Websphere was smooth sailing. Their expertise and professionalism made the entire process seamless. We couldn't be happier with the results!",
+      quote: "From start to finish, working with Websphere UK was smooth sailing. Their expertise and professionalism made the entire process seamless. We couldn't be happier with the results!",
       author: {
         name: "Michael Clark",
         role: "Client",
@@ -46,7 +46,7 @@ const Testimonial = () => {
       }
     },
     {
-      quote: "Websphere's team not only delivered a stunning website but also provided exceptional support. Their dedication to quality and customer satisfaction is truly commendable, ensuring a successful project experience.",
+      quote: "Websphere UK's team not only delivered a stunning website but also provided exceptional support. Their dedication to quality and customer satisfaction is truly commendable, ensuring a successful project experience.",
       author: {
         name: "Laura White",
         role: "Client",
@@ -54,7 +54,7 @@ const Testimonial = () => {
       }
     },
     {
-      quote: "Choosing Websphere was one of the best decisions we made for our business. Their expertise and communication made the process efficient and enjoyable. We're thrilled with the outcome!",
+      quote: "Choosing Websphere UK was one of the best decisions we made for our business. Their expertise and communication made the process efficient and enjoyable. We're thrilled with the outcome!",
       author: {
         name: "Chris Evans",
         role: "Client",

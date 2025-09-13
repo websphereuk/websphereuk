@@ -131,7 +131,7 @@ const BannerSlides = (data: any) => {
                             <div
                                 className="banner-three__slider-single"
                                 role="img"
-                                aria-label={`${data?.data?.projectHeading} collaboration with WebSphereUK`}
+                                aria-label={`${data?.data?.projectHeading} collaboration with Websphere UK`}
                                 style={
 
                                     {

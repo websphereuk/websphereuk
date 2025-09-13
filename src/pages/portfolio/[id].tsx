@@ -15,7 +15,7 @@ const Portfolio = () => {
 
         <>
             <Head >
-                <title>{`${v?.projectHeading}  || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services`}</title>
+                <title>{`${v?.projectHeading}  || Websphere UK | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services`}</title>
                 <meta
                     name="description"
                     content={`${v?.projectParagraph}`}

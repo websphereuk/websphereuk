@@ -62,7 +62,7 @@ const OurMission = () => {
               <h3>Our Visions into Reality</h3>
               <div className="mt-4">
                 <p className="" style={{ textTransform: "initial" }}>
-                  Our vision at Web Sphere is to pioneer transformative solutions that redefine industry standards and inspire positive change on a global scale. With a relentless focus on innovation, integrity, and inclusivity, we strive to lead by example in every facet of our operations. We envision a future where our products and services not only meet but exceed the evolving needs of our customers, while also contributing to a more sustainable and equitable world.
+                  Our vision at Websphere UK is to pioneer transformative solutions that redefine industry standards and inspire positive change on a global scale. With a relentless focus on innovation, integrity, and inclusivity, we strive to lead by example in every facet of our operations. We envision a future where our products and services not only meet but exceed the evolving needs of our customers, while also contributing to a more sustainable and equitable world.
                 </p>
               </div>
             </div>

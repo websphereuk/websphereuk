@@ -37,7 +37,7 @@ const BoxWithLogo = (props: BoxWithLogoProps) => {
                 <Card className={`${style.box} ${props?.className}`}>
                     {
                         !!Boolean(props?.Logo) && (
-                            <Image className={`bg-black ${style.logo} ${props?.LogoImg}`} src={Logo} alt='WebSphereUk Logo' />
+                            <Image className={`bg-black ${style.logo} ${props?.LogoImg}`} src={Logo} alt='Websphere UK Logo' />
                         )
                     }
                     <div className="">

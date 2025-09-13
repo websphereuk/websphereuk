@@ -23,9 +23,9 @@ const VisionToReality = () => {
                 <div className="row my-5 align-items-center">
                     <div className={`col-lg-6  ${style.VisionToRealityLeftColImg} position-relative`}>
                         <div>
-                            <Image src={Logo} className={`position-absolute d-lg-block d-none  ${style.VisionToRealityLogoImg}`} width={80} alt="WebSphereUk Logo" />
+                            <Image src={Logo} className={`position-absolute d-lg-block d-none  ${style.VisionToRealityLogoImg}`} width={80} alt="Websphere UK Logo" />
                         </div>
-                        <Image className={`${style.VisionToRealityLeftImg} `} src={LadyCall} alt="WebSphereUk - Vision to Reality Process" />
+                        <Image className={`${style.VisionToRealityLeftImg} `} src={LadyCall} alt="Websphere UK - Vision to Reality Process" />
                     </div>
                     <div className={`col-lg-6 text-black ${style.VisionToRealityboxCol}`}>
                         {VisionToRealtyData.map((d, index) => {

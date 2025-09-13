@@ -29,9 +29,9 @@ const Footer = () => {
                   <i className="fa-sharp fa-solid fa-phone-volume"></i>
                   (406) 555-0120
                 </Link>
-                <Link href="mailto:info@web sphere.com">
+                <Link href="mailto:info@Websphere UK.com">
                   <i className="fa-sharp fa-solid fa-envelope"></i>
-                  info@web sphere.com
+                  info@Websphere UK.com
                 </Link>
               </div>
               <div className="footer__cta text-start">
@@ -102,7 +102,7 @@ const Footer = () => {
                   <div className="footer__copyright-text text-center text-lg-start">
                     <p>
                       Copyright &copy;
-                      <span id="copyYear">{currentYear}</span> web sphere by{" "}
+                      <span id="copyYear">{currentYear}</span> Websphere UK by{" "}
                       <Link
                         
                         href="https://themeforest.net/user/UltraDevs"

@@ -62,7 +62,7 @@ const AboutUsBanner = () => {
                 </h1>
                 <div className="banner__content-inner">
                   <p>
-                    WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies
+                    Websphere UK skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies
                   </p>
                   <div className="d-flex justify-space-between flex-row cta section__content-cta">
                     <div className="single">

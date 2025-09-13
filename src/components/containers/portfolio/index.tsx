@@ -75,7 +75,7 @@ const Portfolio = () => {
                                                                 Img={v?.projectLogo} ImgClass={`${style?.img}`}
                                                                 HoverImg={v?.projectHoverLogo} HoverImgClass={`${style?.hoverimg}`}
                                                                 ButtonText={'Explore More'}
-                                                                ButtonLink={`/portfolio/${v?.id}`}
+                                                                ButtonLink={`/portfolio/${v?.projectLink}`}
                                                                 className={`text-black mt-5 ${style?.box}`}
                                                                 Heading={v?.projectHeading}
                                                                 Paragraph={v?.projectParagraph}

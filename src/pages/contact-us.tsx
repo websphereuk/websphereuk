@@ -6,16 +6,16 @@ import Head from "next/head";
 
 const ContactUs = () => {
   <Head>
-    <title>Contact Us || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services</title>
+    <title>Contact Us || Websphere Uk | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services</title>
     <meta
       name="description"
-      content="Contact WebSphere today! We'd love to hear from you. Whether you have questions, need assistance, or want to discuss how we can help your business thrive, our team is here to assist you."
+      content="Contact Websphere Uk today! We'd love to hear from you. Whether you have questions, need assistance, or want to discuss how we can help your business thrive, our team is here to assist you."
       key="desc"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="canonical" href="https://websphereuk.com/contact-us" />
-    <meta property="og:title" content="Contact Us || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services" />
-    <meta property="og:description" content="Contact WebSphere today! We'd love to hear from you. Whether you have questions, need assistance, or want to discuss how we can help your business thrive, our team is here to assist you." />
+    <meta property="og:title" content="Contact Us || Websphere Uk | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services" />
+    <meta property="og:description" content="Contact Websphere Uk today! We'd love to hear from you. Whether you have questions, need assistance, or want to discuss how we can help your business thrive, our team is here to assist you." />
     <meta property="og:url" content="https://websphereuk.com/contact-us" />
     <meta property="og:type" content="website" />
   </Head>

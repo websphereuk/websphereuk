@@ -23,7 +23,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     const mailOptions = {
         from: email,
         to: 'bilawal.ali2626@gmail.com', // The email address you want to receive the form data
-        subject: 'Web Sphere Uk Contact Leads',
+        subject: 'Websphere UK Contact Leads',
         text: `
             Full Name: ${fullName}
             Company: ${company}

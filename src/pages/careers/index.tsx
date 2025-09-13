@@ -8,10 +8,10 @@ const Careers = () => {
     return (
         <>
             <Head >
-                <title>{`Careers at Web Sphere UK -  Choose the right path now`}</title>
+                <title>{`Careers at Websphere UK -  Choose the right path now`}</title>
                 <meta
                     name="description"
-                    content={` At Web Sphere UK , we provide our employees with unlimited growth potential. Check out our careers page to find the right job for you!`}
+                    content={` At Websphere UK , we provide our employees with unlimited growth potential. Check out our careers page to find the right job for you!`}
                     key="desc"
                 />
             </Head>

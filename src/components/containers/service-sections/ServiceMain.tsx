@@ -40,7 +40,7 @@ const ServiceMain = (props: ServicesMainProps) => {
 
                 <div className="paragraph mt-4 mb-5 mx-md-5">
                   <p>
-                    Unleash the full potential of your business with Web Sphere of cutting-edge IT solutions. <br /> We craft customized plans to empower your growth, unlock efficiencies, and propel you ahead of the competition.
+                    Unleash the full potential of your business with Websphere UK of cutting-edge IT solutions. <br /> We craft customized plans to empower your growth, unlock efficiencies, and propel you ahead of the competition.
                   </p>
                 </div>
 

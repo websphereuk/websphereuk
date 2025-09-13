@@ -14,17 +14,17 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>About Us || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services</title>
+        <title>About Us || Websphere UK | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services</title>
         <meta
           name="description"
-          content="WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies"
+          content="Websphere UK skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies"
           key="desc"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://websphereuk.com/about-us" />
-        <meta property="og:title" content="About Us || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services" />
-        <meta property="og:description" content="WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies" />
-        <meta property="og:url" content="https://websphereuk.com/about-us" />
+        <meta property="og:title" content="About Us || Websphere UK | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services" />
+        <meta property="og:description" content="Websphere UK skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies" />
+        <meta property="og:url" content="https://Websphere UKuk.com/about-us" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
       </Head>

@@ -33,10 +33,10 @@ type LayoutProps = {
 };
 export const metadata: Metadata = {
   title: {
-    default: "WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services",
-    template: "%s - Web Sphere Uk "
+    default: "WebSphere UK | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services",
+    template: "%s - Websphere UK "
   },
-  description: "WebSphere LLC specializes in innovative web and mobile app development, e-commerce solutions, blockchain technology, AI &amp; ML, and more. Catering to diverse industries, our expert team delivers cutting-edge technology solutions to transform your business vision into reality. Discover how we can upscale your digital presence",
+  description: "Websphere UK specializes in innovative web and mobile app development, e-commerce solutions, blockchain technology, AI &amp; ML, and more. Catering to diverse industries, our expert team delivers cutting-edge technology solutions to transform your business vision into reality. Discover how we can upscale your digital presence",
 }
 
 

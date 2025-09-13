@@ -64,8 +64,8 @@ export default Home;
 export async function getStaticProps() {
   return {
     props: {
-      Title: 'Home || WebSphere | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services',
-      Description: 'WebSphere skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies',
+      Title: 'Home || Websphere UK | Web & Mobile APP | Artificial Intelligence and Blockchain Development Services',
+      Description: 'Websphere UK skyrockets brands to international success through powerful website design, software & custom development, and proven SEO & content marketing strategies',
     },
   };
 }

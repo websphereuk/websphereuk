@@ -56,7 +56,7 @@ const OurTheory = (props: OurTheoryProps) => {
                                     <div className="col-12 col-lg-7 col-xxl-5 offset-xxl-2">
                                         <div className="text-md-center text-lg-start">
                                             <p>
-                                                Web Sphere, a tech innovator, specializes in software development, app creation, UI/UX design, and more. We prioritize a balance of quality, speed, and cost-effectiveness, facilitated by a dedicated team and direct communication across global offices. Founded by industry veterans, our organization boasts a track record of timely project delivery and peak performance, aiding clients in successful goal attainment.
+                                                Websphere UK, a tech innovator, specializes in software development, app creation, UI/UX design, and more. We prioritize a balance of quality, speed, and cost-effectiveness, facilitated by a dedicated team and direct communication across global offices. Founded by industry veterans, our organization boasts a track record of timely project delivery and peak performance, aiding clients in successful goal attainment.
                                             </p>
                                         </div>
                                     </div>

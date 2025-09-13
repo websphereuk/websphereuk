@@ -53,7 +53,7 @@ const handler = async (
           Dear Hiring Manager,
           <br />
           <br />
-          I trust this message finds you well. I am reaching out to express my sincere interest in the ${positionTitle} developer position role available at <a href="websphereuk.com"  style="color: white; text-decoration: none" ><strong>Web Sphere</strong></a>. Over the course of my career, I have accumulated extensive expertise in ${previousExperience}. I am excited about the prospect of contributing my skills and knowledge to your esteemed organization. Should you require further information or wish to discuss my qualifications in more detail, please do not hesitate to contact me at ${phone} or via email at ${email}. I have also enclosed my CV for your perusal . Thank you for considering my application. I am enthusiastic about the opportunity to potentially join your team and contribute to the continued success of <a href="http://websphereuk.com/" style="color: white; text-decoration: none" ><strong>Web Sphere</strong></a>. Here my cover letter is : <br> 
+          I trust this message finds you well. I am reaching out to express my sincere interest in the ${positionTitle} developer position role available at <a href="websphereuk.com"  style="color: white; text-decoration: none" ><strong>Websphere UK</strong></a>. Over the course of my career, I have accumulated extensive expertise in ${previousExperience}. I am excited about the prospect of contributing my skills and knowledge to your esteemed organization. Should you require further information or wish to discuss my qualifications in more detail, please do not hesitate to contact me at ${phone} or via email at ${email}. I have also enclosed my CV for your perusal . Thank you for considering my application. I am enthusiastic about the opportunity to potentially join your team and contribute to the continued success of <a href="http://websphereuk.com/" style="color: white; text-decoration: none" ><strong>Websphere UK</strong></a>. Here my cover letter is : <br> 
           ${coverLetter}
           <br />
           <br />
@@ -72,7 +72,7 @@ const handler = async (
         "
       >
         <div>
-          This E-Mail is sent from applied form on <a href="websphereuk.com" style="color: white; text-decoration: none" ><strong>Web Sphere</strong></a>.
+          This E-Mail is sent from applied form on <a href="websphereuk.com" style="color: white; text-decoration: none" ><strong>Websphere UK</strong></a>.
         </div>
     
       </div>

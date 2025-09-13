@@ -84,7 +84,7 @@ const FooterFour = () => {
                     <div className="footer__copyright-text text-center text-lg-start">
                       <p>
                         Copyright &copy;{" "}
-                        <span id="copyYear">{currentYear}</span> web sphere by{" "}
+                        <span id="copyYear">{currentYear}</span> Websphere UK by{" "}
                         <Link
                           href="https://themeforest.net/user/UltraDevs"
                           target="_blank"
