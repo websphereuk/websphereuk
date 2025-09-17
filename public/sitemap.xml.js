@@ -2,7 +2,7 @@
 
 const Sitemap = () => {};
 
-export const getServerSideProps = async ({ res }) => {
+export const getStaticProps = async ({ res }) => {
   const baseUrl = "https://websphereuk.com"; // No trailing slash
 
   const staticPaths = [
