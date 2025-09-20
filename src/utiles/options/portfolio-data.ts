@@ -128,7 +128,7 @@ export const ProjectData = [
         }
     },
     {
-        projectLink: "kbr-transport" , 
+        projectLink: "kausahal-law" , 
         id: '2',
         projectLogo: klDarkLogo,
         projectHoverLogo: klWhiteLogo,
