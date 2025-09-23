@@ -81,6 +81,19 @@ import vsGalleryFour from "../../../public/images/projects/detail project/vape-s
 import vsGalleryFive from "../../../public/images/projects/detail project/vape-shop/portfolio-gallery/vs-gallery-5.png"
 import vsThumbnail from "../../../public/images/projects/detail project/vape-shop/portfolio-gallery/vs-gallery-5.png"
 
+
+// ..........................................Sprcilist support coach..........................................
+import sscDarkLogo from "../../../public/images/projects/detail project/specialist-sport-coach/logo/logo.png"
+import sscWhiteLogo from "../../../public/images/projects/detail project/specialist-sport-coach/logo/logo.png"
+import sscGalleryOne from "../../../public/images/projects/detail project/specialist-sport-coach/portfolio-gallery/ssc-gallery-1.png"
+import sscGalleryTwo from "../../../public/images/projects/detail project/specialist-sport-coach/portfolio-gallery/ssc-gallery-2.png"
+import sscGalleryThree from "../../../public/images/projects/detail project/specialist-sport-coach/portfolio-gallery/ssc-gallery-3.png"
+import sscGalleryFour from "../../../public/images/projects/detail project/specialist-sport-coach/portfolio-gallery/ssc-gallery-4.png"
+import sscGalleryFive from "../../../public/images/projects/detail project/specialist-sport-coach/portfolio-gallery/ssc-gallery-2.png"
+import sscThumbnail from "../../../public/images/projects/detail project/specialist-sport-coach/banner/ssc-thumbnail.png"
+
+
+
 export const ProjectData = [
     {
         projectLink: "alfa-travel-paris" , 
@@ -499,6 +512,54 @@ export const ProjectData = [
             Duration: "June 2023-August 2023", Industry: "Vape Market", Location: "Canada (CA)",
             Description: "Vape Shop's collaboration with Websphere UK exemplifies the power of teamwork in the CRM system domain, where challenges become opportunities for significant growth. Websphere UK seamlessly integrated a CRM into Vape Shop's CRM system, revitalizing our digital presence. This achievement not only showcased Websphere UK's technical expertise but also reinforced Vape Shop's position as a leader in the vape market. As we navigate the digital landscape together, our commitment to innovation and excellence remains unwavering. This partnership highlights our shared values and the profound impact of collaboration. Moving forward, we are confident that our united efforts will continue to redefine digital solutions and shape the future, turning our aspirations into reality.",
             conclusion: "In the realm of leading CRM solutions, the partnership between Vape Shop and Websphere UK epitomizes innovation and collaboration. With exceptional agility and expertise, Websphere UK seamlessly integrated a CRM Software into Vape Shop's system, showcasing their team's capabilities. This achievement not only addressed a significant challenge but also opened new avenues for Vape Shop's growth and development. By combining technical proficiency with strategic foresight, Websphere UK has propelled Vape Shop to the forefront of the CRM and vape market. Reflecting on this collaborative journey, we recognize the transformative power of teamwork in achieving tangible results. Moving forward, both Websphere UK and Vape Shop are committed to continuous improvement, pioneering new approaches, and embracing innovative ideas. Together, they are poised to push boundaries further and shape the future of top-tier CRM solutions and the vape market with creativity and determination.",
+
+        }
+
+    } , 
+
+    {
+        projectLink: "specialist-sport-coach" , 
+        id: '9',
+        projectLogo: sscDarkLogo,
+        projectHoverLogo: sscWhiteLogo,
+        projectHeading: 'Specialist Sports Coach',
+        projectParagraph: "The Specialist Sports Coach project was designed to capture the passion, professionalism, and proven success of a leading coach who has transformed players from grassroots to the international stage.",
+        ThumbNail: [
+            sscThumbnail
+
+        ],
+        Banner: {
+
+            ShowCase: `/images/projects/detail project/specialist-sport-coach/banner/ssc-banner-one.png`,
+            BannerOne: `"/images/projects/detail project/specialist-sport-coach/banner/ssc-banner-one.png"`,
+
+            BannerTwo: `"/images/projects/detail project/specialist-sport-coach/banner/ssc-banner-two.png"`,
+            BannerThree: `"/images/projects/detail project/specialist-sport-coach/banner/ssc-banner-three.png"`,
+            MobileBanner: `"/images/projects/detail project/specialist-sport-coach/banner/ssc-banner-three.png"`,
+            MobileBannerOne: `"/images/projects/detail project/specialist-sport-coach/banner/ssc-mobile-banner-one.png"`,
+            MobileBannerTwo: `"/images/projects/detail project/specialist-sport-coach/banner/ssc-mobile-banner-two.png"`,
+        },
+        PortfolioGallery: [
+            sscGalleryOne,
+            sscGalleryTwo,
+            sscGalleryThree,
+            sscGalleryFour,
+            sscGalleryFive,
+            sscGalleryOne,
+            sscGalleryTwo,
+            sscGalleryThree,
+            sscGalleryFour,
+
+        ],
+        ProjectInfo: {
+            Overview: "The Specialist Sports Coach project was designed to capture the passion, professionalism, and proven success of a leading coach who has transformed players from grassroots to the international stage. Our aim was to deliver a clean, engaging, and informative platform that reflects both credibility and inspiration. The website not only showcases the coach’s journey and achievements but also serves as a hub for aspiring athletes to connect and grow. With a modern design and strategic content, it strengthens the brand’s identity while highlighting its vision for the future.",
+            Features: {
+                content: "The website was built with a focus on simplicity, user experience, and brand storytelling. It highlights the coach’s career achievements, services, and philosophy while ensuring smooth navigation for athletes, parents, and partners. With responsive design and clear structure, the platform is tailored to inspire trust and engagement.",
+                features: ['Professional Brand Identity ', 'User-Friendly Navigation', 'Engaging Content Presentation']
+            },
+            Duration: "April 2025-June 2025", Industry: "Sports & Games", Location: "Pakistan",
+            Description: "The Specialist Sports Coach project was developed to create a powerful online platform that showcases the coach’s expertise, services, and achievements. Our objective was to design a website that not only highlights a successful coaching career but also inspires trust and engagement among athletes, parents, and partners. The platform was built with a modern interface, structured content flow, and responsive design to ensure accessibility across all devices.One of the key challenges was to balance storytelling with functionality. The client needed a platform that could present detailed career milestones and testimonials while remaining simple and easy to navigate. Another difficulty was ensuring that the brand’s strong identity and mission — “Transforming Dreams Into Reality” — were reflected consistently in both the visuals and the content.Through thoughtful design decisions, optimized layouts, and a focus on user experience, we overcame these challenges and delivered a solution that is professional, inspiring, and future-ready. The final product stands as a digital hub where athletes and their families can connect with a trusted mentor, explore services, and celebrate success stories.",
+            conclusion: "The Specialist Sports Coach project stands as a reflection of dedication, excellence, and vision. By combining a professional online presence with user-friendly features, the platform builds trust, connects with athletes and partners, and strengthens the brand’s position in the sports coaching industry. Ultimately, the website is more than just a digital platform — it is a gateway for players and parents to engage with a trusted mentor, reinforcing the mission of “Transforming Dreams Into Reality.” This project not only elevates the brand’s digital presence but also ensures long-term growth through a scalable and future-ready design. It serves as a benchmark for how modern sports coaching can be represented online with authenticity and impact.",
 
         }
 

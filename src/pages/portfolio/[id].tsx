@@ -21,6 +21,11 @@ const Portfolio = () => {
                     content={`${v?.projectParagraph}`}
                     key="desc"
                 />
+                      <meta
+                    name="title"
+                    content={`${v?.projectHeading} Website Design & Development | Websphere UK`}
+                    key="desc"
+                />
             </Head>
             <Layout themeBlack={true} header={2} footer={2} video={false}>
                 <BannerSlides data={v} />

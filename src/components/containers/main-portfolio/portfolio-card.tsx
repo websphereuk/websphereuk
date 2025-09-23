@@ -22,7 +22,7 @@ const PortfolioCard = () => {
 
         {/* Cards Grid */}
         <div className="row g-4">
-          {ProjectData.slice(0, 9).map((v, i) => (
+          {ProjectData.slice(0, 10).map((v, i) => (
             <div key={i} className="col-12 col-md-6">
               <Link href={`/portfolio/${v?.projectLink}`}>
               <div className={style.card}>
