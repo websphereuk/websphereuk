@@ -9,10 +9,12 @@ import "public/icons/font-awesome/css/all.css";
 
 // custom icons
 import "public/icons/glyphter/css/websphere.css";
-
+import { DefaultSeo } from "next-seo";
+import defaultSEOConfig from "../../next-seo.config";
 // main scss
 import "@/styles/main.scss";
 import Loader from "@/components/containers/loader";
+
 import gsap from "gsap";
 
 import { ToastContainer } from 'react-toastify';
@@ -48,6 +50,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <div className="content">
           <Suspense fallback={<div>Loading...</div>}>
             <ToastContainer />
+            <DefaultSeo {...defaultSEOConfig} />
             <Component {...pageProps} />
           </Suspense>
         </div>
