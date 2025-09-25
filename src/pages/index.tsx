@@ -11,6 +11,7 @@ import SplineDesign from "@/components/containers/spline-design";
 import Portfolio from "@/components/containers/portfolio";
 
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 interface HomeProps {
   Title?: string,
   Description?: string
@@ -22,6 +23,33 @@ const Home = ({ Title, Description }: HomeProps) => {
   const ImageUrl = "https://websphereuk.com/images/websphereseo.png"
   return (
     <>
+
+{/* <NextSeo
+        title="Digital Marketing Agency in Pakistan | Websphere UK"
+        description="Grow your business with Websphere UK – Pakistan’s trusted digital marketing agency offering SEO, web development, and IT solutions."
+        canonical="https://websphereuk.com/"
+        openGraph={{
+          url: "https://websphereuk.com/",
+          title: "Digital Marketing Agency in Pakistan | Websphere UK",
+          description:
+            "SEO, web development, app design, and IT solutions by Websphere UK.",
+          images: [
+            {
+              url: "https://websphereuk.com/og-image.jpg",
+              width: 1200,
+              height: 630,
+              alt: "Websphere UK Services",
+            },
+          ],
+          site_name: "Websphere UK",
+        }}
+        twitter={{
+          handle: "@websphereuk",
+          site: "@websphereuk",
+          cardType: "summary_large_image",
+        }}
+      /> */}
+
       <Head>
         <title>{Title}</title>
 

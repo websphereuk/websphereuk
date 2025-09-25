@@ -71,7 +71,7 @@ const FooterTwo = () => {
         </div>
 
 
-        <FooterAddress />
+        {/* <FooterAddress /> */}
 
 
         <div className="footer__copyright">
